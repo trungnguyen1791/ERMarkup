@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ERMarkup_Example' do
+  pod 'ERMarkup', :path => '../'
+
+  target 'ERMarkup_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
