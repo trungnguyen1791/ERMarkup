@@ -9,11 +9,11 @@ import UIKit
 import Drawsana
 import FTPopOverMenu_Swift
 
-protocol ERMarkupViewControllerDelegate: class {
+public protocol ERMarkupViewControllerDelegate: class {
     func markupViewController(_ controller: UIViewController, didProcessedImage editedImage: UIImage?)
 }
 public class ERMarkupViewController: UIViewController {
-    weak var delegate: ERMarkupViewControllerDelegate?
+    public weak var delegate: ERMarkupViewControllerDelegate?
     
     var toolImages = [UIImage?]()
     var strokeWidthImages = [UIImage?]()
@@ -93,7 +93,7 @@ public class ERMarkupViewController: UIViewController {
 
         let image = UIImage.imageWithColor(color: definedColors.first! ?? UIColor.black)!.circularImageWithBorderOf(color: UIColor.white, diameter: 35, boderWidth: 2)
         
-        let dumb = UIImage(named: "ic_line_size1")
+//        let dumb = UIImage(named: "ic_line_size1")
         
         strokeColorBtn.setImage(image, for: .normal)
         strokeColorBtn.translatesAutoresizingMaskIntoConstraints = false
