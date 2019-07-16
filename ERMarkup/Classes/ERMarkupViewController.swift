@@ -92,6 +92,9 @@ public class ERMarkupViewController: UIViewController {
                     compatibleWith: nil)]
 
         let image = UIImage.imageWithColor(color: definedColors.first! ?? UIColor.black)!.circularImageWithBorderOf(color: UIColor.white, diameter: 35, boderWidth: 2)
+        
+        let dumb = UIImage(named: "ic_line_size1")
+        
         strokeColorBtn.setImage(image, for: .normal)
         strokeColorBtn.translatesAutoresizingMaskIntoConstraints = false
         strokeColorBtn.widthAnchor.constraint(equalToConstant: 45)

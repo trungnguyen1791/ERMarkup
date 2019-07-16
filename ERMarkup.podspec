@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ERMarkup'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A wrapper markup base on Drawsana with nicer UI'
 
 # This description is used to generate tags and improve search results.
@@ -29,9 +29,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'ERMarkup/Classes/**/*.swift'
   
-  # s.resource_bundles = {
-  #   'ERMarkup' => ['ERMarkup/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'ERMarkup' => ['ERMarkup/Assets/*.png']
+  }
+  s.resources    = ['ERMarkup/**/*.{png}']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
