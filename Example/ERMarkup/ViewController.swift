@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import ERMarkup
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let image = UIImage(named: "test") {
+            let vc = ERMarkupViewController(image: image)
+            //        let vc = ERMarkupViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                self.present(nav, animated: true, completion: nil)
+            }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

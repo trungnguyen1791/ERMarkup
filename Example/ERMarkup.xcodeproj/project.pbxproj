@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		097F1F2A5CD45814460B8B00 /* Pods_ERMarkup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1425CC3B1274831E60CC1B97 /* Pods-ERMarkup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERMarkup_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5ED36E875F819E55DA6D325E /* ERMarkup.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ERMarkup.podspec; path = ../ERMarkup.podspec; sourceTree = "<group>"; };
+		5ED36E875F819E55DA6D325E /* ERMarkup.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ERMarkup.podspec; path = ../ERMarkup.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* ERMarkup_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERMarkup_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,10 +41,10 @@
 		607FACE51AFB9204008FA782 /* ERMarkup_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERMarkup_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		657BA0DDA4EBCC518489BA63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		657BA0DDA4EBCC518489BA63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		96D2A0173E2689D8E07B3A9F /* Pods_ERMarkup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9B74CCA4D21865959259B2 /* Pods-ERMarkup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERMarkup_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BBD712A85851121ED6D317B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BBD712A85851121ED6D317B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E950FF47C7221B6BEB3DAC10 /* Pods-ERMarkup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERMarkup_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECCBE68981D78D37D969661B /* Pods-ERMarkup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERMarkup_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SF6R5X4246;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SF6R5X4246;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -226,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -288,21 +291,21 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Drawsana/Drawsana.framework",
 				"${BUILT_PRODUCTS_DIR}/ERMarkup/ERMarkup.framework",
+				"${BUILT_PRODUCTS_DIR}/FTPopOverMenu_Swift/FTPopOverMenu_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Drawsana.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ERMarkup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTPopOverMenu_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F9EB8205E1158B172F26EF8B /* [CP] Check Pods Manifest.lock */ = {
@@ -481,6 +484,7 @@
 			baseConfigurationReference = ECCBE68981D78D37D969661B /* Pods-ERMarkup_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SF6R5X4246;
 				INFOPLIST_FILE = ERMarkup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -496,6 +500,7 @@
 			baseConfigurationReference = BA9B74CCA4D21865959259B2 /* Pods-ERMarkup_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SF6R5X4246;
 				INFOPLIST_FILE = ERMarkup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E950FF47C7221B6BEB3DAC10 /* Pods-ERMarkup_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SF6R5X4246;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -532,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1425CC3B1274831E60CC1B97 /* Pods-ERMarkup_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SF6R5X4246;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,0 +1,6 @@
+framework module Pods_ERMarkup_Tests {
+  umbrella header "Pods-ERMarkup_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

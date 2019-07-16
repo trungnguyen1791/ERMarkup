@@ -1,0 +1,6 @@
+framework module ERMarkup {
+  umbrella header "ERMarkup-umbrella.h"
+
+  export *
+  module * { export * }
+}

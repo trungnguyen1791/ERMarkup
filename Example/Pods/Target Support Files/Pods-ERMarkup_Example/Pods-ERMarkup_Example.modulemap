@@ -1,0 +1,6 @@
+framework module Pods_ERMarkup_Example {
+  umbrella header "Pods-ERMarkup_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

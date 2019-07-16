@@ -1,0 +1,1351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E7604E32EC45A31D6E87238EA616B6 /* SelectionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */; };
+		0168FC1AA5F5719998A90AE08F7A8C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		04960D1FB4009D870925593B7126A118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		051D18F9B2BE3F71B8105FFECC14303C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */; };
+		0531051A7E9314933CAB26A0F8B1E25D /* ERMarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */; };
+		06B20013EA2CA2F6444A726EC2AA736C /* PenTool_EraserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */; };
+		07406E081B6EA1B4838C920053459B90 /* DrawingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */; };
+		0B46B586191EA72269FC4C25A959535D /* ERMarkup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */; };
+		0DF5B4908442F233FDC06FB17E372D13 /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */; };
+		115FF02491D973ADD3179B81234DE9D0 /* Pods-ERMarkup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */; };
+		187BC515A12A33C126738DC232E261A0 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */; };
+		1B3982C88457A25952FBB298A70DF7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DA685F508CD8674A55F779C141B9884 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */; };
+		1E986E5DD1B1339952FFF315A09DA4E1 /* DrawingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */; };
+		220BC19D4BD2BB7222311EB373678D40 /* ToolOperationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */; };
+		3D1E5C65B3548E42DB348B476B47449B /* Drawsana-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */; };
+		44CCA04578D5A5DE93804050FC7A0555 /* RectShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */; };
+		45E3EE05887448C17F956D8D1B94CE6F /* PenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */; };
+		460F73F8B3CEE613A2452E426E1BFDC0 /* DrawsanaUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */; };
+		4A011B9E6DF00804E718A2D1097F7411 /* CGRect+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */; };
+		5A6EC20BBBD120A64EAE618F118E1477 /* TextShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */; };
+		5A99474CFF562C945E789BC99F3F9832 /* DragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */; };
+		67936C8BD16962774523A8AEDBB3C408 /* Pods-ERMarkup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */; };
+		68BC18D642BED3CFE989EC346033D22D /* ERMarkup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A432CB5AEC2B1C2D4AC81820E643A4C /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */; };
+		7059E651EA43387843F102A47BB0D842 /* Drawsana-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71D3C0C4A34FB7B2A5AA42649E449F6A /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */; };
+		7324CCB2667987B0833CB7789CC599E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		751A85C339C9021B5C7B905E41E6BA7D /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */; };
+		7596B47240598203F75C3682B557F7EA /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */; };
+		75D077AB88F64AA7AA8B3F61EC6E0E34 /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */; };
+		75D318B151FD17D5E85C0878EA348E5C /* Pods-ERMarkup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35929D49A1F8B2FCD312FBD6D597FE7C /* Pods-ERMarkup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76FBDDD3E3C35166649659B294B07575 /* ImmediatePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */; };
+		7799003E3B5407C18D864B49ECCF4D8E /* CGPoint+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */; };
+		7990BB65A06ACB9FE3744FE6E55E5167 /* EllipseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */; };
+		7F50767CCC03B09C40D159550EAE20FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		7FBCC40FDDA97C9D9AD3DC2249373912 /* KeyedDecodingContainer+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */; };
+		84AD9AA422DD89830079BDA6 /* ic_resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */; };
+		84AD9AA522DD89830079BDA6 /* ic_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */; };
+		84AFBAC122DC787C007E6F9F /* ic_undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */; };
+		84AFBAC422DC88E7007E6F9F /* ic_brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */; };
+		84AFBAC922DC8B4A007E6F9F /* ic_font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */; };
+		84AFBACA22DC8B4A007E6F9F /* ic_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */; };
+		84AFBACB22DC8B4A007E6F9F /* ic_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */; };
+		84AFBACC22DC8B4A007E6F9F /* ic_selection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */; };
+		84AFBACE22DC8D08007E6F9F /* ic_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */; };
+		84AFBAD222DC9447007E6F9F /* ic_line_size3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */; };
+		84AFBAD322DC9447007E6F9F /* ic_line_size1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */; };
+		84AFBAD422DC9447007E6F9F /* ic_line_size2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */; };
+		88E85EABDDCF4BADEC2764C923026BBB /* ArrowTool_EllipseTool_LineTool_RectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */; };
+		8B5B9DDC3B91551F32FB7775219D5EFF /* DrawingToolForShapeWithTwoPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */; };
+		91DBD42C0C1D86F5E1417C6A7F8D36F9 /* DrawingOperationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */; };
+		94689D95227442F1798185A2618C16AE /* Drawsana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */; };
+		9E43857AB7CB555F792C32BCDFBD07D6 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */; };
+		ABB012906D8150C2B3B39A721368F00E /* Pods-ERMarkup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B31C16AB0294DE5286836010B13E54B8 /* UIColor+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */; };
+		D381216CBC83C7328C2BDA58809B2449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		DA7D53686B875FF594B99B3630221B11 /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */; };
+		DB3C0199BBE2D7E41293F7356C081FE5 /* TextShapeEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */; };
+		E1DF2B062F2EC56B00E1DF4A90A930BE /* DrawsanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */; };
+		E6A86FB938F226B64F82432A70047ED5 /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */; };
+		E733FE4FE70E852922804006A809F0E9 /* ToolSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */; };
+		F13F62D44BCA1CF7083C6DB6F5D73B6C /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */; };
+		F99F1011AEE8AB25022852A6F1F4D475 /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */; };
+		FA7C11BE954E03F71AA36A2FC5884347 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87959D7408D2536E07F39FB926834ED /* Drawing.swift */; };
+		FDD0FD1B6F74899D5F1EADA003648572 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB7C5F5D3A8393814C58EF8B28F3644C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66DBD053243D4B60068E955B0E0D91C2;
+			remoteInfo = "Pods-ERMarkup_Example";
+		};
+		AF28C6C742C5E6325766D967B7A9819C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C11AE6223C3AA93E5419115FE034D7;
+			remoteInfo = Drawsana;
+		};
+		B1D474BF06F77F6A62F8BB65FA04F246 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D35E4D695659AAF9341690B859499F1;
+			remoteInfo = ERMarkup;
+		};
+		C019BBE4B0CDD78C07CDAE40643620C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989619F863D399C5538843E81223983E;
+			remoteInfo = FTPopOverMenu_Swift;
+		};
+		DE39DB629C9C50F1862133222228B51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989619F863D399C5538843E81223983E;
+			remoteInfo = FTPopOverMenu_Swift;
+		};
+		E8EEED760EEB56EF0232BE6BF11C2B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C11AE6223C3AA93E5419115FE034D7;
+			remoteInfo = Drawsana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineShape.swift; path = Drawsana/Shapes/Implementations/LineShape.swift; sourceTree = "<group>"; };
+		0452D3FA76F5B97F82A029CB25DA3F55 /* Pods-ERMarkup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ERMarkup_Example-frameworks.sh"; sourceTree = "<group>"; };
+		089E3CB77F61FE628C95336913A6B116 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
+		0DDE2D68EA8B6D2144A72626CBEBE643 /* Pods-ERMarkup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.xcconfig; sourceTree = "<group>"; };
+		19DAF04157E7C97D0EEB4DE80B9C634B /* Pods-ERMarkup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ERMarkup_Tests.modulemap"; sourceTree = "<group>"; };
+		19DE70DF5FF1B8D2153452DF220F01FF /* ERMarkup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ERMarkup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		2722CEEB06B22A2FF1D34957B4B36690 /* Pods-ERMarkup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A6C5BFD21AD23FF0B42CFE12C48FFAA /* Pods-ERMarkup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35929D49A1F8B2FCD312FBD6D597FE7C /* Pods-ERMarkup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ERMarkup_Example-umbrella.h"; sourceTree = "<group>"; };
+		37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ERMarkup-dummy.m"; sourceTree = "<group>"; };
+		3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
+		3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediatePanGestureRecognizer.swift; path = Drawsana/Helpers/ImmediatePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-umbrella.h"; sourceTree = "<group>"; };
+		460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Drawsana/Shapes/Shape.swift; sourceTree = "<group>"; };
+		47A5B751AF9A86B5CB1FA994742ACB5C /* Pods-ERMarkup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrowTool_EllipseTool_LineTool_RectTool.swift; path = Drawsana/Tools/Implementations/ArrowTool_EllipseTool_LineTool_RectTool.swift; sourceTree = "<group>"; };
+		48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenTool_EraserTool.swift; path = Drawsana/Tools/Implementations/PenTool_EraserTool.swift; sourceTree = "<group>"; };
+		49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingToolForShapeWithTwoPoints.swift; path = Drawsana/Tools/Implementations/DrawingToolForShapeWithTwoPoints.swift; sourceTree = "<group>"; };
+		4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
+		53C20EF6915068E627C13CA9800D083B /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		584F77D02615A83A2534DF1BE53B88DD /* Pods-ERMarkup_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Tests-Info.plist"; sourceTree = "<group>"; };
+		59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingTool.swift; path = Drawsana/Tools/DrawingTool.swift; sourceTree = "<group>"; };
+		626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ERMarkup_Tests-umbrella.h"; sourceTree = "<group>"; };
+		653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = "Drawsana/Data model/UserSettings.swift"; sourceTree = "<group>"; };
+		66ADC8AD0E41E6CDAA246B8C3148C5D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		705ABCDBDE2B274EACD36C871D43AF7C /* ERMarkup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ERMarkup.modulemap; sourceTree = "<group>"; };
+		72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolOperationContext.swift; path = "Drawsana/Data model/ToolOperationContext.swift"; sourceTree = "<group>"; };
+		7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionTool.swift; path = Drawsana/Tools/Implementations/SelectionTool.swift; sourceTree = "<group>"; };
+		75BF3CC005F074B2CD5918F696A0CF0B /* ERMarkup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ERMarkup-Info.plist"; sourceTree = "<group>"; };
+		78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Drawsana-dummy.m"; sourceTree = "<group>"; };
+		7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaView.swift; path = Drawsana/DrawsanaView.swift; sourceTree = "<group>"; };
+		8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperations.swift; path = Drawsana/Tools/DrawingOperations.swift; sourceTree = "<group>"; };
+		82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragHandler.swift; path = "Drawsana/Tools/Implementations/Text tool/DragHandler.swift"; sourceTree = "<group>"; };
+		84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_resize@2x.png"; sourceTree = "<group>"; };
+		84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_delete@2x.png"; sourceTree = "<group>"; };
+		84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_undo@2x.png"; sourceTree = "<group>"; };
+		84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_brush@2x.png"; sourceTree = "<group>"; };
+		84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_font@2x.png"; sourceTree = "<group>"; };
+		84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow@2x.png"; sourceTree = "<group>"; };
+		84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_rect@2x.png"; sourceTree = "<group>"; };
+		84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_selection@2x.png"; sourceTree = "<group>"; };
+		84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line@2x.png"; sourceTree = "<group>"; };
+		84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size3@2x.png"; sourceTree = "<group>"; };
+		84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size1@2x.png"; sourceTree = "<group>"; };
+		84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size2@2x.png"; sourceTree = "<group>"; };
+		84FCF5457072D9B8EE9BC1822EEF3383 /* ERMarkup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-prefix.pch"; sourceTree = "<group>"; };
+		8A3BCC9F293DBA1AB91A1FA51A286A96 /* Drawsana-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Drawsana-Info.plist"; sourceTree = "<group>"; };
+		8E1CEFD19E5CCB12291BFEA2501CA080 /* Pods-ERMarkup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8E8A53EB52A331BF50B7CB530BF3EFF3 /* Drawsana-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-prefix.pch"; sourceTree = "<group>"; };
+		8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShapeEditingView.swift; path = "Drawsana/Tools/Implementations/Text tool/TextShapeEditingView.swift"; sourceTree = "<group>"; };
+		94F87246EC082308F193D05FA3A7A56F /* Pods-ERMarkup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/UIColor+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		95ADE531C945C527928DFE9B95002DCB /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
+		95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaUtilities.swift; path = Drawsana/Helpers/DrawsanaUtilities.swift; sourceTree = "<group>"; };
+		9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGRect+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		9D3F379C72D5621FE4FF6C1FEAF80AA1 /* Pods-ERMarkup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Example-dummy.m"; sourceTree = "<group>"; };
+		A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperationStack.swift; path = "Drawsana/Data model/DrawingOperationStack.swift"; sourceTree = "<group>"; };
+		A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolSettings.swift; path = "Drawsana/Data model/ToolSettings.swift"; sourceTree = "<group>"; };
+		A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeTransform.swift; path = Drawsana/Shapes/ShapeTransform.swift; sourceTree = "<group>"; };
+		A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
+		ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
+		AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.xcconfig; sourceTree = "<group>"; };
+		B7D27EEDB00711AC96BECCF32D2E71F3 /* Pods-ERMarkup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B87959D7408D2536E07F39FB926834ED /* Drawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = "Drawsana/Data model/Drawing.swift"; sourceTree = "<group>"; };
+		BA16EDC9B9BCA1E772CDB299AE849578 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Tests-dummy.m"; sourceTree = "<group>"; };
+		C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-umbrella.h"; sourceTree = "<group>"; };
+		C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipseShape.swift; path = Drawsana/Shapes/Implementations/EllipseShape.swift; sourceTree = "<group>"; };
+		C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGPoint+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ERMarkup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTool.swift; path = "Drawsana/Tools/Implementations/Text tool/TextTool.swift"; sourceTree = "<group>"; };
+		D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
+		DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShape.swift; path = Drawsana/Shapes/Implementations/TextShape.swift; sourceTree = "<group>"; };
+		E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyedDecodingContainer+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/KeyedDecodingContainer+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		EAB8F99EE3FB6C6F07D898CFEEAE9A92 /* Pods-ERMarkup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ERMarkup_Example.modulemap"; sourceTree = "<group>"; };
+		EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERMarkupViewController.swift; path = ERMarkup/Classes/ERMarkupViewController.swift; sourceTree = "<group>"; };
+		ECE8C3E975692EC9A87AB1FF0B801704 /* Pods-ERMarkup_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Example-Info.plist"; sourceTree = "<group>"; };
+		F549F96CB37DA118DC4A12DEE42C131D /* Drawsana.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Drawsana.modulemap; sourceTree = "<group>"; };
+		F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
+		F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenShape.swift; path = Drawsana/Shapes/Implementations/PenShape.swift; sourceTree = "<group>"; };
+		FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectShape.swift; path = Drawsana/Shapes/Implementations/RectShape.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D8D0A01A15B07F4DF576AAF5E4609D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7324CCB2667987B0833CB7789CC599E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435F1C5CE21CDC7C9FF377DD8121F51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D381216CBC83C7328C2BDA58809B2449 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B56225B05F9D9FB503C0D1FF67E4EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94689D95227442F1798185A2618C16AE /* Drawsana.framework in Frameworks */,
+				04960D1FB4009D870925593B7126A118 /* Foundation.framework in Frameworks */,
+				75D077AB88F64AA7AA8B3F61EC6E0E34 /* FTPopOverMenu_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6496E6388FAE28E8EB355AED7637F62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0168FC1AA5F5719998A90AE08F7A8C51 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBBCB77EA494BD29E580015C9218F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F50767CCC03B09C40D159550EAE20FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C6312BC178B4BAE920C97AED8FBFD5 /* FTPopOverMenu_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */,
+				F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */,
+				4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */,
+				1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */,
+				ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */,
+				F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */,
+				49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */,
+				DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */,
+				AF109F5AB73935D038E95DE6CF542290 /* Support Files */,
+			);
+			path = FTPopOverMenu_Swift;
+			sourceTree = "<group>";
+		};
+		0EF8AAD68D8BA6EB706F31B343D55A73 /* Pods-ERMarkup_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				19DAF04157E7C97D0EEB4DE80B9C634B /* Pods-ERMarkup_Tests.modulemap */,
+				2722CEEB06B22A2FF1D34957B4B36690 /* Pods-ERMarkup_Tests-acknowledgements.markdown */,
+				94F87246EC082308F193D05FA3A7A56F /* Pods-ERMarkup_Tests-acknowledgements.plist */,
+				C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */,
+				584F77D02615A83A2534DF1BE53B88DD /* Pods-ERMarkup_Tests-Info.plist */,
+				626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */,
+				0DDE2D68EA8B6D2144A72626CBEBE643 /* Pods-ERMarkup_Tests.debug.xcconfig */,
+				47A5B751AF9A86B5CB1FA994742ACB5C /* Pods-ERMarkup_Tests.release.xcconfig */,
+			);
+			name = "Pods-ERMarkup_Tests";
+			path = "Target Support Files/Pods-ERMarkup_Tests";
+			sourceTree = "<group>";
+		};
+		1281D3FC7280FF19C8E241E6A2082CDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				705ABCDBDE2B274EACD36C871D43AF7C /* ERMarkup.modulemap */,
+				181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */,
+				37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */,
+				75BF3CC005F074B2CD5918F696A0CF0B /* ERMarkup-Info.plist */,
+				84FCF5457072D9B8EE9BC1822EEF3383 /* ERMarkup-prefix.pch */,
+				3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ERMarkup";
+			sourceTree = "<group>";
+		};
+		591EE50D56C4465D373BB7D8FBF761A2 /* ERMarkup */ = {
+			isa = PBXGroup;
+			children = (
+				84AFBABE22DC787C007E6F9F /* Assets */,
+				EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */,
+				C053A7C00E4F851CC835589A947826A0 /* Pod */,
+				1281D3FC7280FF19C8E241E6A2082CDC /* Support Files */,
+			);
+			name = ERMarkup;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6E8BC1BC23010A1E293CE56D5F9856DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F549F96CB37DA118DC4A12DEE42C131D /* Drawsana.modulemap */,
+				AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */,
+				78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */,
+				8A3BCC9F293DBA1AB91A1FA51A286A96 /* Drawsana-Info.plist */,
+				8E8A53EB52A331BF50B7CB530BF3EFF3 /* Drawsana-prefix.pch */,
+				C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Drawsana";
+			sourceTree = "<group>";
+		};
+		83D07E23E468A0AE6F8BE608E906FACC /* Pods-ERMarkup_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EAB8F99EE3FB6C6F07D898CFEEAE9A92 /* Pods-ERMarkup_Example.modulemap */,
+				2A6C5BFD21AD23FF0B42CFE12C48FFAA /* Pods-ERMarkup_Example-acknowledgements.markdown */,
+				B7D27EEDB00711AC96BECCF32D2E71F3 /* Pods-ERMarkup_Example-acknowledgements.plist */,
+				9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */,
+				0452D3FA76F5B97F82A029CB25DA3F55 /* Pods-ERMarkup_Example-frameworks.sh */,
+				ECE8C3E975692EC9A87AB1FF0B801704 /* Pods-ERMarkup_Example-Info.plist */,
+				35929D49A1F8B2FCD312FBD6D597FE7C /* Pods-ERMarkup_Example-umbrella.h */,
+				9D3F379C72D5621FE4FF6C1FEAF80AA1 /* Pods-ERMarkup_Example.debug.xcconfig */,
+				8E1CEFD19E5CCB12291BFEA2501CA080 /* Pods-ERMarkup_Example.release.xcconfig */,
+			);
+			name = "Pods-ERMarkup_Example";
+			path = "Target Support Files/Pods-ERMarkup_Example";
+			sourceTree = "<group>";
+		};
+		84AFBABE22DC787C007E6F9F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */,
+				84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */,
+				84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */,
+				84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */,
+				84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */,
+				84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */,
+				84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */,
+				84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */,
+				84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */,
+				84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */,
+				84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */,
+				84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */,
+			);
+			name = Assets;
+			path = ERMarkup/Assets;
+			sourceTree = "<group>";
+		};
+		A530CC30E5DA47C359DBF06AFB71D573 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				591EE50D56C4465D373BB7D8FBF761A2 /* ERMarkup */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AE997369A4D7DDF3BE4C9DE5F1A509D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D819B6365C6A3D714B821AD764AF0876 /* Drawsana */,
+				05C6312BC178B4BAE920C97AED8FBFD5 /* FTPopOverMenu_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF109F5AB73935D038E95DE6CF542290 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				089E3CB77F61FE628C95336913A6B116 /* FTPopOverMenu_Swift.modulemap */,
+				3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */,
+				D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */,
+				53C20EF6915068E627C13CA9800D083B /* FTPopOverMenu_Swift-Info.plist */,
+				95ADE531C945C527928DFE9B95002DCB /* FTPopOverMenu_Swift-prefix.pch */,
+				A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTPopOverMenu_Swift";
+			sourceTree = "<group>";
+		};
+		C053A7C00E4F851CC835589A947826A0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				19DE70DF5FF1B8D2153452DF220F01FF /* ERMarkup.podspec */,
+				66ADC8AD0E41E6CDAA246B8C3148C5D9 /* LICENSE */,
+				BA16EDC9B9BCA1E772CDB299AE849578 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CDD5F22282EA77B8E4A52497B9E23981 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83D07E23E468A0AE6F8BE608E906FACC /* Pods-ERMarkup_Example */,
+				0EF8AAD68D8BA6EB706F31B343D55A73 /* Pods-ERMarkup_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A530CC30E5DA47C359DBF06AFB71D573 /* Development Pods */,
+				D9739C04BB426A7E86E4A5255244989F /* Frameworks */,
+				AE997369A4D7DDF3BE4C9DE5F1A509D9 /* Pods */,
+				D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */,
+				CDD5F22282EA77B8E4A52497B9E23981 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */,
+				C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */,
+				2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */,
+				59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */,
+				5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D819B6365C6A3D714B821AD764AF0876 /* Drawsana */ = {
+			isa = PBXGroup;
+			children = (
+				47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */,
+				C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */,
+				9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */,
+				82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */,
+				B87959D7408D2536E07F39FB926834ED /* Drawing.swift */,
+				8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */,
+				A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */,
+				60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */,
+				4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */,
+				95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */,
+				7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */,
+				C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */,
+				3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */,
+				E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */,
+				00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */,
+				FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */,
+				48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */,
+				FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */,
+				7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */,
+				460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */,
+				A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */,
+				DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */,
+				8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */,
+				CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */,
+				72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */,
+				A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */,
+				9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */,
+				653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */,
+				6E8BC1BC23010A1E293CE56D5F9856DE /* Support Files */,
+			);
+			path = Drawsana;
+			sourceTree = "<group>";
+		};
+		D9739C04BB426A7E86E4A5255244989F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */,
+				8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */,
+				FAA37327272E12A5ED96827426D0DF4D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA37327272E12A5ED96827426D0DF4D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2066B76C7D0ABF0D395EE8D614B017D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D318B151FD17D5E85C0878EA348E5C /* Pods-ERMarkup_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8C5660BD4134F0AF28E5117242155D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BC18D642BED3CFE989EC346033D22D /* ERMarkup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B534159DF3BF40774A56A7683BF7E2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3982C88457A25952FBB298A70DF7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F072FFFE2B94F7C70A7A252D5BAB6C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7059E651EA43387843F102A47BB0D842 /* Drawsana-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1D6C46ADE89FD34F01D1198C14A73D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB012906D8150C2B3B39A721368F00E /* Pods-ERMarkup_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D35E4D695659AAF9341690B859499F1 /* ERMarkup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C107CCF23E4B4D2C856FFBC9D80DC56 /* Build configuration list for PBXNativeTarget "ERMarkup" */;
+			buildPhases = (
+				4B8C5660BD4134F0AF28E5117242155D /* Headers */,
+				C8C711D17B4C27CC4B328426DE01743F /* Sources */,
+				4B56225B05F9D9FB503C0D1FF67E4EB0 /* Frameworks */,
+				4D57EB44DDDD2B8E9574079420E6CA38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8DC1FD62712A97C3DEE0910B82A5BA2 /* PBXTargetDependency */,
+				DD248EDF45A5176E160B5F29B6BE8DC7 /* PBXTargetDependency */,
+			);
+			name = ERMarkup;
+			productName = ERMarkup;
+			productReference = C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0400AD1EAD415D8330AAF674360CDB /* Build configuration list for PBXNativeTarget "Drawsana" */;
+			buildPhases = (
+				7F072FFFE2B94F7C70A7A252D5BAB6C4 /* Headers */,
+				039047F4851933FD4199D3FAF6A64E3F /* Sources */,
+				6496E6388FAE28E8EB355AED7637F62D /* Frameworks */,
+				7B74A9BC19F7F9B8838E5FE4C28646B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drawsana;
+			productName = Drawsana;
+			productReference = BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		66DBD053243D4B60068E955B0E0D91C2 /* Pods-ERMarkup_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DC3FF835657A6CAC13F9473930DFBD /* Build configuration list for PBXNativeTarget "Pods-ERMarkup_Example" */;
+			buildPhases = (
+				2066B76C7D0ABF0D395EE8D614B017D9 /* Headers */,
+				B3B0C1B83C2812E83FB45C7CF98EA230 /* Sources */,
+				8CBBCB77EA494BD29E580015C9218F40 /* Frameworks */,
+				A8945692D01AA6B144F79FB91DC9C01B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BE59D801256F9A8A9FB7EC2C035CDBC /* PBXTargetDependency */,
+				DC8F4AD0507ED50A935BA1736816A8A9 /* PBXTargetDependency */,
+				21A76D97CB8999705E0DEA6C10E9B4F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-ERMarkup_Example";
+			productName = "Pods-ERMarkup_Example";
+			productReference = 59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87DAD2232BA5691384B553320D52473F /* Pods-ERMarkup_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FE09227DD9B8251F566DAC66832C8E /* Build configuration list for PBXNativeTarget "Pods-ERMarkup_Tests" */;
+			buildPhases = (
+				BB1D6C46ADE89FD34F01D1198C14A73D /* Headers */,
+				1D69232AA2119BE8CD7BC85F59AFCD60 /* Sources */,
+				0D8D0A01A15B07F4DF576AAF5E4609D5 /* Frameworks */,
+				C50AEE098D0000C6447C4B8109DCFDBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F574026C83FFC6EC25505C4D4475C73 /* PBXTargetDependency */,
+			);
+			name = "Pods-ERMarkup_Tests";
+			productName = "Pods-ERMarkup_Tests";
+			productReference = 5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05ADCA3919B5B81D4B693B5F25EE8A42 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
+			buildPhases = (
+				5B534159DF3BF40774A56A7683BF7E2D /* Headers */,
+				B46E63D4CAE366A79A8179D265F0D2FA /* Sources */,
+				435F1C5CE21CDC7C9FF377DD8121F51C /* Frameworks */,
+				FE4B706D66374E79094E782E152F7EDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTPopOverMenu_Swift;
+			productName = FTPopOverMenu_Swift;
+			productReference = 2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */,
+				2D35E4D695659AAF9341690B859499F1 /* ERMarkup */,
+				989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */,
+				66DBD053243D4B60068E955B0E0D91C2 /* Pods-ERMarkup_Example */,
+				87DAD2232BA5691384B553320D52473F /* Pods-ERMarkup_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D57EB44DDDD2B8E9574079420E6CA38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AFBACB22DC8B4A007E6F9F /* ic_rect@2x.png in Resources */,
+				84AFBAD222DC9447007E6F9F /* ic_line_size3@2x.png in Resources */,
+				84AFBAC922DC8B4A007E6F9F /* ic_font@2x.png in Resources */,
+				84AD9AA522DD89830079BDA6 /* ic_delete@2x.png in Resources */,
+				84AFBAC122DC787C007E6F9F /* ic_undo@2x.png in Resources */,
+				84AFBAD422DC9447007E6F9F /* ic_line_size2@2x.png in Resources */,
+				84AFBACC22DC8B4A007E6F9F /* ic_selection@2x.png in Resources */,
+				84AD9AA422DD89830079BDA6 /* ic_resize@2x.png in Resources */,
+				84AFBACA22DC8B4A007E6F9F /* ic_arrow@2x.png in Resources */,
+				84AFBAD322DC9447007E6F9F /* ic_line_size1@2x.png in Resources */,
+				84AFBACE22DC8D08007E6F9F /* ic_line@2x.png in Resources */,
+				84AFBAC422DC88E7007E6F9F /* ic_brush@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B74A9BC19F7F9B8838E5FE4C28646B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8945692D01AA6B144F79FB91DC9C01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50AEE098D0000C6447C4B8109DCFDBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE4B706D66374E79094E782E152F7EDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039047F4851933FD4199D3FAF6A64E3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E85EABDDCF4BADEC2764C923026BBB /* ArrowTool_EllipseTool_LineTool_RectTool.swift in Sources */,
+				7799003E3B5407C18D864B49ECCF4D8E /* CGPoint+DrawsanaExtensions.swift in Sources */,
+				4A011B9E6DF00804E718A2D1097F7411 /* CGRect+DrawsanaExtensions.swift in Sources */,
+				5A99474CFF562C945E789BC99F3F9832 /* DragHandler.swift in Sources */,
+				FA7C11BE954E03F71AA36A2FC5884347 /* Drawing.swift in Sources */,
+				07406E081B6EA1B4838C920053459B90 /* DrawingOperations.swift in Sources */,
+				91DBD42C0C1D86F5E1417C6A7F8D36F9 /* DrawingOperationStack.swift in Sources */,
+				1E986E5DD1B1339952FFF315A09DA4E1 /* DrawingTool.swift in Sources */,
+				8B5B9DDC3B91551F32FB7775219D5EFF /* DrawingToolForShapeWithTwoPoints.swift in Sources */,
+				3D1E5C65B3548E42DB348B476B47449B /* Drawsana-dummy.m in Sources */,
+				460F73F8B3CEE613A2452E426E1BFDC0 /* DrawsanaUtilities.swift in Sources */,
+				E1DF2B062F2EC56B00E1DF4A90A930BE /* DrawsanaView.swift in Sources */,
+				7990BB65A06ACB9FE3744FE6E55E5167 /* EllipseShape.swift in Sources */,
+				76FBDDD3E3C35166649659B294B07575 /* ImmediatePanGestureRecognizer.swift in Sources */,
+				7FBCC40FDDA97C9D9AD3DC2249373912 /* KeyedDecodingContainer+DrawsanaExtensions.swift in Sources */,
+				9E43857AB7CB555F792C32BCDFBD07D6 /* LineShape.swift in Sources */,
+				45E3EE05887448C17F956D8D1B94CE6F /* PenShape.swift in Sources */,
+				06B20013EA2CA2F6444A726EC2AA736C /* PenTool_EraserTool.swift in Sources */,
+				44CCA04578D5A5DE93804050FC7A0555 /* RectShape.swift in Sources */,
+				00E7604E32EC45A31D6E87238EA616B6 /* SelectionTool.swift in Sources */,
+				051D18F9B2BE3F71B8105FFECC14303C /* Shape.swift in Sources */,
+				6A432CB5AEC2B1C2D4AC81820E643A4C /* ShapeTransform.swift in Sources */,
+				5A6EC20BBBD120A64EAE618F118E1477 /* TextShape.swift in Sources */,
+				DB3C0199BBE2D7E41293F7356C081FE5 /* TextShapeEditingView.swift in Sources */,
+				F13F62D44BCA1CF7083C6DB6F5D73B6C /* TextTool.swift in Sources */,
+				220BC19D4BD2BB7222311EB373678D40 /* ToolOperationContext.swift in Sources */,
+				E733FE4FE70E852922804006A809F0E9 /* ToolSettings.swift in Sources */,
+				B31C16AB0294DE5286836010B13E54B8 /* UIColor+DrawsanaExtensions.swift in Sources */,
+				1DA685F508CD8674A55F779C141B9884 /* UserSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D69232AA2119BE8CD7BC85F59AFCD60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67936C8BD16962774523A8AEDBB3C408 /* Pods-ERMarkup_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3B0C1B83C2812E83FB45C7CF98EA230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115FF02491D973ADD3179B81234DE9D0 /* Pods-ERMarkup_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B46E63D4CAE366A79A8179D265F0D2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99F1011AEE8AB25022852A6F1F4D475 /* FT+Extension.swift in Sources */,
+				DA7D53686B875FF594B99B3630221B11 /* FTCellConfiguration.swift in Sources */,
+				FDD0FD1B6F74899D5F1EADA003648572 /* FTConfiguration.swift in Sources */,
+				71D3C0C4A34FB7B2A5AA42649E449F6A /* FTConstants.swift in Sources */,
+				187BC515A12A33C126738DC232E261A0 /* FTPopOverMenu.swift in Sources */,
+				E6A86FB938F226B64F82432A70047ED5 /* FTPopOverMenu_Swift-dummy.m in Sources */,
+				0DF5B4908442F233FDC06FB17E372D13 /* FTPopOverMenuCell.swift in Sources */,
+				7596B47240598203F75C3682B557F7EA /* UIControl+Point.swift in Sources */,
+				751A85C339C9021B5C7B905E41E6BA7D /* UIScreen+Frame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8C711D17B4C27CC4B328426DE01743F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B46B586191EA72269FC4C25A959535D /* ERMarkup-dummy.m in Sources */,
+				0531051A7E9314933CAB26A0F8B1E25D /* ERMarkupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21A76D97CB8999705E0DEA6C10E9B4F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FTPopOverMenu_Swift;
+			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
+			targetProxy = DE39DB629C9C50F1862133222228B51A /* PBXContainerItemProxy */;
+		};
+		4BE59D801256F9A8A9FB7EC2C035CDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Drawsana;
+			target = 58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */;
+			targetProxy = E8EEED760EEB56EF0232BE6BF11C2B9D /* PBXContainerItemProxy */;
+		};
+		4F574026C83FFC6EC25505C4D4475C73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ERMarkup_Example";
+			target = 66DBD053243D4B60068E955B0E0D91C2 /* Pods-ERMarkup_Example */;
+			targetProxy = AB7C5F5D3A8393814C58EF8B28F3644C /* PBXContainerItemProxy */;
+		};
+		B8DC1FD62712A97C3DEE0910B82A5BA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Drawsana;
+			target = 58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */;
+			targetProxy = AF28C6C742C5E6325766D967B7A9819C /* PBXContainerItemProxy */;
+		};
+		DC8F4AD0507ED50A935BA1736816A8A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ERMarkup;
+			target = 2D35E4D695659AAF9341690B859499F1 /* ERMarkup */;
+			targetProxy = B1D474BF06F77F6A62F8BB65FA04F246 /* PBXContainerItemProxy */;
+		};
+		DD248EDF45A5176E160B5F29B6BE8DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FTPopOverMenu_Swift;
+			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
+			targetProxy = C019BBE4B0CDD78C07CDAE40643620C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		127F1D823D8E2351F7CF80D5DDDF6256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3F379C72D5621FE4FF6C1FEAF80AA1 /* Pods-ERMarkup_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19966477EB894F8E4E8E374039DEEC91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19FA77690DC01962AA9F798EFE7B2E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDE2D68EA8B6D2144A72626CBEBE643 /* Pods-ERMarkup_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1BF7BD6E09D0E0D0D062D8DAA33B17F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A5B751AF9A86B5CB1FA994742ACB5C /* Pods-ERMarkup_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ERMarkup_Tests/Pods-ERMarkup_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D87017C40EAAFE44B22C5829188596D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41A72AD52161731024F84FE21FB14877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Drawsana/Drawsana-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Drawsana/Drawsana-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Drawsana/Drawsana.modulemap";
+				PRODUCT_MODULE_NAME = Drawsana;
+				PRODUCT_NAME = Drawsana;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F646F7D3C96B3C5688A721099CF2047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Drawsana/Drawsana-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Drawsana/Drawsana-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Drawsana/Drawsana.modulemap";
+				PRODUCT_MODULE_NAME = Drawsana;
+				PRODUCT_NAME = Drawsana;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D2E119E3190E28725B844436B2F3F7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
+				PRODUCT_MODULE_NAME = ERMarkup;
+				PRODUCT_NAME = ERMarkup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9FD238543934AA8E8FA84F5DA8A3356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1CEFD19E5CCB12291BFEA2501CA080 /* Pods-ERMarkup_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ERMarkup_Example/Pods-ERMarkup_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB55FCAE937EADAE7D56A3554F904EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
+				PRODUCT_MODULE_NAME = ERMarkup;
+				PRODUCT_NAME = ERMarkup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05ADCA3919B5B81D4B693B5F25EE8A42 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D87017C40EAAFE44B22C5829188596D /* Debug */,
+				19966477EB894F8E4E8E374039DEEC91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FE09227DD9B8251F566DAC66832C8E /* Build configuration list for PBXNativeTarget "Pods-ERMarkup_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FA77690DC01962AA9F798EFE7B2E2E /* Debug */,
+				1BF7BD6E09D0E0D0D062D8DAA33B17F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C107CCF23E4B4D2C856FFBC9D80DC56 /* Build configuration list for PBXNativeTarget "ERMarkup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E119E3190E28725B844436B2F3F7E0 /* Debug */,
+				DB55FCAE937EADAE7D56A3554F904EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DC3FF835657A6CAC13F9473930DFBD /* Build configuration list for PBXNativeTarget "Pods-ERMarkup_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				127F1D823D8E2351F7CF80D5DDDF6256 /* Debug */,
+				D9FD238543934AA8E8FA84F5DA8A3356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0400AD1EAD415D8330AAF674360CDB /* Build configuration list for PBXNativeTarget "Drawsana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F646F7D3C96B3C5688A721099CF2047 /* Debug */,
+				41A72AD52161731024F84FE21FB14877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
