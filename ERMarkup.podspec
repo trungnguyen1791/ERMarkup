@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ERMarkup'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A wrapper markup base on Drawsana with nicer UI'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Drawsana', '~> 0.9.2'
   #s.dependency 'LiquidButton'
-  s.dependency 'FTPopOverMenu_Swift', '0.2.0'
+  s.dependency 'FTPopOverMenu_Swift', '~> 0.2.0'
   
   s.swift_version = '4.2'
   s.platform     = :ios, '9.0'
