@@ -1,6 +1,6 @@
 {
   "name": "ERMarkup",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "summary": "A wrapper markup base on Drawsana with nicer UI",
   "homepage": "https://github.com/trungnguyen1791/ERMarkup",
   "license": {
@@ -12,18 +12,26 @@
   },
   "source": {
     "git": "https://github.com/trungnguyen1791/ERMarkup.git",
-    "tag": "0.1.0"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "ERMarkup/Classes/**/*.swift",
+  "resource_bundles": {
+    "ERMarkup": [
+      "ERMarkup/Assets/*.png"
+    ]
+  },
+  "resources": [
+    "ERMarkup/**/*.{png}"
+  ],
   "dependencies": {
     "Drawsana": [
       "~> 0.9.2"
     ],
     "FTPopOverMenu_Swift": [
-
+      "0.2.0"
     ]
   },
   "swift_versions": "4.2",

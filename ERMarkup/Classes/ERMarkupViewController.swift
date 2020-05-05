@@ -132,6 +132,7 @@ public class ERMarkupViewController: UIViewController {
         toolbarStackView.distribution = .equalSpacing
         toolbarStackView.alignment = .center
         toolbarStackView.spacing = 10
+//        toolbarStackView.addBackground(color: UIColor.black)
         view.addSubview(toolbarStackView)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -194,10 +195,23 @@ public class ERMarkupViewController: UIViewController {
     @objc func handleDoneBtnTapped() {
         //Here we even can save edited steps to json objects...
         //But currently, we only take the edited image
-        let image = drawingView.render(over: imageView.image)
-        delegate?.markupViewController(self, didProcessedImage: image)
+        if let _ = drawingView.tool as? TextTool {
+            drawingView.set(tool: self.selectionTool)
+            self.toolBtn.setImage(self.toolImages.last??.withRenderingMode(.alwaysTemplate), for: .normal)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() ) {
+                let image = self.drawingView.render(over: self.imageView.image)
+                self.delegate?.markupViewController(self, didProcessedImage: image)
+                
+                self.dismiss(animated: true, completion: nil)
+            }
+        }else {
+            let image = drawingView.render(over: imageView.image)
+            delegate?.markupViewController(self, didProcessedImage: image)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
         
-        self.dismiss(animated: true, completion: nil)
     }
     //MARK:- Handle action
     
@@ -228,6 +242,7 @@ public class ERMarkupViewController: UIViewController {
             }
             self.strokeColorBtn.setImage(image, for: .normal)
             self.drawingView.userSettings.strokeColor = colorArray[index]
+            print(colorArray[index])
         })
     }
     
@@ -391,11 +406,20 @@ extension ERMarkupViewController: TextToolDelegate {
             NSLayoutConstraint.activate([
                 resizeAndRotateControlView.widthAnchor.constraint(equalToConstant: buttonSize),
                 resizeAndRotateControlView.heightAnchor.constraint(equalToConstant: buttonSize),
-                resizeAndRotateControlView.leftAnchor.constraint(equalTo: textView.rightAnchor, constant: 5 - halfButtonSize),
-//                resizeAndRotateControlView.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 4 - halfButtonSize),
+                resizeAndRotateControlView.leftAnchor.constraint(equalTo: textView.rightAnchor, constant: 8 - halfButtonSize),
                 resizeAndRotateControlView.centerYAnchor.constraint(equalTo: textView.centerYAnchor)
                 ])
         }
+        
+//        editingView.addControl(dragActionType: .changeWidth, view: makeView(UIImage(named: "ic_check", in: Bundle(for: self.classForCoder), compatibleWith: nil))) { (textView, checkControlView) in
+//            checkControlView.layer.anchorPoint = CGPoint(x: 0, y: 0)
+//            NSLayoutConstraint.activate([
+//                checkControlView.widthAnchor.constraint(equalToConstant: buttonSize),
+//                checkControlView.heightAnchor.constraint(equalToConstant: buttonSize),
+//                checkControlView.rightAnchor.constraint(equalTo: textView.leftAnchor, constant:8 - halfButtonSize),
+//                checkControlView.centerYAnchor.constraint(equalTo: textView.centerYAnchor)
+//                ])
+//        }
     }
     
     public func textToolDidUpdateEditingViewTransform(_ editingView: TextShapeEditingView, transform: ShapeTransform) {
@@ -457,5 +481,15 @@ extension UIImage {
         UIGraphicsEndImageContext()
         
         return anImg
+    }
+}
+
+
+extension UIStackView {
+    func addBackground(color: UIColor) {
+        let subView = UIView(frame: bounds)
+        subView.backgroundColor = color
+        subView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        insertSubview(subView, at: 0)
     }
 }

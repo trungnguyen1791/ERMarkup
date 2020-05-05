@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             let vc = ERMarkupViewController(image: image)
             //        let vc = ERMarkupViewController()
             let nav = UINavigationController(rootViewController: vc)
-            
+            nav.modalPresentationStyle = .fullScreen
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.present(nav, animated: true, completion: nil)
             }

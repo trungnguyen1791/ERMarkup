@@ -7,72 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E7604E32EC45A31D6E87238EA616B6 /* SelectionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */; };
+		00E7604E32EC45A31D6E87238EA616B6 /* SelectionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0149D00DCE5F4D021EC77521CAA98F74 /* SelectionTool.swift */; };
 		0168FC1AA5F5719998A90AE08F7A8C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
-		04960D1FB4009D870925593B7126A118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
-		051D18F9B2BE3F71B8105FFECC14303C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */; };
-		0531051A7E9314933CAB26A0F8B1E25D /* ERMarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */; };
-		06B20013EA2CA2F6444A726EC2AA736C /* PenTool_EraserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */; };
-		07406E081B6EA1B4838C920053459B90 /* DrawingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */; };
-		0B46B586191EA72269FC4C25A959535D /* ERMarkup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */; };
-		0DF5B4908442F233FDC06FB17E372D13 /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */; };
+		04016C938E0ACB289160EC014B96833C /* ic_font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 333ABA4C25328D702C66D5C2DFC1E622 /* ic_font@2x.png */; };
+		051D18F9B2BE3F71B8105FFECC14303C /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9049383D0C8302D8CFC6BEA7D7FB64F4 /* Shape.swift */; };
+		06B20013EA2CA2F6444A726EC2AA736C /* PenTool_EraserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC419FADBDC5777D10A906682BD353 /* PenTool_EraserTool.swift */; };
+		07406E081B6EA1B4838C920053459B90 /* DrawingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8ED6F0DB7C8D0F1F41AD755C900416 /* DrawingOperations.swift */; };
+		0743809B27B4FB76613C81C0376A951A /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DCAFB1F766980235D6DF5E28B69A57 /* FTCellConfiguration.swift */; };
+		0948DC0E81394F2493B6DA801C3434C1 /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDAA2A293EDE6C7A162BBACE6122120 /* FTConstants.swift */; };
 		115FF02491D973ADD3179B81234DE9D0 /* Pods-ERMarkup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */; };
-		187BC515A12A33C126738DC232E261A0 /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */; };
-		1B3982C88457A25952FBB298A70DF7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DA685F508CD8674A55F779C141B9884 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */; };
-		1E986E5DD1B1339952FFF315A09DA4E1 /* DrawingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */; };
-		220BC19D4BD2BB7222311EB373678D40 /* ToolOperationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */; };
-		3D1E5C65B3548E42DB348B476B47449B /* Drawsana-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */; };
-		44CCA04578D5A5DE93804050FC7A0555 /* RectShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */; };
-		45E3EE05887448C17F956D8D1B94CE6F /* PenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */; };
-		460F73F8B3CEE613A2452E426E1BFDC0 /* DrawsanaUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */; };
-		4A011B9E6DF00804E718A2D1097F7411 /* CGRect+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */; };
-		5A6EC20BBBD120A64EAE618F118E1477 /* TextShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */; };
-		5A99474CFF562C945E789BC99F3F9832 /* DragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */; };
+		11D2879087E09EB6521F45AD36FA300C /* ic_font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 333ABA4C25328D702C66D5C2DFC1E622 /* ic_font@2x.png */; };
+		11EC236EABC7158398434096FF0B823E /* ic_brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530BC4BFCC4077D2ABC9DF1293F92E5F /* ic_brush@2x.png */; };
+		1A0886522D79CE4FBC30A8DE06B62943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		1BAC39955A8EF6E4E32E25527766583A /* ERMarkup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1E33230694BFAE0F9E837C5C346D1A /* ERMarkup-dummy.m */; };
+		1D6844B9744D41E6BF86B102BC6B2FAE /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCF3E52ADCC64D403A2975119C0B6D8 /* FTConfiguration.swift */; };
+		1DA685F508CD8674A55F779C141B9884 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1510C729D533D7569919179162975DF5 /* UserSettings.swift */; };
+		1E7FF75C9263E8EE61F2914EFC3BA27A /* ic_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EEB8712FAC73E343993131BF6D0B49E /* ic_rect@2x.png */; };
+		1E986E5DD1B1339952FFF315A09DA4E1 /* DrawingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D18ADF30B7D9891801B22E68A925C2 /* DrawingTool.swift */; };
+		220BC19D4BD2BB7222311EB373678D40 /* ToolOperationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E36070210285A7DE78F980881977C /* ToolOperationContext.swift */; };
+		23498B8455709071F8598F7A09F5932E /* ic_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3488C726F94CC1C1F09A92BA5C69C50 /* ic_delete@2x.png */; };
+		29FE56C1CD00248AD2F3547FA38713CA /* ic_resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B62A9E333EF649A4A5FB41F63AC316 /* ic_resize@2x.png */; };
+		2F6F2BD4CBED91DBFFADA782F4BC9AB9 /* ic_line_size1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5DEE4778EB604454E60E12842C38E /* ic_line_size1@2x.png */; };
+		31851726EA5AA5A14D237820D74844E5 /* ic_brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530BC4BFCC4077D2ABC9DF1293F92E5F /* ic_brush@2x.png */; };
+		385C7FCD9A64DA1A8A24214E2F61D91F /* ic_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5CB2899BB6E2F6AB95682CB2CC1019 /* ic_line@2x.png */; };
+		3D1E5C65B3548E42DB348B476B47449B /* Drawsana-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F18A5ACC828CDC7982DA0922C57F201D /* Drawsana-dummy.m */; };
+		44CCA04578D5A5DE93804050FC7A0555 /* RectShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0CEC3E8529AE62A76965EA9E2C6A46 /* RectShape.swift */; };
+		45E3EE05887448C17F956D8D1B94CE6F /* PenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1C18214AD2781A3EAF42E27B3E4AFD /* PenShape.swift */; };
+		460F73F8B3CEE613A2452E426E1BFDC0 /* DrawsanaUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B511A40CBAB8772C31B8289383481EE4 /* DrawsanaUtilities.swift */; };
+		4713B434B76025D60F9E511C880C89F6 /* ic_line_size2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A31F925D4B0AE00352697EFEF3438 /* ic_line_size2@2x.png */; };
+		4728A17E36DF48F7FE905ADB4DE662FB /* FTPopOverMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00675A272E83D98BF70A0BB93F17975 /* FTPopOverMenu.swift */; };
+		47C31B4C9B8036A819185A0AD8646853 /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B7A658D157C1B5BF5AC081AFE0EFB /* FTPopOverMenu_Swift-dummy.m */; };
+		4A011B9E6DF00804E718A2D1097F7411 /* CGRect+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A89BB215F3303640DCB467817E310F /* CGRect+DrawsanaExtensions.swift */; };
+		4F451C087CE882C13254BA45DACE77C9 /* ERMarkup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2566A3D0113569427B9C1239C8DDEFA2 /* ERMarkup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		507DCF141C243D7ACD015265B42B0FE4 /* ic_selection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530C587E91674FC7F92BB00FC065C591 /* ic_selection@2x.png */; };
+		5A6EC20BBBD120A64EAE618F118E1477 /* TextShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5950F9E54E9D475A5562575D22E59DC /* TextShape.swift */; };
+		5A99474CFF562C945E789BC99F3F9832 /* DragHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700B06C4AE7B717B8AF96BC941FBDA3 /* DragHandler.swift */; };
+		6195A18EAC023DB06BFFEB4AD28B11A1 /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7273B1B758CC30300B1191DFC8966C /* UIControl+Point.swift */; };
 		67936C8BD16962774523A8AEDBB3C408 /* Pods-ERMarkup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */; };
-		68BC18D642BED3CFE989EC346033D22D /* ERMarkup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A432CB5AEC2B1C2D4AC81820E643A4C /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */; };
-		7059E651EA43387843F102A47BB0D842 /* Drawsana-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71D3C0C4A34FB7B2A5AA42649E449F6A /* FTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */; };
+		698DE2D5C9B025D51B97F308D3DB2E1A /* ic_line_size1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5DEE4778EB604454E60E12842C38E /* ic_line_size1@2x.png */; };
+		6A432CB5AEC2B1C2D4AC81820E643A4C /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB61125AD422302B7EBD9AFAF342406 /* ShapeTransform.swift */; };
+		7059E651EA43387843F102A47BB0D842 /* Drawsana-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13DAC1067AE7966E4A6DC01D90A660C6 /* Drawsana-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7324CCB2667987B0833CB7789CC599E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
-		751A85C339C9021B5C7B905E41E6BA7D /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */; };
-		7596B47240598203F75C3682B557F7EA /* UIControl+Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */; };
-		75D077AB88F64AA7AA8B3F61EC6E0E34 /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */; };
+		74A543CC8B251BA4EF9BFD95D7B57DB2 /* ic_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EEB8712FAC73E343993131BF6D0B49E /* ic_rect@2x.png */; };
+		7554CCAF6EBF3770D7B5D8DDB7675A5A /* ic_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C90F092F0D4E63DD0F8B4AC23894045 /* ic_arrow@2x.png */; };
 		75D318B151FD17D5E85C0878EA348E5C /* Pods-ERMarkup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35929D49A1F8B2FCD312FBD6D597FE7C /* Pods-ERMarkup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76FBDDD3E3C35166649659B294B07575 /* ImmediatePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */; };
-		7799003E3B5407C18D864B49ECCF4D8E /* CGPoint+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */; };
-		7990BB65A06ACB9FE3744FE6E55E5167 /* EllipseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */; };
+		76FBDDD3E3C35166649659B294B07575 /* ImmediatePanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54036E021A0C25D8E9E816F41A0E8671 /* ImmediatePanGestureRecognizer.swift */; };
+		7799003E3B5407C18D864B49ECCF4D8E /* CGPoint+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315516F020998A33455C56B2FD975489 /* CGPoint+DrawsanaExtensions.swift */; };
+		77D153922B01205FF571DF522C0477EC /* ic_selection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 530C587E91674FC7F92BB00FC065C591 /* ic_selection@2x.png */; };
+		78357E94F675DB76AAB334BF0A355078 /* FTPopOverMenu_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */; };
+		7990BB65A06ACB9FE3744FE6E55E5167 /* EllipseShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA53094967A29E3EFFBB3E83266CA8EB /* EllipseShape.swift */; };
+		7A033DFCFC10FE395C9304A2251F4612 /* ic_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3488C726F94CC1C1F09A92BA5C69C50 /* ic_delete@2x.png */; };
 		7F50767CCC03B09C40D159550EAE20FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
-		7FBCC40FDDA97C9D9AD3DC2249373912 /* KeyedDecodingContainer+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */; };
-		84AD9AA422DD89830079BDA6 /* ic_resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */; };
-		84AD9AA522DD89830079BDA6 /* ic_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */; };
-		84AFBAC122DC787C007E6F9F /* ic_undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */; };
-		84AFBAC422DC88E7007E6F9F /* ic_brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */; };
-		84AFBAC922DC8B4A007E6F9F /* ic_font@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */; };
-		84AFBACA22DC8B4A007E6F9F /* ic_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */; };
-		84AFBACB22DC8B4A007E6F9F /* ic_rect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */; };
-		84AFBACC22DC8B4A007E6F9F /* ic_selection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */; };
-		84AFBACE22DC8D08007E6F9F /* ic_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */; };
-		84AFBAD222DC9447007E6F9F /* ic_line_size3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */; };
-		84AFBAD322DC9447007E6F9F /* ic_line_size1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */; };
-		84AFBAD422DC9447007E6F9F /* ic_line_size2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */; };
-		88E85EABDDCF4BADEC2764C923026BBB /* ArrowTool_EllipseTool_LineTool_RectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */; };
-		8B5B9DDC3B91551F32FB7775219D5EFF /* DrawingToolForShapeWithTwoPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */; };
-		91DBD42C0C1D86F5E1417C6A7F8D36F9 /* DrawingOperationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */; };
-		94689D95227442F1798185A2618C16AE /* Drawsana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */; };
-		9E43857AB7CB555F792C32BCDFBD07D6 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */; };
+		7FBCC40FDDA97C9D9AD3DC2249373912 /* KeyedDecodingContainer+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA05E3027498CD3EE0CC369091EF2A1 /* KeyedDecodingContainer+DrawsanaExtensions.swift */; };
+		84C3A45524614FBB00F24591 /* ic_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C3A45424614FBB00F24591 /* ic_check@2x.png */; };
+		84C3A45624614FBB00F24591 /* ic_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C3A45424614FBB00F24591 /* ic_check@2x.png */; };
+		85D65A8DCC9F4DBEFE907AA9F65AAAE6 /* ERMarkup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1675667FED5F2E1BB6E1BCF3A11DD18 /* ERMarkup.bundle */; };
+		88E85EABDDCF4BADEC2764C923026BBB /* ArrowTool_EllipseTool_LineTool_RectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81616D75F017F36C99AC43851EE2A8B /* ArrowTool_EllipseTool_LineTool_RectTool.swift */; };
+		8B5B9DDC3B91551F32FB7775219D5EFF /* DrawingToolForShapeWithTwoPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C83BBF20AF280956C1AA37353D84B7 /* DrawingToolForShapeWithTwoPoints.swift */; };
+		8C3B73DAE97B4F440F0F4912EA09E3F1 /* ic_line_size3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D640821B6B92F84CA77A8D642514B /* ic_line_size3@2x.png */; };
+		8FB6233E3F619D17713E97C036980D6C /* ic_line_size3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F7D640821B6B92F84CA77A8D642514B /* ic_line_size3@2x.png */; };
+		91DBD42C0C1D86F5E1417C6A7F8D36F9 /* DrawingOperationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5658B0EFDDF9FCB1D2685595A10F5B /* DrawingOperationStack.swift */; };
+		9E43857AB7CB555F792C32BCDFBD07D6 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E0257E40AC991B6585B658A4A67131 /* LineShape.swift */; };
+		A6CA47A3CBF2E95D69A24DC1D00365EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
+		A941B00B1958192719A4FA5F203E29C5 /* Drawsana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */; };
 		ABB012906D8150C2B3B39A721368F00E /* Pods-ERMarkup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B31C16AB0294DE5286836010B13E54B8 /* UIColor+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */; };
-		D381216CBC83C7328C2BDA58809B2449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
-		DA7D53686B875FF594B99B3630221B11 /* FTCellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */; };
-		DB3C0199BBE2D7E41293F7356C081FE5 /* TextShapeEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */; };
-		E1DF2B062F2EC56B00E1DF4A90A930BE /* DrawsanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */; };
-		E6A86FB938F226B64F82432A70047ED5 /* FTPopOverMenu_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */; };
-		E733FE4FE70E852922804006A809F0E9 /* ToolSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */; };
-		F13F62D44BCA1CF7083C6DB6F5D73B6C /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */; };
-		F99F1011AEE8AB25022852A6F1F4D475 /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */; };
-		FA7C11BE954E03F71AA36A2FC5884347 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87959D7408D2536E07F39FB926834ED /* Drawing.swift */; };
-		FDD0FD1B6F74899D5F1EADA003648572 /* FTConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */; };
+		B31C16AB0294DE5286836010B13E54B8 /* UIColor+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490975120C34DD5468F3D1D307FB51A /* UIColor+DrawsanaExtensions.swift */; };
+		B67F12A9C0D9F8F988BDA7E097223CA6 /* ic_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C90F092F0D4E63DD0F8B4AC23894045 /* ic_arrow@2x.png */; };
+		B860B743CE22BDB9A2457D7CDA8ECDB9 /* FT+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E5F120445F01524B808AB07F0732C /* FT+Extension.swift */; };
+		BE6F3FC774353CFF466F195099A8D8A6 /* ERMarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF656310BDC56B45E2563BD8B7F6C9 /* ERMarkupViewController.swift */; };
+		C25B4B48AACD61AF497FDA4AAD35E7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D6B9082EA0DA80B780EC7A1EDF0215 /* FTPopOverMenu_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7008BAB082943DDDD88FA16892D5C8D /* ic_undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E57BE08260C88AD6088703D65B0DC2 /* ic_undo@2x.png */; };
+		D4BF2BDD9784A2A31B67BF59B6B05F56 /* UIScreen+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F93C770CCAFDF5082066435890A2D0D /* UIScreen+Frame.swift */; };
+		D61DAFF73EA6A6E172CB6BD7CD1316FB /* ic_resize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B62A9E333EF649A4A5FB41F63AC316 /* ic_resize@2x.png */; };
+		DA4FC14348C10065B911805E8EC9819E /* ic_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5CB2899BB6E2F6AB95682CB2CC1019 /* ic_line@2x.png */; };
+		DB3C0199BBE2D7E41293F7356C081FE5 /* TextShapeEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BEECD25BFF97E6F728163C9244CFE /* TextShapeEditingView.swift */; };
+		E1DF2B062F2EC56B00E1DF4A90A930BE /* DrawsanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363D83E6C4D0E6CD79A5EACA5BD9CE2 /* DrawsanaView.swift */; };
+		E733FE4FE70E852922804006A809F0E9 /* ToolSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17124B0DF84B63893AD6543005DD82A8 /* ToolSettings.swift */; };
+		E85C39E6DBBA4E2373ADD1C94D7C3C82 /* ic_line_size2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7A31F925D4B0AE00352697EFEF3438 /* ic_line_size2@2x.png */; };
+		F13F62D44BCA1CF7083C6DB6F5D73B6C /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29196D4B8DFA0820F161E098CD3C17B1 /* TextTool.swift */; };
+		F3A1335BF345D552151D52C2DABCEA64 /* FTPopOverMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0408EC1C878AD7B301EF9702B86695 /* FTPopOverMenuCell.swift */; };
+		F6053C2E77B0BDE771D6A2B0FCA38799 /* ic_undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6E57BE08260C88AD6088703D65B0DC2 /* ic_undo@2x.png */; };
+		FA7C11BE954E03F71AA36A2FC5884347 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9D4DB983319D7D5E703A38C17C8C0D /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,13 +98,6 @@
 			remoteGlobalIDString = 66DBD053243D4B60068E955B0E0D91C2;
 			remoteInfo = "Pods-ERMarkup_Example";
 		};
-		AF28C6C742C5E6325766D967B7A9819C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 58C11AE6223C3AA93E5419115FE034D7;
-			remoteInfo = Drawsana;
-		};
 		B1D474BF06F77F6A62F8BB65FA04F246 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -97,12 +105,19 @@
 			remoteGlobalIDString = 2D35E4D695659AAF9341690B859499F1;
 			remoteInfo = ERMarkup;
 		};
-		C019BBE4B0CDD78C07CDAE40643620C8 /* PBXContainerItemProxy */ = {
+		BA35D0F5CAB6014C5834591C3D732DC7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 989619F863D399C5538843E81223983E;
 			remoteInfo = FTPopOverMenu_Swift;
+		};
+		C164F6253996E1C31F4162B4DF582F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58C11AE6223C3AA93E5419115FE034D7;
+			remoteInfo = Drawsana;
 		};
 		DE39DB629C9C50F1862133222228B51A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -118,131 +133,134 @@
 			remoteGlobalIDString = 58C11AE6223C3AA93E5419115FE034D7;
 			remoteInfo = Drawsana;
 		};
+		FBBA6E78BF530684C4820986031A44D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D290CB6A52BEE85564EDCB3E7BF34D9F;
+			remoteInfo = "ERMarkup-ERMarkup";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineShape.swift; path = Drawsana/Shapes/Implementations/LineShape.swift; sourceTree = "<group>"; };
+		0149D00DCE5F4D021EC77521CAA98F74 /* SelectionTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionTool.swift; path = Drawsana/Tools/Implementations/SelectionTool.swift; sourceTree = "<group>"; };
 		0452D3FA76F5B97F82A029CB25DA3F55 /* Pods-ERMarkup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ERMarkup_Example-frameworks.sh"; sourceTree = "<group>"; };
-		089E3CB77F61FE628C95336913A6B116 /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
+		06D0ABB6B30ED09FEE10AE661DCFCC53 /* ERMarkup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.release.xcconfig; sourceTree = "<group>"; };
 		0DDE2D68EA8B6D2144A72626CBEBE643 /* Pods-ERMarkup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.xcconfig; sourceTree = "<group>"; };
+		13DAC1067AE7966E4A6DC01D90A660C6 /* Drawsana-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-umbrella.h"; sourceTree = "<group>"; };
+		1510C729D533D7569919179162975DF5 /* UserSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = "Drawsana/Data model/UserSettings.swift"; sourceTree = "<group>"; };
+		17124B0DF84B63893AD6543005DD82A8 /* ToolSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolSettings.swift; path = "Drawsana/Data model/ToolSettings.swift"; sourceTree = "<group>"; };
 		19DAF04157E7C97D0EEB4DE80B9C634B /* Pods-ERMarkup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ERMarkup_Tests.modulemap"; sourceTree = "<group>"; };
-		19DE70DF5FF1B8D2153452DF220F01FF /* ERMarkup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ERMarkup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		1B9BEECD25BFF97E6F728163C9244CFE /* TextShapeEditingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShapeEditingView.swift; path = "Drawsana/Tools/Implementations/Text tool/TextShapeEditingView.swift"; sourceTree = "<group>"; };
+		1CA5DEE4778EB604454E60E12842C38E /* ic_line_size1@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_line_size1@2x.png"; path = "ERMarkup/Assets/ic_line_size1@2x.png"; sourceTree = "<group>"; };
+		1CCF3E52ADCC64D403A2975119C0B6D8 /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
+		2566A3D0113569427B9C1239C8DDEFA2 /* ERMarkup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-umbrella.h"; sourceTree = "<group>"; };
 		2722CEEB06B22A2FF1D34957B4B36690 /* Pods-ERMarkup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E0257E40AC991B6585B658A4A67131 /* LineShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineShape.swift; path = Drawsana/Shapes/Implementations/LineShape.swift; sourceTree = "<group>"; };
+		29196D4B8DFA0820F161E098CD3C17B1 /* TextTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTool.swift; path = "Drawsana/Tools/Implementations/Text tool/TextTool.swift"; sourceTree = "<group>"; };
 		2A6C5BFD21AD23FF0B42CFE12C48FFAA /* Pods-ERMarkup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C90F092F0D4E63DD0F8B4AC23894045 /* ic_arrow@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_arrow@2x.png"; path = "ERMarkup/Assets/ic_arrow@2x.png"; sourceTree = "<group>"; };
 		30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		315516F020998A33455C56B2FD975489 /* CGPoint+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGPoint+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		333ABA4C25328D702C66D5C2DFC1E622 /* ic_font@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_font@2x.png"; path = "ERMarkup/Assets/ic_font@2x.png"; sourceTree = "<group>"; };
 		35929D49A1F8B2FCD312FBD6D597FE7C /* Pods-ERMarkup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ERMarkup_Example-umbrella.h"; sourceTree = "<group>"; };
-		37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ERMarkup-dummy.m"; sourceTree = "<group>"; };
-		3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.xcconfig; sourceTree = "<group>"; };
-		3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediatePanGestureRecognizer.swift; path = Drawsana/Helpers/ImmediatePanGestureRecognizer.swift; sourceTree = "<group>"; };
-		3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-umbrella.h"; sourceTree = "<group>"; };
-		460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Drawsana/Shapes/Shape.swift; sourceTree = "<group>"; };
+		39C83BBF20AF280956C1AA37353D84B7 /* DrawingToolForShapeWithTwoPoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingToolForShapeWithTwoPoints.swift; path = Drawsana/Tools/Implementations/DrawingToolForShapeWithTwoPoints.swift; sourceTree = "<group>"; };
+		3B39E124B9239E90B7912AA6FB282808 /* ERMarkup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ERMarkup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FB61125AD422302B7EBD9AFAF342406 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeTransform.swift; path = Drawsana/Shapes/ShapeTransform.swift; sourceTree = "<group>"; };
 		47A5B751AF9A86B5CB1FA994742ACB5C /* Pods-ERMarkup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrowTool_EllipseTool_LineTool_RectTool.swift; path = Drawsana/Tools/Implementations/ArrowTool_EllipseTool_LineTool_RectTool.swift; sourceTree = "<group>"; };
-		48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenTool_EraserTool.swift; path = Drawsana/Tools/Implementations/PenTool_EraserTool.swift; sourceTree = "<group>"; };
-		49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
-		4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingToolForShapeWithTwoPoints.swift; path = Drawsana/Tools/Implementations/DrawingToolForShapeWithTwoPoints.swift; sourceTree = "<group>"; };
-		4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
-		4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
-		53C20EF6915068E627C13CA9800D083B /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		47A89BB215F3303640DCB467817E310F /* CGRect+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGRect+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		530BC4BFCC4077D2ABC9DF1293F92E5F /* ic_brush@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_brush@2x.png"; path = "ERMarkup/Assets/ic_brush@2x.png"; sourceTree = "<group>"; };
+		530C587E91674FC7F92BB00FC065C591 /* ic_selection@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_selection@2x.png"; path = "ERMarkup/Assets/ic_selection@2x.png"; sourceTree = "<group>"; };
+		54036E021A0C25D8E9E816F41A0E8671 /* ImmediatePanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediatePanGestureRecognizer.swift; path = Drawsana/Helpers/ImmediatePanGestureRecognizer.swift; sourceTree = "<group>"; };
+		57E0ED1EE59DBF5853CF927774F968EC /* FTPopOverMenu_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.debug.xcconfig; sourceTree = "<group>"; };
+		582E5F120445F01524B808AB07F0732C /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
 		584F77D02615A83A2534DF1BE53B88DD /* Pods-ERMarkup_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Tests-Info.plist"; sourceTree = "<group>"; };
 		59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7A31F925D4B0AE00352697EFEF3438 /* ic_line_size2@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_line_size2@2x.png"; path = "ERMarkup/Assets/ic_line_size2@2x.png"; sourceTree = "<group>"; };
 		5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingTool.swift; path = Drawsana/Tools/DrawingTool.swift; sourceTree = "<group>"; };
+		5F7D640821B6B92F84CA77A8D642514B /* ic_line_size3@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_line_size3@2x.png"; path = "ERMarkup/Assets/ic_line_size3@2x.png"; sourceTree = "<group>"; };
 		626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ERMarkup_Tests-umbrella.h"; sourceTree = "<group>"; };
-		653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = "Drawsana/Data model/UserSettings.swift"; sourceTree = "<group>"; };
-		66ADC8AD0E41E6CDAA246B8C3148C5D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		705ABCDBDE2B274EACD36C871D43AF7C /* ERMarkup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ERMarkup.modulemap; sourceTree = "<group>"; };
-		72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolOperationContext.swift; path = "Drawsana/Data model/ToolOperationContext.swift"; sourceTree = "<group>"; };
-		7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionTool.swift; path = Drawsana/Tools/Implementations/SelectionTool.swift; sourceTree = "<group>"; };
-		75BF3CC005F074B2CD5918F696A0CF0B /* ERMarkup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ERMarkup-Info.plist"; sourceTree = "<group>"; };
-		78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Drawsana-dummy.m"; sourceTree = "<group>"; };
-		7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaView.swift; path = Drawsana/DrawsanaView.swift; sourceTree = "<group>"; };
+		67842ED8A3FBF98CCC21EEF72E7C465E /* ResourceBundle-ERMarkup-ERMarkup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ERMarkup-ERMarkup-Info.plist"; sourceTree = "<group>"; };
+		6A0CEC3E8529AE62A76965EA9E2C6A46 /* RectShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectShape.swift; path = Drawsana/Shapes/Implementations/RectShape.swift; sourceTree = "<group>"; };
+		6F93C770CCAFDF5082066435890A2D0D /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
+		714F5A0A9A5A438AC3CE392D7F992D2A /* FTPopOverMenu_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FTPopOverMenu_Swift.modulemap; sourceTree = "<group>"; };
+		79131FA2E989C3F9BE4618E3295F9205 /* ERMarkup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ERMarkup-Info.plist"; sourceTree = "<group>"; };
+		7A7273B1B758CC30300B1191DFC8966C /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
+		7A8ED6F0DB7C8D0F1F41AD755C900416 /* DrawingOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperations.swift; path = Drawsana/Tools/DrawingOperations.swift; sourceTree = "<group>"; };
+		7D08A210977F04668BA96131AD360640 /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
+		7EEB8712FAC73E343993131BF6D0B49E /* ic_rect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_rect@2x.png"; path = "ERMarkup/Assets/ic_rect@2x.png"; sourceTree = "<group>"; };
 		8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperations.swift; path = Drawsana/Tools/DrawingOperations.swift; sourceTree = "<group>"; };
-		82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragHandler.swift; path = "Drawsana/Tools/Implementations/Text tool/DragHandler.swift"; sourceTree = "<group>"; };
-		84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_resize@2x.png"; sourceTree = "<group>"; };
-		84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_delete@2x.png"; sourceTree = "<group>"; };
-		84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_undo@2x.png"; sourceTree = "<group>"; };
-		84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_brush@2x.png"; sourceTree = "<group>"; };
-		84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_font@2x.png"; sourceTree = "<group>"; };
-		84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_arrow@2x.png"; sourceTree = "<group>"; };
-		84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_rect@2x.png"; sourceTree = "<group>"; };
-		84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_selection@2x.png"; sourceTree = "<group>"; };
-		84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line@2x.png"; sourceTree = "<group>"; };
-		84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size3@2x.png"; sourceTree = "<group>"; };
-		84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size1@2x.png"; sourceTree = "<group>"; };
-		84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_line_size2@2x.png"; sourceTree = "<group>"; };
-		84FCF5457072D9B8EE9BC1822EEF3383 /* ERMarkup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-prefix.pch"; sourceTree = "<group>"; };
-		8A3BCC9F293DBA1AB91A1FA51A286A96 /* Drawsana-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Drawsana-Info.plist"; sourceTree = "<group>"; };
+		820003B23C2153F56B7F65D660A92AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		84C3A45424614FBB00F24591 /* ic_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_check@2x.png"; sourceTree = "<group>"; };
+		84CF656310BDC56B45E2563BD8B7F6C9 /* ERMarkupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERMarkupViewController.swift; path = ERMarkup/Classes/ERMarkupViewController.swift; sourceTree = "<group>"; };
+		8700B06C4AE7B717B8AF96BC941FBDA3 /* DragHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragHandler.swift; path = "Drawsana/Tools/Implementations/Text tool/DragHandler.swift"; sourceTree = "<group>"; };
+		8A475660A9364856ED47271AFC0F5DB2 /* Drawsana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.release.xcconfig; sourceTree = "<group>"; };
 		8E1CEFD19E5CCB12291BFEA2501CA080 /* Pods-ERMarkup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8E8A53EB52A331BF50B7CB530BF3EFF3 /* Drawsana-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-prefix.pch"; sourceTree = "<group>"; };
-		8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShapeEditingView.swift; path = "Drawsana/Tools/Implementations/Text tool/TextShapeEditingView.swift"; sourceTree = "<group>"; };
+		8ECC419FADBDC5777D10A906682BD353 /* PenTool_EraserTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenTool_EraserTool.swift; path = Drawsana/Tools/Implementations/PenTool_EraserTool.swift; sourceTree = "<group>"; };
+		8F1C18214AD2781A3EAF42E27B3E4AFD /* PenShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenShape.swift; path = Drawsana/Shapes/Implementations/PenShape.swift; sourceTree = "<group>"; };
+		8F4CA21675AA1D5F000EC30E40AC0F5F /* Drawsana-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-prefix.pch"; sourceTree = "<group>"; };
+		9049383D0C8302D8CFC6BEA7D7FB64F4 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Drawsana/Shapes/Shape.swift; sourceTree = "<group>"; };
+		931746AE56ED3A82DB435D595BCD0E69 /* Drawsana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.debug.xcconfig; sourceTree = "<group>"; };
+		9371DEC706BAF9F76B7B3C8D040DA5A3 /* ERMarkup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ERMarkup.modulemap; sourceTree = "<group>"; };
+		94D6B9082EA0DA80B780EC7A1EDF0215 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
 		94F87246EC082308F193D05FA3A7A56F /* Pods-ERMarkup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/UIColor+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
-		95ADE531C945C527928DFE9B95002DCB /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
-		95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaUtilities.swift; path = Drawsana/Helpers/DrawsanaUtilities.swift; sourceTree = "<group>"; };
-		9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGRect+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		95B62A9E333EF649A4A5FB41F63AC316 /* ic_resize@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_resize@2x.png"; path = "ERMarkup/Assets/ic_resize@2x.png"; sourceTree = "<group>"; };
+		99D75011280DC3D3AC8490F2E4662339 /* FTPopOverMenu_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.release.xcconfig; sourceTree = "<group>"; };
 		9D3F379C72D5621FE4FF6C1FEAF80AA1 /* Pods-ERMarkup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Example-dummy.m"; sourceTree = "<group>"; };
-		A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperationStack.swift; path = "Drawsana/Data model/DrawingOperationStack.swift"; sourceTree = "<group>"; };
-		A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolSettings.swift; path = "Drawsana/Data model/ToolSettings.swift"; sourceTree = "<group>"; };
-		A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeTransform.swift; path = Drawsana/Shapes/ShapeTransform.swift; sourceTree = "<group>"; };
-		A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-umbrella.h"; sourceTree = "<group>"; };
-		ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
-		AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.xcconfig; sourceTree = "<group>"; };
+		A81616D75F017F36C99AC43851EE2A8B /* ArrowTool_EllipseTool_LineTool_RectTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrowTool_EllipseTool_LineTool_RectTool.swift; path = Drawsana/Tools/Implementations/ArrowTool_EllipseTool_LineTool_RectTool.swift; sourceTree = "<group>"; };
+		AD5CB2899BB6E2F6AB95682CB2CC1019 /* ic_line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_line@2x.png"; path = "ERMarkup/Assets/ic_line@2x.png"; sourceTree = "<group>"; };
+		AFDAA2A293EDE6C7A162BBACE6122120 /* FTConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConstants.swift; path = FTPopOverMenu_Swift/FTConstants.swift; sourceTree = "<group>"; };
+		B490975120C34DD5468F3D1D307FB51A /* UIColor+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/UIColor+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		B511A40CBAB8772C31B8289383481EE4 /* DrawsanaUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaUtilities.swift; path = Drawsana/Helpers/DrawsanaUtilities.swift; sourceTree = "<group>"; };
+		B769B5A7D0371E95B3CF79062386DBE5 /* ERMarkup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-prefix.pch"; sourceTree = "<group>"; };
 		B7D27EEDB00711AC96BECCF32D2E71F3 /* Pods-ERMarkup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		B87959D7408D2536E07F39FB926834ED /* Drawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = "Drawsana/Data model/Drawing.swift"; sourceTree = "<group>"; };
-		BA16EDC9B9BCA1E772CDB299AE849578 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3A14A5CB030A84A8598B7FBC4CE17B /* FTPopOverMenu_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPopOverMenu_Swift-prefix.pch"; sourceTree = "<group>"; };
+		C00675A272E83D98BF70A0BB93F17975 /* FTPopOverMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenu.swift; path = FTPopOverMenu_Swift/FTPopOverMenu.swift; sourceTree = "<group>"; };
 		C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Tests-dummy.m"; sourceTree = "<group>"; };
-		C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Drawsana-umbrella.h"; sourceTree = "<group>"; };
-		C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipseShape.swift; path = Drawsana/Shapes/Implementations/EllipseShape.swift; sourceTree = "<group>"; };
-		C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGPoint+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		C1D18ADF30B7D9891801B22E68A925C2 /* DrawingTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingTool.swift; path = Drawsana/Tools/DrawingTool.swift; sourceTree = "<group>"; };
+		C1DCAFB1F766980235D6DF5E28B69A57 /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
+		C3E72DFEE7E6FDDED62E575D0418A655 /* Drawsana-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Drawsana-Info.plist"; sourceTree = "<group>"; };
 		C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ERMarkup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextTool.swift; path = "Drawsana/Tools/Implementations/Text tool/TextTool.swift"; sourceTree = "<group>"; };
-		D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
-		DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+Frame.swift"; path = "FTPopOverMenu_Swift/UIScreen+Frame.swift"; sourceTree = "<group>"; };
-		DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShape.swift; path = Drawsana/Shapes/Implementations/TextShape.swift; sourceTree = "<group>"; };
-		E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyedDecodingContainer+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/KeyedDecodingContainer+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		CD9D4DB983319D7D5E703A38C17C8C0D /* Drawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = "Drawsana/Data model/Drawing.swift"; sourceTree = "<group>"; };
+		CF0408EC1C878AD7B301EF9702B86695 /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
+		CF5658B0EFDDF9FCB1D2685595A10F5B /* DrawingOperationStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperationStack.swift; path = "Drawsana/Data model/DrawingOperationStack.swift"; sourceTree = "<group>"; };
+		D3488C726F94CC1C1F09A92BA5C69C50 /* ic_delete@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_delete@2x.png"; path = "ERMarkup/Assets/ic_delete@2x.png"; sourceTree = "<group>"; };
+		D363D83E6C4D0E6CD79A5EACA5BD9CE2 /* DrawsanaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaView.swift; path = Drawsana/DrawsanaView.swift; sourceTree = "<group>"; };
+		D612F29FE512FE610A0CA7A701C9D109 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF6A1E2B5C0944DF94A1C2C649315948 /* Drawsana.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Drawsana.modulemap; sourceTree = "<group>"; };
+		E363002FF17249B0EE76BB5F01B2FE73 /* ERMarkup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.debug.xcconfig; sourceTree = "<group>"; };
+		E6E57BE08260C88AD6088703D65B0DC2 /* ic_undo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_undo@2x.png"; path = "ERMarkup/Assets/ic_undo@2x.png"; sourceTree = "<group>"; };
+		EA53094967A29E3EFFBB3E83266CA8EB /* EllipseShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipseShape.swift; path = Drawsana/Shapes/Implementations/EllipseShape.swift; sourceTree = "<group>"; };
 		EAB8F99EE3FB6C6F07D898CFEEAE9A92 /* Pods-ERMarkup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ERMarkup_Example.modulemap"; sourceTree = "<group>"; };
-		EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERMarkupViewController.swift; path = ERMarkup/Classes/ERMarkupViewController.swift; sourceTree = "<group>"; };
+		EC1E33230694BFAE0F9E837C5C346D1A /* ERMarkup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ERMarkup-dummy.m"; sourceTree = "<group>"; };
 		ECE8C3E975692EC9A87AB1FF0B801704 /* Pods-ERMarkup_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Example-Info.plist"; sourceTree = "<group>"; };
-		F549F96CB37DA118DC4A12DEE42C131D /* Drawsana.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Drawsana.modulemap; sourceTree = "<group>"; };
-		F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTCellConfiguration.swift; path = FTPopOverMenu_Swift/FTCellConfiguration.swift; sourceTree = "<group>"; };
-		F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTPopOverMenuCell.swift; path = FTPopOverMenu_Swift/FTPopOverMenuCell.swift; sourceTree = "<group>"; };
-		FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenShape.swift; path = Drawsana/Shapes/Implementations/PenShape.swift; sourceTree = "<group>"; };
-		FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectShape.swift; path = Drawsana/Shapes/Implementations/RectShape.swift; sourceTree = "<group>"; };
+		EDA05E3027498CD3EE0CC369091EF2A1 /* KeyedDecodingContainer+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyedDecodingContainer+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/KeyedDecodingContainer+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
+		F02E36070210285A7DE78F980881977C /* ToolOperationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToolOperationContext.swift; path = "Drawsana/Data model/ToolOperationContext.swift"; sourceTree = "<group>"; };
+		F1675667FED5F2E1BB6E1BCF3A11DD18 /* ERMarkup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERMarkup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18A5ACC828CDC7982DA0922C57F201D /* Drawsana-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Drawsana-dummy.m"; sourceTree = "<group>"; };
+		F5950F9E54E9D475A5562575D22E59DC /* TextShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextShape.swift; path = Drawsana/Shapes/Implementations/TextShape.swift; sourceTree = "<group>"; };
+		F80B7A658D157C1B5BF5AC081AFE0EFB /* FTPopOverMenu_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPopOverMenu_Swift-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0932E0090738A1C5DB636B253E9CB775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CA47A3CBF2E95D69A24DC1D00365EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D8D0A01A15B07F4DF576AAF5E4609D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7324CCB2667987B0833CB7789CC599E6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435F1C5CE21CDC7C9FF377DD8121F51C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D381216CBC83C7328C2BDA58809B2449 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B56225B05F9D9FB503C0D1FF67E4EB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94689D95227442F1798185A2618C16AE /* Drawsana.framework in Frameworks */,
-				04960D1FB4009D870925593B7126A118 /* Foundation.framework in Frameworks */,
-				75D077AB88F64AA7AA8B3F61EC6E0E34 /* FTPopOverMenu_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,25 +280,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		91E23F33D82C85B6C9145AB5FA4E51FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D797338A9B074C29473F00C893EC4F3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A941B00B1958192719A4FA5F203E29C5 /* Drawsana.framework in Frameworks */,
+				1A0886522D79CE4FBC30A8DE06B62943 /* Foundation.framework in Frameworks */,
+				78357E94F675DB76AAB334BF0A355078 /* FTPopOverMenu_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05C6312BC178B4BAE920C97AED8FBFD5 /* FTPopOverMenu_Swift */ = {
-			isa = PBXGroup;
-			children = (
-				4DF8BBEB3F5EBE6E62F21A1CA4998F9E /* FT+Extension.swift */,
-				F724AA5A91C9C8EF48D5A9B2C3A6BD11 /* FTCellConfiguration.swift */,
-				4CF01C4F06FA531423E9602C2BFB0656 /* FTConfiguration.swift */,
-				1BA83761A6B30EA87F80AEFFC3681E47 /* FTConstants.swift */,
-				ABD9E728565D94D3C4501BB03C0E25AC /* FTPopOverMenu.swift */,
-				F866109CFB4C7ABA52220DC06403DC80 /* FTPopOverMenuCell.swift */,
-				49EFEDC39BE0255A5655D0944804F893 /* UIControl+Point.swift */,
-				DB8FD1C8545FC2A660DC6A99D936B091 /* UIScreen+Frame.swift */,
-				AF109F5AB73935D038E95DE6CF542290 /* Support Files */,
-			);
-			path = FTPopOverMenu_Swift;
-			sourceTree = "<group>";
-		};
 		0EF8AAD68D8BA6EB706F31B343D55A73 /* Pods-ERMarkup_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,41 +316,95 @@
 			path = "Target Support Files/Pods-ERMarkup_Tests";
 			sourceTree = "<group>";
 		};
-		1281D3FC7280FF19C8E241E6A2082CDC /* Support Files */ = {
+		3280057683C74EA9A36264590845ED8B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				705ABCDBDE2B274EACD36C871D43AF7C /* ERMarkup.modulemap */,
-				181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */,
-				37E4401DB73FFF6107632FD6975FF26C /* ERMarkup-dummy.m */,
-				75BF3CC005F074B2CD5918F696A0CF0B /* ERMarkup-Info.plist */,
-				84FCF5457072D9B8EE9BC1822EEF3383 /* ERMarkup-prefix.pch */,
-				3D3280167975037F59F7186548666F20 /* ERMarkup-umbrella.h */,
+				3B39E124B9239E90B7912AA6FB282808 /* ERMarkup.podspec */,
+				820003B23C2153F56B7F65D660A92AF9 /* LICENSE */,
+				D612F29FE512FE610A0CA7A701C9D109 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3612405428407A69AED89D0486DD0894 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9371DEC706BAF9F76B7B3C8D040DA5A3 /* ERMarkup.modulemap */,
+				EC1E33230694BFAE0F9E837C5C346D1A /* ERMarkup-dummy.m */,
+				79131FA2E989C3F9BE4618E3295F9205 /* ERMarkup-Info.plist */,
+				B769B5A7D0371E95B3CF79062386DBE5 /* ERMarkup-prefix.pch */,
+				2566A3D0113569427B9C1239C8DDEFA2 /* ERMarkup-umbrella.h */,
+				E363002FF17249B0EE76BB5F01B2FE73 /* ERMarkup.debug.xcconfig */,
+				06D0ABB6B30ED09FEE10AE661DCFCC53 /* ERMarkup.release.xcconfig */,
+				67842ED8A3FBF98CCC21EEF72E7C465E /* ResourceBundle-ERMarkup-ERMarkup-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ERMarkup";
 			sourceTree = "<group>";
 		};
-		591EE50D56C4465D373BB7D8FBF761A2 /* ERMarkup */ = {
+		3D14D74CE24F3EA5368D78A24F3697C1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84AFBABE22DC787C007E6F9F /* Assets */,
-				EAE4ED9FBB9CA6D7BB3B7B943B316B82 /* ERMarkupViewController.swift */,
-				C053A7C00E4F851CC835589A947826A0 /* Pod */,
-				1281D3FC7280FF19C8E241E6A2082CDC /* Support Files */,
+				7066545802B5397FD72A0CFD9816D78C /* ERMarkup */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4DC5F5EEA0DAC2498BD9BFDB8EC0F1F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */,
+				F1675667FED5F2E1BB6E1BCF3A11DD18 /* ERMarkup.bundle */,
+				C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */,
+				2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */,
+				59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */,
+				5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5076475139CFC5F59637D3328BDD12A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84C3A45424614FBB00F24591 /* ic_check@2x.png */,
+				2C90F092F0D4E63DD0F8B4AC23894045 /* ic_arrow@2x.png */,
+				530BC4BFCC4077D2ABC9DF1293F92E5F /* ic_brush@2x.png */,
+				D3488C726F94CC1C1F09A92BA5C69C50 /* ic_delete@2x.png */,
+				333ABA4C25328D702C66D5C2DFC1E622 /* ic_font@2x.png */,
+				AD5CB2899BB6E2F6AB95682CB2CC1019 /* ic_line@2x.png */,
+				1CA5DEE4778EB604454E60E12842C38E /* ic_line_size1@2x.png */,
+				5A7A31F925D4B0AE00352697EFEF3438 /* ic_line_size2@2x.png */,
+				5F7D640821B6B92F84CA77A8D642514B /* ic_line_size3@2x.png */,
+				7EEB8712FAC73E343993131BF6D0B49E /* ic_rect@2x.png */,
+				95B62A9E333EF649A4A5FB41F63AC316 /* ic_resize@2x.png */,
+				530C587E91674FC7F92BB00FC065C591 /* ic_selection@2x.png */,
+				E6E57BE08260C88AD6088703D65B0DC2 /* ic_undo@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7066545802B5397FD72A0CFD9816D78C /* ERMarkup */ = {
+			isa = PBXGroup;
+			children = (
+				84CF656310BDC56B45E2563BD8B7F6C9 /* ERMarkupViewController.swift */,
+				3280057683C74EA9A36264590845ED8B /* Pod */,
+				5076475139CFC5F59637D3328BDD12A2 /* Resources */,
+				3612405428407A69AED89D0486DD0894 /* Support Files */,
 			);
 			name = ERMarkup;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		6E8BC1BC23010A1E293CE56D5F9856DE /* Support Files */ = {
+		7B0126FE667413EEF2B1BD332C3ABE4A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F549F96CB37DA118DC4A12DEE42C131D /* Drawsana.modulemap */,
-				AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */,
-				78BF89DE908FF1A35D1CD97554A491E2 /* Drawsana-dummy.m */,
-				8A3BCC9F293DBA1AB91A1FA51A286A96 /* Drawsana-Info.plist */,
-				8E8A53EB52A331BF50B7CB530BF3EFF3 /* Drawsana-prefix.pch */,
-				C142717F35BEF130D7D8ACE437797C52 /* Drawsana-umbrella.h */,
+				DF6A1E2B5C0944DF94A1C2C649315948 /* Drawsana.modulemap */,
+				F18A5ACC828CDC7982DA0922C57F201D /* Drawsana-dummy.m */,
+				C3E72DFEE7E6FDDED62E575D0418A655 /* Drawsana-Info.plist */,
+				8F4CA21675AA1D5F000EC30E40AC0F5F /* Drawsana-prefix.pch */,
+				13DAC1067AE7966E4A6DC01D90A660C6 /* Drawsana-umbrella.h */,
+				931746AE56ED3A82DB435D595BCD0E69 /* Drawsana.debug.xcconfig */,
+				8A475660A9364856ED47271AFC0F5DB2 /* Drawsana.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Drawsana";
@@ -354,65 +427,13 @@
 			path = "Target Support Files/Pods-ERMarkup_Example";
 			sourceTree = "<group>";
 		};
-		84AFBABE22DC787C007E6F9F /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				84AD9AA322DD89830079BDA6 /* ic_delete@2x.png */,
-				84AD9AA222DD89830079BDA6 /* ic_resize@2x.png */,
-				84AFBAD022DC9447007E6F9F /* ic_line_size1@2x.png */,
-				84AFBAD122DC9447007E6F9F /* ic_line_size2@2x.png */,
-				84AFBACF22DC9447007E6F9F /* ic_line_size3@2x.png */,
-				84AFBACD22DC8D08007E6F9F /* ic_line@2x.png */,
-				84AFBAC622DC8B4A007E6F9F /* ic_arrow@2x.png */,
-				84AFBAC522DC8B4A007E6F9F /* ic_font@2x.png */,
-				84AFBAC722DC8B4A007E6F9F /* ic_rect@2x.png */,
-				84AFBAC822DC8B4A007E6F9F /* ic_selection@2x.png */,
-				84AFBAC322DC88E7007E6F9F /* ic_brush@2x.png */,
-				84AFBABF22DC787C007E6F9F /* ic_undo@2x.png */,
-			);
-			name = Assets;
-			path = ERMarkup/Assets;
-			sourceTree = "<group>";
-		};
-		A530CC30E5DA47C359DBF06AFB71D573 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				591EE50D56C4465D373BB7D8FBF761A2 /* ERMarkup */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		AE997369A4D7DDF3BE4C9DE5F1A509D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D819B6365C6A3D714B821AD764AF0876 /* Drawsana */,
-				05C6312BC178B4BAE920C97AED8FBFD5 /* FTPopOverMenu_Swift */,
+				D87A56BA925DA59B4D43615A48145CEA /* Drawsana */,
+				F170E54C9269F0A38A4C1C7FCAB1DEC5 /* FTPopOverMenu_Swift */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		AF109F5AB73935D038E95DE6CF542290 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				089E3CB77F61FE628C95336913A6B116 /* FTPopOverMenu_Swift.modulemap */,
-				3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */,
-				D234709ACA02230B72C92AA4631089D9 /* FTPopOverMenu_Swift-dummy.m */,
-				53C20EF6915068E627C13CA9800D083B /* FTPopOverMenu_Swift-Info.plist */,
-				95ADE531C945C527928DFE9B95002DCB /* FTPopOverMenu_Swift-prefix.pch */,
-				A9ED3C040A988822BF019E97B3002FD4 /* FTPopOverMenu_Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FTPopOverMenu_Swift";
-			sourceTree = "<group>";
-		};
-		C053A7C00E4F851CC835589A947826A0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				19DE70DF5FF1B8D2153452DF220F01FF /* ERMarkup.podspec */,
-				66ADC8AD0E41E6CDAA246B8C3148C5D9 /* LICENSE */,
-				BA16EDC9B9BCA1E772CDB299AE849578 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		CDD5F22282EA77B8E4A52497B9E23981 /* Targets Support Files */ = {
@@ -428,58 +449,46 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A530CC30E5DA47C359DBF06AFB71D573 /* Development Pods */,
+				3D14D74CE24F3EA5368D78A24F3697C1 /* Development Pods */,
 				D9739C04BB426A7E86E4A5255244989F /* Frameworks */,
 				AE997369A4D7DDF3BE4C9DE5F1A509D9 /* Pods */,
-				D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */,
+				4DC5F5EEA0DAC2498BD9BFDB8EC0F1F5 /* Products */,
 				CDD5F22282EA77B8E4A52497B9E23981 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */ = {
+		D87A56BA925DA59B4D43615A48145CEA /* Drawsana */ = {
 			isa = PBXGroup;
 			children = (
-				BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */,
-				C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */,
-				2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */,
-				59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */,
-				5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D819B6365C6A3D714B821AD764AF0876 /* Drawsana */ = {
-			isa = PBXGroup;
-			children = (
-				47DA42E3996214AAE28A9A55FED0A4EC /* ArrowTool_EllipseTool_LineTool_RectTool.swift */,
-				C437696C22058D55DC01B0713F5ACB85 /* CGPoint+DrawsanaExtensions.swift */,
-				9B082241EB6529BAF7999BB1C312996A /* CGRect+DrawsanaExtensions.swift */,
-				82DA34B642D78BDD3870D76501964483 /* DragHandler.swift */,
-				B87959D7408D2536E07F39FB926834ED /* Drawing.swift */,
-				8272DA5A522ABDB410F0F66CAB9C3C8B /* DrawingOperations.swift */,
-				A6624A0475BB10C00245792F3D4404AD /* DrawingOperationStack.swift */,
-				60436FC83C1A3E99E38B796DF9E5C5EE /* DrawingTool.swift */,
-				4AAF3D1DCA2A4BB9EA5C9A04DF4B3DE7 /* DrawingToolForShapeWithTwoPoints.swift */,
-				95E58F0D5BFD475347FF5E76F4EE30E8 /* DrawsanaUtilities.swift */,
-				7A549A50B4436998DC617006DC1AB75F /* DrawsanaView.swift */,
-				C3AB56B455972336DA906A3DBF84D8DE /* EllipseShape.swift */,
-				3C62A0B9DFCF3703217537D76455823E /* ImmediatePanGestureRecognizer.swift */,
-				E48E933F052DE95517388B0473F859C7 /* KeyedDecodingContainer+DrawsanaExtensions.swift */,
-				00E21A1171DB338DB505CBA8481BB29C /* LineShape.swift */,
-				FAC9EB312AC0E9AF9BA097E41825224E /* PenShape.swift */,
-				48749EB880D79A9162CE0D926F4DF6E2 /* PenTool_EraserTool.swift */,
-				FF8DF2DFD82B42BF0A2B7C13B13B3B22 /* RectShape.swift */,
-				7481FF32B56CB04D2C3DBBE3B96E417D /* SelectionTool.swift */,
-				460EE31D05C798510BE8A22BD59EFACA /* Shape.swift */,
-				A78E77473C2F256E9800102518995D78 /* ShapeTransform.swift */,
-				DE3CF48A35FB6CCDC996F47EE4254868 /* TextShape.swift */,
-				8EAA6A95E385B3CB13B5941233C526F4 /* TextShapeEditingView.swift */,
-				CEB03FEB815997C1210AF07C2386DF50 /* TextTool.swift */,
-				72AF17B4949EBC989632EC63E5806E59 /* ToolOperationContext.swift */,
-				A7471F916AB4807C675A3C2DA0DB2F9A /* ToolSettings.swift */,
-				9579A610E70D369BF5588949A4ADA4A3 /* UIColor+DrawsanaExtensions.swift */,
-				653B7B1F2C8FEEA818A23E8934CEA8B7 /* UserSettings.swift */,
-				6E8BC1BC23010A1E293CE56D5F9856DE /* Support Files */,
+				A81616D75F017F36C99AC43851EE2A8B /* ArrowTool_EllipseTool_LineTool_RectTool.swift */,
+				315516F020998A33455C56B2FD975489 /* CGPoint+DrawsanaExtensions.swift */,
+				47A89BB215F3303640DCB467817E310F /* CGRect+DrawsanaExtensions.swift */,
+				8700B06C4AE7B717B8AF96BC941FBDA3 /* DragHandler.swift */,
+				CD9D4DB983319D7D5E703A38C17C8C0D /* Drawing.swift */,
+				7A8ED6F0DB7C8D0F1F41AD755C900416 /* DrawingOperations.swift */,
+				CF5658B0EFDDF9FCB1D2685595A10F5B /* DrawingOperationStack.swift */,
+				C1D18ADF30B7D9891801B22E68A925C2 /* DrawingTool.swift */,
+				39C83BBF20AF280956C1AA37353D84B7 /* DrawingToolForShapeWithTwoPoints.swift */,
+				B511A40CBAB8772C31B8289383481EE4 /* DrawsanaUtilities.swift */,
+				D363D83E6C4D0E6CD79A5EACA5BD9CE2 /* DrawsanaView.swift */,
+				EA53094967A29E3EFFBB3E83266CA8EB /* EllipseShape.swift */,
+				54036E021A0C25D8E9E816F41A0E8671 /* ImmediatePanGestureRecognizer.swift */,
+				EDA05E3027498CD3EE0CC369091EF2A1 /* KeyedDecodingContainer+DrawsanaExtensions.swift */,
+				28E0257E40AC991B6585B658A4A67131 /* LineShape.swift */,
+				8F1C18214AD2781A3EAF42E27B3E4AFD /* PenShape.swift */,
+				8ECC419FADBDC5777D10A906682BD353 /* PenTool_EraserTool.swift */,
+				6A0CEC3E8529AE62A76965EA9E2C6A46 /* RectShape.swift */,
+				0149D00DCE5F4D021EC77521CAA98F74 /* SelectionTool.swift */,
+				9049383D0C8302D8CFC6BEA7D7FB64F4 /* Shape.swift */,
+				3FB61125AD422302B7EBD9AFAF342406 /* ShapeTransform.swift */,
+				F5950F9E54E9D475A5562575D22E59DC /* TextShape.swift */,
+				1B9BEECD25BFF97E6F728163C9244CFE /* TextShapeEditingView.swift */,
+				29196D4B8DFA0820F161E098CD3C17B1 /* TextTool.swift */,
+				F02E36070210285A7DE78F980881977C /* ToolOperationContext.swift */,
+				17124B0DF84B63893AD6543005DD82A8 /* ToolSettings.swift */,
+				B490975120C34DD5468F3D1D307FB51A /* UIColor+DrawsanaExtensions.swift */,
+				1510C729D533D7569919179162975DF5 /* UserSettings.swift */,
+				7B0126FE667413EEF2B1BD332C3ABE4A /* Support Files */,
 			);
 			path = Drawsana;
 			sourceTree = "<group>";
@@ -492,6 +501,37 @@
 				FAA37327272E12A5ED96827426D0DF4D /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA187A1D9192EA1F7784E561214340F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				714F5A0A9A5A438AC3CE392D7F992D2A /* FTPopOverMenu_Swift.modulemap */,
+				F80B7A658D157C1B5BF5AC081AFE0EFB /* FTPopOverMenu_Swift-dummy.m */,
+				7D08A210977F04668BA96131AD360640 /* FTPopOverMenu_Swift-Info.plist */,
+				BE3A14A5CB030A84A8598B7FBC4CE17B /* FTPopOverMenu_Swift-prefix.pch */,
+				94D6B9082EA0DA80B780EC7A1EDF0215 /* FTPopOverMenu_Swift-umbrella.h */,
+				57E0ED1EE59DBF5853CF927774F968EC /* FTPopOverMenu_Swift.debug.xcconfig */,
+				99D75011280DC3D3AC8490F2E4662339 /* FTPopOverMenu_Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FTPopOverMenu_Swift";
+			sourceTree = "<group>";
+		};
+		F170E54C9269F0A38A4C1C7FCAB1DEC5 /* FTPopOverMenu_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				582E5F120445F01524B808AB07F0732C /* FT+Extension.swift */,
+				C1DCAFB1F766980235D6DF5E28B69A57 /* FTCellConfiguration.swift */,
+				1CCF3E52ADCC64D403A2975119C0B6D8 /* FTConfiguration.swift */,
+				AFDAA2A293EDE6C7A162BBACE6122120 /* FTConstants.swift */,
+				C00675A272E83D98BF70A0BB93F17975 /* FTPopOverMenu.swift */,
+				CF0408EC1C878AD7B301EF9702B86695 /* FTPopOverMenuCell.swift */,
+				7A7273B1B758CC30300B1191DFC8966C /* UIControl+Point.swift */,
+				6F93C770CCAFDF5082066435890A2D0D /* UIScreen+Frame.swift */,
+				EA187A1D9192EA1F7784E561214340F7 /* Support Files */,
+			);
+			path = FTPopOverMenu_Swift;
 			sourceTree = "<group>";
 		};
 		FAA37327272E12A5ED96827426D0DF4D /* iOS */ = {
@@ -513,19 +553,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B8C5660BD4134F0AF28E5117242155D /* Headers */ = {
+		23DFB74DA971804D642827E9AC424B32 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BC18D642BED3CFE989EC346033D22D /* ERMarkup-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B534159DF3BF40774A56A7683BF7E2D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B3982C88457A25952FBB298A70DF7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */,
+				C25B4B48AACD61AF497FDA4AAD35E7DB /* FTPopOverMenu_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,23 +577,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE1364720A2389A033AD83895C722B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F451C087CE882C13254BA45DACE77C9 /* ERMarkup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2D35E4D695659AAF9341690B859499F1 /* ERMarkup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C107CCF23E4B4D2C856FFBC9D80DC56 /* Build configuration list for PBXNativeTarget "ERMarkup" */;
+			buildConfigurationList = 3B56750F43897960D0B8981C07C7BD6A /* Build configuration list for PBXNativeTarget "ERMarkup" */;
 			buildPhases = (
-				4B8C5660BD4134F0AF28E5117242155D /* Headers */,
-				C8C711D17B4C27CC4B328426DE01743F /* Sources */,
-				4B56225B05F9D9FB503C0D1FF67E4EB0 /* Frameworks */,
-				4D57EB44DDDD2B8E9574079420E6CA38 /* Resources */,
+				EBE1364720A2389A033AD83895C722B5 /* Headers */,
+				D693CCEB47A733A3334F38C690D322D7 /* Sources */,
+				D797338A9B074C29473F00C893EC4F3D /* Frameworks */,
+				06491A6972DFE65AAF441DB6D9491BE4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B8DC1FD62712A97C3DEE0910B82A5BA2 /* PBXTargetDependency */,
-				DD248EDF45A5176E160B5F29B6BE8DC7 /* PBXTargetDependency */,
+				D74E6E037F2CA38B28262685D20A46F1 /* PBXTargetDependency */,
+				0CDE20F843C65359437F0E93A1F9A5FF /* PBXTargetDependency */,
+				7B80008563C6AC7C092F5F24BD1E27B9 /* PBXTargetDependency */,
 			);
 			name = ERMarkup;
 			productName = ERMarkup;
@@ -628,12 +669,12 @@
 		};
 		989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05ADCA3919B5B81D4B693B5F25EE8A42 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
+			buildConfigurationList = 91CEE3790275152E9E05CFAE89C179FC /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */;
 			buildPhases = (
-				5B534159DF3BF40774A56A7683BF7E2D /* Headers */,
-				B46E63D4CAE366A79A8179D265F0D2FA /* Sources */,
-				435F1C5CE21CDC7C9FF377DD8121F51C /* Frameworks */,
-				FE4B706D66374E79094E782E152F7EDF /* Resources */,
+				23DFB74DA971804D642827E9AC424B32 /* Headers */,
+				FD8D01AE03C74E101AAA18EC94322AE1 /* Sources */,
+				0932E0090738A1C5DB636B253E9CB775 /* Frameworks */,
+				3E80F4481BDA18377AF2516E2278889D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -643,6 +684,23 @@
 			productName = FTPopOverMenu_Swift;
 			productReference = 2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		D290CB6A52BEE85564EDCB3E7BF34D9F /* ERMarkup-ERMarkup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EE47556AE02AB50A4DAA1774D8EAFF6 /* Build configuration list for PBXNativeTarget "ERMarkup-ERMarkup" */;
+			buildPhases = (
+				3E238A15E73EB6B7F3611042020CBC82 /* Sources */,
+				91E23F33D82C85B6C9145AB5FA4E51FE /* Frameworks */,
+				31A4C259C23EE86F9162F793B1642328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ERMarkup-ERMarkup";
+			productName = "ERMarkup-ERMarkup";
+			productReference = F1675667FED5F2E1BB6E1BCF3A11DD18 /* ERMarkup.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -659,14 +717,16 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D5C79EB2AB288BF4A3427301DFFCADE6 /* Products */;
+			productRefGroup = 4DC5F5EEA0DAC2498BD9BFDB8EC0F1F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */,
 				2D35E4D695659AAF9341690B859499F1 /* ERMarkup */,
+				D290CB6A52BEE85564EDCB3E7BF34D9F /* ERMarkup-ERMarkup */,
 				989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */,
 				66DBD053243D4B60068E955B0E0D91C2 /* Pods-ERMarkup_Example */,
 				87DAD2232BA5691384B553320D52473F /* Pods-ERMarkup_Tests */,
@@ -675,22 +735,51 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4D57EB44DDDD2B8E9574079420E6CA38 /* Resources */ = {
+		06491A6972DFE65AAF441DB6D9491BE4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AFBACB22DC8B4A007E6F9F /* ic_rect@2x.png in Resources */,
-				84AFBAD222DC9447007E6F9F /* ic_line_size3@2x.png in Resources */,
-				84AFBAC922DC8B4A007E6F9F /* ic_font@2x.png in Resources */,
-				84AD9AA522DD89830079BDA6 /* ic_delete@2x.png in Resources */,
-				84AFBAC122DC787C007E6F9F /* ic_undo@2x.png in Resources */,
-				84AFBAD422DC9447007E6F9F /* ic_line_size2@2x.png in Resources */,
-				84AFBACC22DC8B4A007E6F9F /* ic_selection@2x.png in Resources */,
-				84AD9AA422DD89830079BDA6 /* ic_resize@2x.png in Resources */,
-				84AFBACA22DC8B4A007E6F9F /* ic_arrow@2x.png in Resources */,
-				84AFBAD322DC9447007E6F9F /* ic_line_size1@2x.png in Resources */,
-				84AFBACE22DC8D08007E6F9F /* ic_line@2x.png in Resources */,
-				84AFBAC422DC88E7007E6F9F /* ic_brush@2x.png in Resources */,
+				85D65A8DCC9F4DBEFE907AA9F65AAAE6 /* ERMarkup.bundle in Resources */,
+				B67F12A9C0D9F8F988BDA7E097223CA6 /* ic_arrow@2x.png in Resources */,
+				31851726EA5AA5A14D237820D74844E5 /* ic_brush@2x.png in Resources */,
+				84C3A45524614FBB00F24591 /* ic_check@2x.png in Resources */,
+				23498B8455709071F8598F7A09F5932E /* ic_delete@2x.png in Resources */,
+				04016C938E0ACB289160EC014B96833C /* ic_font@2x.png in Resources */,
+				385C7FCD9A64DA1A8A24214E2F61D91F /* ic_line@2x.png in Resources */,
+				698DE2D5C9B025D51B97F308D3DB2E1A /* ic_line_size1@2x.png in Resources */,
+				E85C39E6DBBA4E2373ADD1C94D7C3C82 /* ic_line_size2@2x.png in Resources */,
+				8FB6233E3F619D17713E97C036980D6C /* ic_line_size3@2x.png in Resources */,
+				74A543CC8B251BA4EF9BFD95D7B57DB2 /* ic_rect@2x.png in Resources */,
+				D61DAFF73EA6A6E172CB6BD7CD1316FB /* ic_resize@2x.png in Resources */,
+				507DCF141C243D7ACD015265B42B0FE4 /* ic_selection@2x.png in Resources */,
+				C7008BAB082943DDDD88FA16892D5C8D /* ic_undo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A4C259C23EE86F9162F793B1642328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7554CCAF6EBF3770D7B5D8DDB7675A5A /* ic_arrow@2x.png in Resources */,
+				11EC236EABC7158398434096FF0B823E /* ic_brush@2x.png in Resources */,
+				7A033DFCFC10FE395C9304A2251F4612 /* ic_delete@2x.png in Resources */,
+				11D2879087E09EB6521F45AD36FA300C /* ic_font@2x.png in Resources */,
+				DA4FC14348C10065B911805E8EC9819E /* ic_line@2x.png in Resources */,
+				2F6F2BD4CBED91DBFFADA782F4BC9AB9 /* ic_line_size1@2x.png in Resources */,
+				4713B434B76025D60F9E511C880C89F6 /* ic_line_size2@2x.png in Resources */,
+				8C3B73DAE97B4F440F0F4912EA09E3F1 /* ic_line_size3@2x.png in Resources */,
+				1E7FF75C9263E8EE61F2914EFC3BA27A /* ic_rect@2x.png in Resources */,
+				29FE56C1CD00248AD2F3547FA38713CA /* ic_resize@2x.png in Resources */,
+				84C3A45624614FBB00F24591 /* ic_check@2x.png in Resources */,
+				77D153922B01205FF571DF522C0477EC /* ic_selection@2x.png in Resources */,
+				F6053C2E77B0BDE771D6A2B0FCA38799 /* ic_undo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E80F4481BDA18377AF2516E2278889D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,13 +798,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C50AEE098D0000C6447C4B8109DCFDBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE4B706D66374E79094E782E152F7EDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -769,6 +851,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E238A15E73EB6B7F3611042020CBC82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3B0C1B83C2812E83FB45C7CF98EA230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -777,34 +866,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B46E63D4CAE366A79A8179D265F0D2FA /* Sources */ = {
+		D693CCEB47A733A3334F38C690D322D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F99F1011AEE8AB25022852A6F1F4D475 /* FT+Extension.swift in Sources */,
-				DA7D53686B875FF594B99B3630221B11 /* FTCellConfiguration.swift in Sources */,
-				FDD0FD1B6F74899D5F1EADA003648572 /* FTConfiguration.swift in Sources */,
-				71D3C0C4A34FB7B2A5AA42649E449F6A /* FTConstants.swift in Sources */,
-				187BC515A12A33C126738DC232E261A0 /* FTPopOverMenu.swift in Sources */,
-				E6A86FB938F226B64F82432A70047ED5 /* FTPopOverMenu_Swift-dummy.m in Sources */,
-				0DF5B4908442F233FDC06FB17E372D13 /* FTPopOverMenuCell.swift in Sources */,
-				7596B47240598203F75C3682B557F7EA /* UIControl+Point.swift in Sources */,
-				751A85C339C9021B5C7B905E41E6BA7D /* UIScreen+Frame.swift in Sources */,
+				1BAC39955A8EF6E4E32E25527766583A /* ERMarkup-dummy.m in Sources */,
+				BE6F3FC774353CFF466F195099A8D8A6 /* ERMarkupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8C711D17B4C27CC4B328426DE01743F /* Sources */ = {
+		FD8D01AE03C74E101AAA18EC94322AE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B46B586191EA72269FC4C25A959535D /* ERMarkup-dummy.m in Sources */,
-				0531051A7E9314933CAB26A0F8B1E25D /* ERMarkupViewController.swift in Sources */,
+				B860B743CE22BDB9A2457D7CDA8ECDB9 /* FT+Extension.swift in Sources */,
+				0743809B27B4FB76613C81C0376A951A /* FTCellConfiguration.swift in Sources */,
+				1D6844B9744D41E6BF86B102BC6B2FAE /* FTConfiguration.swift in Sources */,
+				0948DC0E81394F2493B6DA801C3434C1 /* FTConstants.swift in Sources */,
+				4728A17E36DF48F7FE905ADB4DE662FB /* FTPopOverMenu.swift in Sources */,
+				47C31B4C9B8036A819185A0AD8646853 /* FTPopOverMenu_Swift-dummy.m in Sources */,
+				F3A1335BF345D552151D52C2DABCEA64 /* FTPopOverMenuCell.swift in Sources */,
+				6195A18EAC023DB06BFFEB4AD28B11A1 /* UIControl+Point.swift in Sources */,
+				D4BF2BDD9784A2A31B67BF59B6B05F56 /* UIScreen+Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0CDE20F843C65359437F0E93A1F9A5FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ERMarkup-ERMarkup";
+			target = D290CB6A52BEE85564EDCB3E7BF34D9F /* ERMarkup-ERMarkup */;
+			targetProxy = FBBA6E78BF530684C4820986031A44D5 /* PBXContainerItemProxy */;
+		};
 		21A76D97CB8999705E0DEA6C10E9B4F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FTPopOverMenu_Swift;
@@ -823,23 +918,23 @@
 			target = 66DBD053243D4B60068E955B0E0D91C2 /* Pods-ERMarkup_Example */;
 			targetProxy = AB7C5F5D3A8393814C58EF8B28F3644C /* PBXContainerItemProxy */;
 		};
-		B8DC1FD62712A97C3DEE0910B82A5BA2 /* PBXTargetDependency */ = {
+		7B80008563C6AC7C092F5F24BD1E27B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FTPopOverMenu_Swift;
+			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
+			targetProxy = BA35D0F5CAB6014C5834591C3D732DC7 /* PBXContainerItemProxy */;
+		};
+		D74E6E037F2CA38B28262685D20A46F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Drawsana;
 			target = 58C11AE6223C3AA93E5419115FE034D7 /* Drawsana */;
-			targetProxy = AF28C6C742C5E6325766D967B7A9819C /* PBXContainerItemProxy */;
+			targetProxy = C164F6253996E1C31F4162B4DF582F8D /* PBXContainerItemProxy */;
 		};
 		DC8F4AD0507ED50A935BA1736816A8A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ERMarkup;
 			target = 2D35E4D695659AAF9341690B859499F1 /* ERMarkup */;
 			targetProxy = B1D474BF06F77F6A62F8BB65FA04F246 /* PBXContainerItemProxy */;
-		};
-		DD248EDF45A5176E160B5F29B6BE8DC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FTPopOverMenu_Swift;
-			target = 989619F863D399C5538843E81223983E /* FTPopOverMenu_Swift */;
-			targetProxy = C019BBE4B0CDD78C07CDAE40643620C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -876,37 +971,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		19966477EB894F8E4E8E374039DEEC91 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
-				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
-				PRODUCT_NAME = FTPopOverMenu_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		19FA77690DC01962AA9F798EFE7B2E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -975,9 +1039,41 @@
 			};
 			name = Release;
 		};
-		1D87017C40EAAFE44B22C5829188596D /* Debug */ = {
+		1FABF0B411AE0B3A2D55E953C242A822 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BE0132680760C4A5539511107BF2ADA /* FTPopOverMenu_Swift.xcconfig */;
+			baseConfigurationReference = 06D0ABB6B30ED09FEE10AE661DCFCC53 /* ERMarkup.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
+				PRODUCT_MODULE_NAME = ERMarkup;
+				PRODUCT_NAME = ERMarkup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37214052AC5F8DC8F1870C43E3F48F40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D75011280DC3D3AC8490F2E4662339 /* FTPopOverMenu_Swift.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1000,14 +1096,63 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		378C9DDBAD0D977AE19B8327D917AF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D0ABB6B30ED09FEE10AE661DCFCC53 /* ERMarkup.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ERMarkup";
+				IBSC_MODULE = ERMarkup;
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ResourceBundle-ERMarkup-ERMarkup-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ERMarkup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		43B70ADA5A073EA166936B925A68F233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E363002FF17249B0EE76BB5F01B2FE73 /* ERMarkup.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
+				PRODUCT_MODULE_NAME = ERMarkup;
+				PRODUCT_NAME = ERMarkup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		41A72AD52161731024F84FE21FB14877 /* Release */ = {
+		8F6A70A537407E368E0BFE03FE7C9938 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */;
+			baseConfigurationReference = 931746AE56ED3A82DB435D595BCD0E69 /* Drawsana.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1031,15 +1176,14 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		4F646F7D3C96B3C5688A721099CF2047 /* Debug */ = {
+		985829FF9D8E7FB22C422FAAA9438579 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF877514E403CD5476258F17848A11D3 /* Drawsana.xcconfig */;
+			baseConfigurationReference = 57E0ED1EE59DBF5853CF927774F968EC /* FTPopOverMenu_Swift.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1050,18 +1194,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Drawsana/Drawsana-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Drawsana/Drawsana-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Drawsana/Drawsana.modulemap";
-				PRODUCT_MODULE_NAME = Drawsana;
-				PRODUCT_NAME = Drawsana;
+				MODULEMAP_FILE = "Target Support Files/FTPopOverMenu_Swift/FTPopOverMenu_Swift.modulemap";
+				PRODUCT_MODULE_NAME = FTPopOverMenu_Swift;
+				PRODUCT_NAME = FTPopOverMenu_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1191,9 +1334,9 @@
 			};
 			name = Debug;
 		};
-		D2E119E3190E28725B844436B2F3F7E0 /* Debug */ = {
+		D67C0C8CFD93916911BD8679F19E99DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */;
+			baseConfigurationReference = 8A475660A9364856ED47271AFC0F5DB2 /* Drawsana.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1204,23 +1347,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Drawsana/Drawsana-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Drawsana/Drawsana-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
-				PRODUCT_MODULE_NAME = ERMarkup;
-				PRODUCT_NAME = ERMarkup;
+				MODULEMAP_FILE = "Target Support Files/Drawsana/Drawsana.modulemap";
+				PRODUCT_MODULE_NAME = Drawsana;
+				PRODUCT_NAME = Drawsana;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D9FD238543934AA8E8FA84F5DA8A3356 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1256,46 +1400,31 @@
 			};
 			name = Release;
 		};
-		DB55FCAE937EADAE7D56A3554F904EA3 /* Release */ = {
+		E1BC2DCC753F2F4D07B6319C34BFA8FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181B145DA78318682A7A4EFF1AF9B4E0 /* ERMarkup.xcconfig */;
+			baseConfigurationReference = E363002FF17249B0EE76BB5F01B2FE73 /* ERMarkup.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ERMarkup/ERMarkup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ERMarkup/ERMarkup-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ERMarkup";
+				IBSC_MODULE = ERMarkup;
+				INFOPLIST_FILE = "Target Support Files/ERMarkup/ResourceBundle-ERMarkup-ERMarkup-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ERMarkup/ERMarkup.modulemap";
-				PRODUCT_MODULE_NAME = ERMarkup;
 				PRODUCT_NAME = ERMarkup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05ADCA3919B5B81D4B693B5F25EE8A42 /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
+		2EE47556AE02AB50A4DAA1774D8EAFF6 /* Build configuration list for PBXNativeTarget "ERMarkup-ERMarkup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D87017C40EAAFE44B22C5829188596D /* Debug */,
-				19966477EB894F8E4E8E374039DEEC91 /* Release */,
+				E1BC2DCC753F2F4D07B6319C34BFA8FB /* Debug */,
+				378C9DDBAD0D977AE19B8327D917AF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1309,6 +1438,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3B56750F43897960D0B8981C07C7BD6A /* Build configuration list for PBXNativeTarget "ERMarkup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B70ADA5A073EA166936B925A68F233 /* Debug */,
+				1FABF0B411AE0B3A2D55E953C242A822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1318,11 +1456,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C107CCF23E4B4D2C856FFBC9D80DC56 /* Build configuration list for PBXNativeTarget "ERMarkup" */ = {
+		91CEE3790275152E9E05CFAE89C179FC /* Build configuration list for PBXNativeTarget "FTPopOverMenu_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2E119E3190E28725B844436B2F3F7E0 /* Debug */,
-				DB55FCAE937EADAE7D56A3554F904EA3 /* Release */,
+				985829FF9D8E7FB22C422FAAA9438579 /* Debug */,
+				37214052AC5F8DC8F1870C43E3F48F40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1339,8 +1477,8 @@
 		CF0400AD1EAD415D8330AAF674360CDB /* Build configuration list for PBXNativeTarget "Drawsana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F646F7D3C96B3C5688A721099CF2047 /* Debug */,
-				41A72AD52161731024F84FE21FB14877 /* Release */,
+				8F6A70A537407E368E0BFE03FE7C9938 /* Debug */,
+				D67C0C8CFD93916911BD8679F19E99DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
