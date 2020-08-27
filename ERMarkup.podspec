@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ERMarkup'
-  s.version          = '0.1.9'
+  s.version          = '0.1.10'
   s.summary          = 'A wrapper markup base on Drawsana with nicer UI'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/trungnguyen1791/ERMarkup.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ERMarkup/Classes/**/*.swift'
   
@@ -41,6 +41,6 @@ Pod::Spec.new do |s|
   s.dependency 'FTPopOverMenu_Swift', '~> 0.2.0'
   
   s.swift_version = '4.2'
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '10.0'
 
 end

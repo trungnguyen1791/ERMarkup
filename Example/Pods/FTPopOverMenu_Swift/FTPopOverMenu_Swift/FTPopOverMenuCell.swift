@@ -18,6 +18,7 @@ class FTPopOverMenuCell: UITableViewCell {
         let imageView = UIImageView(frame: CGRect.zero)
         imageView.backgroundColor = UIColor.clear
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
+//        imageView.layer.shouldRasterize = true
         self.contentView.addSubview(imageView)
         return imageView
     }()
