@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class ERLocationPickerViewController: UIViewController {
+public class ERLocationPickerViewController: UIViewController {
 
     @IBOutlet weak var mapPin: UIImageView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -28,7 +28,7 @@ class ERLocationPickerViewController: UIViewController {
     var selectedLocation: Location?
     var searchTimer: Timer?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -154,7 +154,7 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
         return button
     }
 }
-struct Location {
+public struct Location {
     var lat: Double          = 0
     var long: Double         = 0
     var address: Address?
@@ -166,7 +166,7 @@ struct Location {
     }
 }
 
-struct Address {
+public struct Address {
     
     // MARK: - Properties
     
