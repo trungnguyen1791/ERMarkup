@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ERLocationPickerViewController" customModule="ERMarkup" customModuleProvider="target">
+            <connections>
+                <outlet property="mapPin" destination="pu7-h6-hbs" id="9zT-W7-dig"/>
+                <outlet property="mapView" destination="XUn-sd-sij" id="2m6-m4-iR7"/>
+                <outlet property="searchBar" destination="Yui-v2-AiI" id="Iz0-Ki-obP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-xk-OpY">
+                    <rect key="frame" x="30" y="821" width="354" height="45"/>
+                    <color key="backgroundColor" red="0.2019788921" green="0.34205108880000001" blue="0.60395061969999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="EXo-pA-aMZ"/>
+                    </constraints>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneBtnTapped:" destination="-1" eventType="touchUpInside" id="npr-0n-XAf"/>
+                    </connections>
+                </button>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUn-sd-sij">
+                    <rect key="frame" x="30" y="94" width="354" height="697"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </mapView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-v2-AiI">
+                    <rect key="frame" x="40" y="104" width="334" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pu7-h6-hbs">
+                    <rect key="frame" x="187" y="406" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ADt-rv-2mH"/>
+                        <constraint firstAttribute="height" constant="40" id="WhH-HZ-GgC"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XUn-sd-sij" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="3t6-y4-IZV"/>
+                <constraint firstItem="Yui-v2-AiI" firstAttribute="leading" secondItem="XUn-sd-sij" secondAttribute="leading" constant="10" id="4rY-ro-NuO"/>
+                <constraint firstItem="pu7-h6-hbs" firstAttribute="centerY" secondItem="XUn-sd-sij" secondAttribute="centerY" constant="-16" id="8oe-iq-ATE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iWr-xk-OpY" secondAttribute="trailing" constant="30" id="JY8-Z1-hYc"/>
+                <constraint firstAttribute="bottom" secondItem="iWr-xk-OpY" secondAttribute="bottom" constant="30" id="MD7-M6-0HJ"/>
+                <constraint firstItem="Yui-v2-AiI" firstAttribute="trailing" secondItem="XUn-sd-sij" secondAttribute="trailing" constant="-10" id="NIk-89-fok"/>
+                <constraint firstItem="iWr-xk-OpY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="RrY-AZ-Nnp"/>
+                <constraint firstItem="pu7-h6-hbs" firstAttribute="centerX" secondItem="XUn-sd-sij" secondAttribute="centerX" id="VX6-5n-f4d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XUn-sd-sij" secondAttribute="trailing" constant="30" id="XjQ-Sc-1sU"/>
+                <constraint firstItem="XUn-sd-sij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pdx-rb-5lG"/>
+                <constraint firstItem="iWr-xk-OpY" firstAttribute="top" secondItem="XUn-sd-sij" secondAttribute="bottom" constant="30" id="txd-Qe-iLW"/>
+                <constraint firstItem="Yui-v2-AiI" firstAttribute="top" secondItem="XUn-sd-sij" secondAttribute="top" constant="10" id="wmQ-Cd-mgo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mappin" catalog="system" width="105" height="128"/>
+    </resources>
+</document>

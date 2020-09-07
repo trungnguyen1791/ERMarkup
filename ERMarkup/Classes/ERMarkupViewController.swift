@@ -36,10 +36,14 @@ public class ERMarkupViewController: UIViewController {
     let redoBtn = UIButton()
     let toolBtn = UIButton()
     
+    let mapBtn = UIButton()
+    var selectedLocation: Location?
+    var originalImage: UIImage?
+    var tempImage: UIImage?
     
     
     lazy var toolbarStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [undoBtn, strokeColorBtn, strokeWidthBtn, toolBtn])
+        let stack = UIStackView(arrangedSubviews: [undoBtn, strokeColorBtn, strokeWidthBtn, toolBtn, mapBtn])
         
         return stack
     }()
@@ -59,6 +63,11 @@ public class ERMarkupViewController: UIViewController {
     public init(image: UIImage) {
         super.init(nibName: nil, bundle: nil)
         imageView.image = image
+        originalImage = image
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     override public func viewDidLoad() {
@@ -129,6 +138,17 @@ public class ERMarkupViewController: UIViewController {
         undoBtn.addTarget(drawingView.operationStack, action: #selector(DrawingOperationStack.undo), for: .touchUpInside)
         toolBtn.addTarget(self, action: #selector(handleToolsBtnTapped(sender:)), for: .touchUpInside)
         
+        
+        mapBtn.translatesAutoresizingMaskIntoConstraints = false
+        mapBtn.widthAnchor.constraint(equalToConstant: 45)
+        mapBtn.heightAnchor.constraint(equalToConstant: 45)
+        mapBtn.setImage(UIImage(named: selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
+                                 in: Bundle(for: self.classForCoder),
+                                 compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
+        mapBtn.tintColor = .white
+        mapBtn.addTarget(self, action: #selector(handleMapBtnTapped(sender:)), for: .touchUpInside)
+        
+        
         toolbarStackView.translatesAutoresizingMaskIntoConstraints = false
         toolbarStackView.axis = .horizontal
         toolbarStackView.distribution = .equalSpacing
@@ -184,7 +204,6 @@ public class ERMarkupViewController: UIViewController {
         
         let defaultPopoverConfig = FTConfiguration.shared
         defaultPopoverConfig.backgoundTintColor = UIColor.white
-        
     }
     
     deinit {
@@ -289,6 +308,23 @@ public class ERMarkupViewController: UIViewController {
             self.toolBtn.setImage(self.toolImages[index]?.withRenderingMode(.alwaysTemplate), for: .normal)
             self.drawingView.set(tool: self.tools[index])
         })
+    }
+    
+    @objc func handleMapBtnTapped(sender: UIButton) {
+        let vc = ERLocationPickerViewController(nibName: "ERLocationPickerViewController", bundle: Bundle(for: self.classForCoder))
+        vc.modalPresentationStyle = .fullScreen
+        vc.completion = { item in
+            self.selectedLocation = item
+            self.mapBtn.setImage(UIImage(named: self.selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
+            in: Bundle(for: self.classForCoder),
+            compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
+            
+            if let originalImage = self.originalImage, let logo = UIImage.imageWith(qrCode: "http://maps.google.com/?q=\(item?.lat ?? 0),\(item?.long ?? 0)") {
+                self.imageView.image = originalImage.drawQRCode(logo: logo, position: CGPoint.zero)
+            }
+            
+        }
+        self.present(vc, animated: true, completion: nil)
     }
     
 }
@@ -464,6 +500,34 @@ extension UIImage {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
+    }
+    
+    class func imageWith(qrCode: String ) -> UIImage? {
+        let data = qrCode.data(using: String.Encoding.ascii)
+
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 10, y: 10)
+
+            if let output = filter.outputImage?.transformed(by: transform) {
+                return UIImage(ciImage: output)
+            }
+        }
+
+        return nil
+    }
+    
+    func drawQRCode(logo: UIImage, position: CGPoint) -> UIImage {
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(size: self.size)
+            return renderer.image { context in
+                self.draw(in: CGRect(origin: CGPoint.zero, size: self.size))
+                logo.draw(in: CGRect(origin: position, size: logo.size))
+            }
+        } else {
+            // Fallback on earlier versions
+            return self
+        }
     }
 }
 
