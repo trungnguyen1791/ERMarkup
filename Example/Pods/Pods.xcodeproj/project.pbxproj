@@ -59,12 +59,12 @@
 		7A033DFCFC10FE395C9304A2251F4612 /* ic_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3488C726F94CC1C1F09A92BA5C69C50 /* ic_delete@2x.png */; };
 		7F50767CCC03B09C40D159550EAE20FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
 		7FBCC40FDDA97C9D9AD3DC2249373912 /* KeyedDecodingContainer+DrawsanaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA05E3027498CD3EE0CC369091EF2A1 /* KeyedDecodingContainer+DrawsanaExtensions.swift */; };
-		844811CE2502128D00B8EEC1 /* ERLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844811CB2502128C00B8EEC1 /* ERLocationPickerViewController.swift */; };
-		844811D02502128D00B8EEC1 /* ERLocationPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844811CC2502128D00B8EEC1 /* ERLocationPickerViewController.xib */; };
 		84C3A45524614FBB00F24591 /* ic_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C3A45424614FBB00F24591 /* ic_check@2x.png */; };
 		84C3A45624614FBB00F24591 /* ic_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C3A45424614FBB00F24591 /* ic_check@2x.png */; };
 		84DE30BD2506335900DE9EBD /* ic_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE30BC2506335900DE9EBD /* ic_location@2x.png */; };
 		84DE30BF250636FC00DE9EBD /* ic_location_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DE30BE250636FC00DE9EBD /* ic_location_empty@2x.png */; };
+		84DE30C2250734A600DE9EBD /* ERLocationPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DE30C0250734A500DE9EBD /* ERLocationPickerViewController.xib */; };
+		84DE30C3250734A600DE9EBD /* ERLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DE30C1250734A500DE9EBD /* ERLocationPickerViewController.swift */; };
 		85D65A8DCC9F4DBEFE907AA9F65AAAE6 /* ERMarkup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1675667FED5F2E1BB6E1BCF3A11DD18 /* ERMarkup.bundle */; };
 		88E85EABDDCF4BADEC2764C923026BBB /* ArrowTool_EllipseTool_LineTool_RectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81616D75F017F36C99AC43851EE2A8B /* ArrowTool_EllipseTool_LineTool_RectTool.swift */; };
 		8B5B9DDC3B91551F32FB7775219D5EFF /* DrawingToolForShapeWithTwoPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C83BBF20AF280956C1AA37353D84B7 /* DrawingToolForShapeWithTwoPoints.swift */; };
@@ -196,12 +196,12 @@
 		7EEB8712FAC73E343993131BF6D0B49E /* ic_rect@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_rect@2x.png"; path = "ERMarkup/Assets/ic_rect@2x.png"; sourceTree = "<group>"; };
 		8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		820003B23C2153F56B7F65D660A92AF9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		844811CB2502128C00B8EEC1 /* ERLocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERLocationPickerViewController.swift; sourceTree = "<group>"; };
-		844811CC2502128D00B8EEC1 /* ERLocationPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ERLocationPickerViewController.xib; sourceTree = "<group>"; };
 		84C3A45424614FBB00F24591 /* ic_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_check@2x.png"; sourceTree = "<group>"; };
 		84CF656310BDC56B45E2563BD8B7F6C9 /* ERMarkupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERMarkupViewController.swift; path = ERMarkup/Classes/ERMarkupViewController.swift; sourceTree = "<group>"; };
 		84DE30BC2506335900DE9EBD /* ic_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_location@2x.png"; sourceTree = "<group>"; };
 		84DE30BE250636FC00DE9EBD /* ic_location_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_location_empty@2x.png"; sourceTree = "<group>"; };
+		84DE30C0250734A500DE9EBD /* ERLocationPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ERLocationPickerViewController.xib; path = ERMarkup/Classes/ERLocationPickerViewController.xib; sourceTree = "<group>"; };
+		84DE30C1250734A500DE9EBD /* ERLocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ERLocationPickerViewController.swift; path = ERMarkup/Classes/ERLocationPickerViewController.swift; sourceTree = "<group>"; };
 		8700B06C4AE7B717B8AF96BC941FBDA3 /* DragHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragHandler.swift; path = "Drawsana/Tools/Implementations/Text tool/DragHandler.swift"; sourceTree = "<group>"; };
 		8A475660A9364856ED47271AFC0F5DB2 /* Drawsana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.release.xcconfig; sourceTree = "<group>"; };
 		8E1CEFD19E5CCB12291BFEA2501CA080 /* Pods-ERMarkup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -397,8 +397,8 @@
 			isa = PBXGroup;
 			children = (
 				84CF656310BDC56B45E2563BD8B7F6C9 /* ERMarkupViewController.swift */,
-				844811CB2502128C00B8EEC1 /* ERLocationPickerViewController.swift */,
-				844811CC2502128D00B8EEC1 /* ERLocationPickerViewController.xib */,
+				84DE30C1250734A500DE9EBD /* ERLocationPickerViewController.swift */,
+				84DE30C0250734A500DE9EBD /* ERLocationPickerViewController.xib */,
 				3280057683C74EA9A36264590845ED8B /* Pod */,
 				5076475139CFC5F59637D3328BDD12A2 /* Resources */,
 				3612405428407A69AED89D0486DD0894 /* Support Files */,
@@ -753,11 +753,11 @@
 			files = (
 				85D65A8DCC9F4DBEFE907AA9F65AAAE6 /* ERMarkup.bundle in Resources */,
 				84DE30BD2506335900DE9EBD /* ic_location@2x.png in Resources */,
+				84DE30C2250734A600DE9EBD /* ERLocationPickerViewController.xib in Resources */,
 				B67F12A9C0D9F8F988BDA7E097223CA6 /* ic_arrow@2x.png in Resources */,
 				31851726EA5AA5A14D237820D74844E5 /* ic_brush@2x.png in Resources */,
 				84C3A45524614FBB00F24591 /* ic_check@2x.png in Resources */,
 				23498B8455709071F8598F7A09F5932E /* ic_delete@2x.png in Resources */,
-				844811D02502128D00B8EEC1 /* ERLocationPickerViewController.xib in Resources */,
 				04016C938E0ACB289160EC014B96833C /* ic_font@2x.png in Resources */,
 				385C7FCD9A64DA1A8A24214E2F61D91F /* ic_line@2x.png in Resources */,
 				698DE2D5C9B025D51B97F308D3DB2E1A /* ic_line_size1@2x.png in Resources */,
@@ -886,7 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAC39955A8EF6E4E32E25527766583A /* ERMarkup-dummy.m in Sources */,
-				844811CE2502128D00B8EEC1 /* ERLocationPickerViewController.swift in Sources */,
+				84DE30C3250734A600DE9EBD /* ERLocationPickerViewController.swift in Sources */,
 				BE6F3FC774353CFF466F195099A8D8A6 /* ERMarkupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

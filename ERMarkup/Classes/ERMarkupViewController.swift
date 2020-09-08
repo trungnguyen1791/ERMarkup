@@ -108,19 +108,19 @@ public class ERMarkupViewController: UIViewController {
         
         strokeColorBtn.setImage(image, for: .normal)
         strokeColorBtn.translatesAutoresizingMaskIntoConstraints = false
-        strokeColorBtn.widthAnchor.constraint(equalToConstant: 45)
-        strokeColorBtn.heightAnchor.constraint(equalToConstant: 45)
+        _ = strokeColorBtn.widthAnchor.constraint(equalToConstant: 45)
+        _ = strokeColorBtn.heightAnchor.constraint(equalToConstant: 45)
         
         undoBtn.translatesAutoresizingMaskIntoConstraints = false
-        undoBtn.widthAnchor.constraint(equalToConstant: 45)
-        undoBtn.heightAnchor.constraint(equalToConstant: 45)
+        _ = undoBtn.widthAnchor.constraint(equalToConstant: 45)
+        _ = undoBtn.heightAnchor.constraint(equalToConstant: 45)
         undoBtn.setImage(UIImage(named: "ic_undo.png",
                                      in: Bundle(for: self.classForCoder),
                                      compatibleWith: nil), for: .normal)
         
         strokeWidthBtn.translatesAutoresizingMaskIntoConstraints = false
-        strokeWidthBtn.widthAnchor.constraint(equalToConstant: 45)
-        strokeWidthBtn.heightAnchor.constraint(equalToConstant: 45)
+        _ = strokeWidthBtn.widthAnchor.constraint(equalToConstant: 45)
+        _ = strokeWidthBtn.heightAnchor.constraint(equalToConstant: 45)
         strokeWidthBtn.setImage(UIImage(named: "ic_brush",
                                  in: Bundle(for: self.classForCoder),
                                  compatibleWith: nil), for: .normal)
@@ -128,8 +128,8 @@ public class ERMarkupViewController: UIViewController {
         strokeWidthBtn.titleLabel?.font = UIFont.systemFont(ofSize: 10)
         
         toolBtn.translatesAutoresizingMaskIntoConstraints = false
-        toolBtn.widthAnchor.constraint(equalToConstant: 45)
-        toolBtn.heightAnchor.constraint(equalToConstant: 45)
+        _ = toolBtn.widthAnchor.constraint(equalToConstant: 45)
+        _ = toolBtn.heightAnchor.constraint(equalToConstant: 45)
         toolBtn.setImage(toolImages[0]?.withRenderingMode(.alwaysTemplate), for: .normal)
         toolBtn.tintColor = UIColor.white
         
@@ -140,8 +140,8 @@ public class ERMarkupViewController: UIViewController {
         
         
         mapBtn.translatesAutoresizingMaskIntoConstraints = false
-        mapBtn.widthAnchor.constraint(equalToConstant: 45)
-        mapBtn.heightAnchor.constraint(equalToConstant: 45)
+        _ = mapBtn.widthAnchor.constraint(equalToConstant: 45)
+        _ = mapBtn.heightAnchor.constraint(equalToConstant: 45)
         mapBtn.setImage(UIImage(named: selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
                                  in: Bundle(for: self.classForCoder),
                                  compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
@@ -265,7 +265,6 @@ public class ERMarkupViewController: UIViewController {
             }
             self.strokeColorBtn.setImage(image, for: .normal)
             self.drawingView.userSettings.strokeColor = colorArray[index]
-            print(colorArray[index])
         })
     }
     

@@ -95,32 +95,32 @@ public class ERLocationPickerViewController: UIViewController {
 }
 
 extension ERLocationPickerViewController: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
     }
 }
 
 extension ERLocationPickerViewController: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+    public func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         mapView.removeAnnotations(mapView.annotations)
         mapPin.alpha = 1
         
     }
-    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+    public func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         print("Map view center will be :\(mapView.centerCoordinate)")
         selectLocation(location: CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude))
         mapPin.alpha = 0
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation { return nil }
         
         let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "annotation")
@@ -132,7 +132,7 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
         return pin
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    public func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         //call complete with location.
         dismiss(animated: true) {
             self.completion?(self.selectedLocation)
@@ -155,9 +155,9 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
     }
 }
 public struct Location {
-    var lat: Double          = 0
-    var long: Double         = 0
-    var address: Address?
+    public var lat: Double          = 0
+    public var long: Double         = 0
+    public var address: Address?
     
     public init(lat: Double, long: Double, address: Address?) {
         self.lat = lat
@@ -170,22 +170,22 @@ public struct Address {
     
     // MARK: - Properties
     
-    var street: String?
-    var building: String?
-    var apt: String?
-    var zip: String?
-    var city: String?
-    var state: String?
-    var country: String?
-    var ISOcountryCode: String?
-    var timeZone: TimeZone?
-    var latitude: CLLocationDegrees?
-    var longitude: CLLocationDegrees?
-    var placemark: CLPlacemark?
+    public var street: String?
+    public var building: String?
+    public var apt: String?
+    public var zip: String?
+    public var city: String?
+    public var state: String?
+    public var country: String?
+    public var ISOcountryCode: String?
+    public var timeZone: TimeZone?
+    public var latitude: CLLocationDegrees?
+    public var longitude: CLLocationDegrees?
+    public var placemark: CLPlacemark?
     
     // MARK: - Types
     
-    init(placemark: CLPlacemark) {
+    public init(placemark: CLPlacemark) {
         self.street = placemark.thoroughfare
         self.building = placemark.subThoroughfare
         self.city = placemark.locality
@@ -201,19 +201,19 @@ public struct Address {
     
     // MARK: - Helpers
     
-    var coordinates: CLLocationCoordinate2D {
+    public var coordinates: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude ?? 0.0, longitude: longitude ?? 0.0)
     }
     
-    var line: String? {
+    public var line: String? {
         return [line1, line2].compactMap{$0}.joined(separator: ", ")
     }
     
-    var line1: String? {
+    public var line1: String? {
         return [[building, street].compactMap{$0}.joined(separator: " "), apt].compactMap{$0}.joined(separator: ", ")
     }
     
-    var line2: String? {
+    public var line2: String? {
         return [[city, zip].compactMap{$0}.joined(separator: " "), country].compactMap{$0}.joined(separator: ", ")
     }
 }
