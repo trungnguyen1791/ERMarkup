@@ -164,6 +164,10 @@ public struct Location {
         self.long = long
         self.address = address
     }
+    
+    public var locationString: String {
+        return "\(lat),\(long))"
+    }
 }
 
 public struct Address {

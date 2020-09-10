@@ -10,7 +10,7 @@ import Drawsana
 import FTPopOverMenu_Swift
 
 public protocol ERMarkupViewControllerDelegate: class {
-    func markupViewController(_ controller: UIViewController, didProcessedImage editedImage: UIImage?)
+    func markupViewController(_ controller: UIViewController, didProcessedImage editedImage: UIImage?, atLocation: String?)
 }
 public class ERMarkupViewController: UIViewController {
     public weak var delegate: ERMarkupViewControllerDelegate?
@@ -224,13 +224,13 @@ public class ERMarkupViewController: UIViewController {
             
             DispatchQueue.main.asyncAfter(deadline: .now() ) {
                 let image = self.drawingView.render(over: self.imageView.image)
-                self.delegate?.markupViewController(self, didProcessedImage: image)
+                self.delegate?.markupViewController(self, didProcessedImage: image, atLocation: self.selectedLocation?.locationString)
                 
                 self.dismiss(animated: true, completion: nil)
             }
         }else {
             let image = drawingView.render(over: imageView.image)
-            delegate?.markupViewController(self, didProcessedImage: image)
+            delegate?.markupViewController(self, didProcessedImage: image, atLocation: selectedLocation?.locationString)
             
             self.dismiss(animated: true, completion: nil)
         }
@@ -318,9 +318,9 @@ public class ERMarkupViewController: UIViewController {
             in: Bundle(for: self.classForCoder),
             compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
             
-            if let originalImage = self.originalImage, let logo = UIImage.imageWith(qrCode: "http://maps.google.com/?q=\(item?.lat ?? 0),\(item?.long ?? 0)") {
-                self.imageView.image = originalImage.drawQRCode(logo: logo, position: CGPoint.zero)
-            }
+//            if let originalImage = self.originalImage, let logo = UIImage.imageWith(qrCode: "http://maps.google.com/?q=\(item?.lat ?? 0),\(item?.long ?? 0)") {
+//                self.imageView.image = originalImage.drawQRCode(logo: logo, position: CGPoint.zero)
+//            }
             
         }
         self.present(vc, animated: true, completion: nil)
