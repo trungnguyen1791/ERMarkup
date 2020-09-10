@@ -166,7 +166,7 @@ public struct Location {
     }
     
     public var locationString: String {
-        return "\(lat),\(long))"
+        return "\(lat),\(long)"
     }
 }
 
