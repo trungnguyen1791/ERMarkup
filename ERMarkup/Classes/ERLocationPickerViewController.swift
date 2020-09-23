@@ -28,6 +28,10 @@ public class ERLocationPickerViewController: UIViewController {
     var selectedLocation: Location?
     var searchTimer: Timer?
     
+    public var locationPickerSuccessMessage: String = "Location successfully selected"
+    public var locationPickerSuccessTitle: String = "Success"
+    
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +41,7 @@ public class ERLocationPickerViewController: UIViewController {
             userLocationBtn.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(userLocationBtn)
             
-            NSLayoutConstraint.activate([userLocationBtn.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: -10), userLocationBtn.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -10)])
+            NSLayoutConstraint.activate([userLocationBtn.bottomAnchor.constraint(equalTo: mapView.bottomAnchor, constant: -15), userLocationBtn.trailingAnchor.constraint(equalTo: mapView.trailingAnchor, constant: -10)])
         } else {
             // Fallback on earlier versions
         }
@@ -45,6 +49,13 @@ public class ERLocationPickerViewController: UIViewController {
         searchBar.delegate = self
         mapView.delegate = self
         searchBar.isHidden = true
+        
+        if let item = selectedLocation {
+            let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta:  0.1)
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: item.lat, longitude: item.long), span: span)
+            
+            mapView.setRegion(region, animated: true)
+        }
     }
     @IBAction func doneBtnTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -54,8 +65,8 @@ public class ERLocationPickerViewController: UIViewController {
         // add point annotation to map
         let annotation = MKPointAnnotation()
         annotation.coordinate = location.coordinate
-        self.mapView.addAnnotation(annotation)
-        annotation.title = "test callout"
+//        self.mapView.addAnnotation(annotation)
+        annotation.title = ""
         geocoder.cancelGeocode()
         geocoder.reverseGeocodeLocation(location) { response, error in
             if let error = error as NSError?, error.code != 10 { // ignore cancelGeocode errors
@@ -68,12 +79,9 @@ public class ERLocationPickerViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 
             } else if let placemark = response?.first {
-                // get POI name from placemark if any
-                
-                
                 let address = Address(placemark: placemark)
                 
-                var name = "Geofence"
+                var name = ""
                 if let item = placemark.areasOfInterest?.first, item.count > 0 {
                     name = item
                 }else if let item = address.street, item.count > 0 {
@@ -87,7 +95,11 @@ public class ERLocationPickerViewController: UIViewController {
                 annotation.subtitle = (address.line1 ?? "") + "\n" + (address.line2 ?? "")
                 
                 self.selectedLocation = Location(lat: location.coordinate.latitude, long: location.coordinate.longitude, address: address)
-                self.mapView.selectAnnotation(annotation, animated: true)
+                self.mapView.addAnnotation(annotation)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.016) {
+                    self.mapView.selectAnnotation(annotation, animated: true)
+                }
+                
             }
         }
     }
@@ -127,25 +139,41 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
         // drop only on long press gesture
         let fromLongPress = annotation is MKPointAnnotation
         pin.animatesDrop = fromLongPress
+//        let subtitleLb = UILabel()
+//        subtitleLb.font = UIFont.systemFont(ofSize: 13)
+//        subtitleLb.textColor = UIColor.gray
+//        subtitleLb.text = annotation.subtitle ?? "1231232131231"
+//        subtitleLb.text = "                       "
+//        subtitleLb.text = "123"
+//        if let text = annotation.subtitle,let value = text, value.count > 0 {
+//
+//        }
         pin.rightCalloutAccessoryView = selectLocationButton()
+//        pin.conteiner(arrangedSubviews: [subtitleLb, selectLocationButton(), UILabel()])
         pin.canShowCallout = true
         return pin
     }
     
     public func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         //call complete with location.
-        dismiss(animated: true) {
-            self.completion?(self.selectedLocation)
-        }
+        
+        let alert = UIAlertController(title: locationPickerSuccessTitle, message: locationPickerSuccessMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            self.dismiss(animated: true) {
+                self.completion?(self.selectedLocation)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+        
     }
     
     func selectLocationButton() -> UIButton {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
         button.setTitle("Select", for: UIControl.State())
-        if let titleLabel = button.titleLabel {
-            let width = titleLabel.textRect(forBounds: CGRect(x: 0, y: 0, width: Int.max, height: 30), limitedToNumberOfLines: 1).width
-            button.frame.size = CGSize(width: width + 10, height: 30.0)
-        }
+//        if let titleLabel = button.titleLabel {
+//            let width = titleLabel.textRect(forBounds: CGRect(x: 0, y: 0, width: Int.max, height: 30), limitedToNumberOfLines: 1).width
+//            button.frame.size = CGSize(width: width + 10, height: 30.0)
+//        }
         button.backgroundColor = UIColor.blue
         button.setTitleColor(.white, for: UIControl.State())
         button.layer.cornerRadius = 5
@@ -219,5 +247,20 @@ public struct Address {
     
     public var line2: String? {
         return [[city, zip].compactMap{$0}.joined(separator: " "), country].compactMap{$0}.joined(separator: ", ")
+    }
+}
+
+
+extension MKAnnotationView {
+
+    func conteiner(arrangedSubviews: [UIView]) {
+        let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        stackView.alignment = .fill
+        stackView.spacing = 5
+        stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        self.detailCalloutAccessoryView = stackView
     }
 }

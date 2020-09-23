@@ -6,7 +6,6 @@
 //  Copyright © 2018 Asana. All rights reserved.
 //
 
-import CoreGraphics
 import UIKit
 
 /**
@@ -17,7 +16,7 @@ import UIKit
 public protocol Shape: AnyObject, Codable {
   /// Globally unique identifier for this shape. Meant to be used for equality
   /// checks, especially for network-based updates.
-  var id: String { get }
+  var id: String { get set }
 
   /// String value of this shape, for serialization and debugging
   static var type: String { get }
@@ -127,7 +126,40 @@ extension ShapeWithTwoPoints {
     let y2 = max(a.y, b.y)
     return CGRect(x: x1, y: y1, width: x2 - x1, height: y2 - y1)
   }
+    
+    public var squareRect: CGRect {
+        let width = min(abs(b.x - a.x), abs(b.y - a.y))
+        let x = b.x < a.x ? a.x - width : a.x
+        let y = b.y < a.y ? a.y - width : a.y
+        return CGRect(x: x, y: y, width: width, height: width)
+    }
+    
 
+  public var boundingRect: CGRect {
+    return rect.insetBy(dx: -strokeWidth/2, dy: -strokeWidth/2)
+  }
+}
+
+/**
+ Special case of `Shape` where the shape is defined by exactly three points.
+ */
+public protocol ShapeWithThreePoints {
+  var a: CGPoint { get set }
+  var b: CGPoint { get set }
+  var c: CGPoint { get set }
+  
+  var strokeWidth: CGFloat { get set }
+}
+
+extension ShapeWithThreePoints {
+  public var rect: CGRect {
+    let x1 = min(a.x, b.x, c.x)
+    let y1 = min(a.y, b.y, c.y)
+    let x2 = max(a.x, b.x, c.x)
+    let y2 = max(a.y, b.y, c.y)
+    return CGRect(x: x1, y: y1, width: x2 - x1, height: y2 - y1)
+  }
+  
   public var boundingRect: CGRect {
     return rect.insetBy(dx: -strokeWidth/2, dy: -strokeWidth/2)
   }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public let DRAWSANA_VERSION = "1.0"
+public let DRAWSANA_VERSION = "0.12.0"
 
 /// Set yourself as the `DrawsanaView`'s delegate to be notified when the active
 /// tool changes.
@@ -51,8 +51,15 @@ public class DrawsanaView: UIView {
 
   public var drawing: Drawing = Drawing(size: CGSize(width: 320, height: 320)) {
     didSet {
+      tool?.deactivate(context: self.toolOperationContext)
+      operationStack = DrawingOperationStack(drawing: drawing)
       drawing.delegate = self
       drawing.size = bounds.size
+      tool?.activate(shapeUpdater: self, context: self.toolOperationContext, shape: nil)
+      applyToolSettingsChanges()
+      if let tool = tool {
+        delegate?.drawsanaView(self, didSwitchTo: tool)
+      }
       redrawAbsolutelyEverything()
     }
   }
@@ -114,6 +121,11 @@ public class DrawsanaView: UIView {
   /// You may configure whatever properties you want to to make it look like
   /// you want it to look.
   public let selectionIndicatorView = UIView()
+    
+
+  /// Offset for the selection Indicatior, because it is placed relative to the anchorPoint.
+  /// You should only have to change this if your anchorPoint is different from the default (0.5, 0.5)
+  public var selectionIndicatorAnchorPointOffset = CGPoint(x: 0.5, y: 0.5)
 
   /// Layer that backs `DrawsanaView.selectionIndicatorView`. You may set this
   /// layer's properties to change its visual apparance. Its `path` and `frame`
@@ -201,6 +213,9 @@ public class DrawsanaView: UIView {
   public override func layoutSubviews() {
     super.layoutSubviews()
     drawing.size = frame.size
+
+    // Buffers may not be sized correctly
+    redrawAbsolutelyEverything()
   }
 
   // MARK: API
@@ -223,10 +238,13 @@ public class DrawsanaView: UIView {
 
   /// Render the drawing on top of an image, using that image's size. Shapes are
   /// re-scaled to match the resolution of the target without artifacts.
-  public func render(over image: UIImage?) -> UIImage? {
+  /// The scale parameter defines wether image is rendered at the device's native resolution (scale = 0.0)
+  /// or to scale it to the image size (scale 1.0). Use scale = 0.0 when rendering to display on screen and
+  /// 1.0 if you are saving the image to a file
+    public func render(over image: UIImage?, scale:CGFloat = 0.0) -> UIImage? {
     let size = image?.size ?? drawing.size
-    let shapesImage = render(size: size)
-    return DrawsanaUtilities.renderImage(size: size) { (context: CGContext) -> Void in
+    let shapesImage = render(size: size, scale: scale)
+    return DrawsanaUtilities.renderImage(size: size, scale: scale) { (context: CGContext) -> Void in
       image?.draw(at: .zero)
       shapesImage?.draw(at: .zero)
     }
@@ -234,9 +252,9 @@ public class DrawsanaView: UIView {
 
   /// Render the drawing. If you pass a size, shapes are re-scaled to be full
   /// resolution at that size, otherwise the view size is used.
-  public func render(size: CGSize? = nil) -> UIImage? {
+    public func render(size: CGSize? = nil, scale:CGFloat = 0.0) -> UIImage? {
     let size = size ?? drawing.size
-    return DrawsanaUtilities.renderImage(size: size) { (context: CGContext) -> Void in
+        return DrawsanaUtilities.renderImage(size: size, scale:scale) { (context: CGContext) -> Void in
       context.saveGState()
       context.scaleBy(
         x: size.width / self.drawing.size.width,
@@ -294,11 +312,13 @@ public class DrawsanaView: UIView {
         tool.handleTap(context: toolOperationContext, point: point)
       }
       reapplyLayerContents()
-    case .failed:
+    case .failed, .cancelled:
       tool.handleDragCancel(context: toolOperationContext, point: point)
       reapplyLayerContents()
-    default:
-      assert(false, "State not handled")
+    case .possible:
+      break // do nothing
+    @unknown default:
+      break
     }
 
     applyToolSettingsChanges()
@@ -357,7 +377,7 @@ public class DrawsanaView: UIView {
         // figure out where the shape is in space
         offset + shape.transform.translation +
         // Account for the coordinate system being anchored in the middle
-        CGPoint(x: -bounds.size.width / 2, y: -bounds.size.height / 2) +
+        CGPoint(x: -bounds.size.width * selectionIndicatorAnchorPointOffset.x, y: -bounds.size.height * selectionIndicatorAnchorPointOffset.y) +
         // We've just moved the CENTER of the selection view to the UPPER LEFT
         // of the shape, so adjust by half the selection size:
         CGPoint(x: selectionBounds.size.width / 2, y: selectionBounds.size.height / 2)),

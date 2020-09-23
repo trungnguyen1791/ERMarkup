@@ -1,4 +1,4 @@
-#  Drawsana 0.9.2
+#  Drawsana 0.12.0
 
 Drawsana is a generalized framework for making freehand drawing views on iOS. You can
 let users scribble over images, add shapes and text, and even make your own tools.
@@ -10,7 +10,7 @@ Drawsana might work for you!
 
 [Docs](https://asana.github.io/Drawsana)
 
-_Like what you see? [Come work with us!](https://asana.com/jobs/apply/874145/software-engineerios)_
+_Like what you see? [Come work with us!](https://asana.com/jobs/all#)_
 
 ## Features
 
@@ -32,7 +32,7 @@ Add `Asana/Drawsana` to your Cartfile and update your project like you would for
 Carthage framework, or clone the source code and add the project to your workspace.
 
 ```
-github "Asana/Drawsana" == 0.9.2
+github "Asana/Drawsana" == 0.12.0
 ```
 
 ## Usage
@@ -94,6 +94,47 @@ open https://asana.github.io/Drawsana
 ```
 
 ## Changelog
+
+### 0.12.0
+* Undo operations are now accessible outside the framework to enable you to make undoable changes with your own UI.
+  - `AddShapeOperation`
+  - `RemoveShapeOperation`
+  - `ChangeTransformOperation`
+  - `EditTextOperation`
+  - `ChangeExplicitWidthOperation`
+* Fix drawing view not being redrawn after being resized.
+* Fix bugs related to color serialization.
+* Fix bugs related to text entry.
+
+### 0.11.0
+
+* `DrawingOperationStack.clearRedoStack()` clears all redo operations from the
+  redo stack.
+* `DrawingToolForShapeWithThreePoints` and 
+  `DrawingToolForShapeWithTwoPoints` are declared `open` instead of `public` so
+  they can be subclassed.
+* `PenShape` now works with the selection tool.
+* `DrawsanaView.selectionIndicatorAnchorPointOffset` allows Drawsana to
+keep working when you change the anchorPoint.
+* `Shape.id` is now settable.
+* Fix bug that prevented character input of some languages, including Chinese.
+* Fix bugs in gesture recognizer.
+
+### 0.10.0
+* Convert to Swift 5
+* Fix `NgonShape` and `TextShape` serialization bugs. Old data can't be fixed, but
+  new data will be correct.
+* Deserialization error reporting is more detailed. Shapes that find a JSON object with
+  the correct type will now throw errors instead of causing the whole operation to silently
+  fail, as long as you enable `Drawing.debugSerialization`.
+* Replacing `DrawingView.drawing` now behaves correctly instead of being unusably
+  buggy.
+* `PenLineSegment`'s members are now public.
+* `ShapeTransform` and `PenLineSegment` are now `Equatable`.
+
+### 0.9.4
+* Star, triangle, pentagon, and angle tools
+* `DrawsanaView.render()` accepts a `scale` parameter instead of always using zero
 
 ### 0.9.2
 * Convert to Swift 4.2

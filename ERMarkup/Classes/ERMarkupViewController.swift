@@ -56,6 +56,15 @@ public class ERMarkupViewController: UIViewController {
     let strokeWidths: [CGFloat] = [3, 10, 16]
     var strokeWidthIndex = 0
     
+    /**
+     Later lets bring it to a configuration variable
+     */
+    public var doneTitle: String = "Done"
+    public var cancelTitle: String = "Cancel"
+    public var locationPickerSuccessMessage: String = "Location successfully selected"
+    public var locationPickerSuccessTitle: String = "Success"
+    
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -72,8 +81,8 @@ public class ERMarkupViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancelBtnTapped))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(handleDoneBtnTapped))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: cancelTitle, style: .plain, target: self, action: #selector(handleCancelBtnTapped))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: doneTitle, style: .done, target: self, action: #selector(handleDoneBtnTapped))
         toolImages = [
             UIImage(named: "ic_line.png",
                     in: Bundle(for: self.classForCoder),
@@ -223,13 +232,13 @@ public class ERMarkupViewController: UIViewController {
             self.toolBtn.setImage(self.toolImages.last??.withRenderingMode(.alwaysTemplate), for: .normal)
             
             DispatchQueue.main.asyncAfter(deadline: .now() ) {
-                let image = self.drawingView.render(over: self.imageView.image)
+                let image = self.drawingView.render(over: self.imageView.image, scale: 1.0)
                 self.delegate?.markupViewController(self, didProcessedImage: image, atLocation: self.selectedLocation?.locationString)
                 
                 self.dismiss(animated: true, completion: nil)
             }
         }else {
-            let image = drawingView.render(over: imageView.image)
+            let image = drawingView.render(over: imageView.image, scale: 1.0)
             delegate?.markupViewController(self, didProcessedImage: image, atLocation: selectedLocation?.locationString)
             
             self.dismiss(animated: true, completion: nil)
@@ -312,6 +321,10 @@ public class ERMarkupViewController: UIViewController {
     @objc func handleMapBtnTapped(sender: UIButton) {
         let vc = ERLocationPickerViewController(nibName: "ERLocationPickerViewController", bundle: Bundle(for: self.classForCoder))
         vc.modalPresentationStyle = .fullScreen
+        vc.selectedLocation = selectedLocation
+        vc.locationPickerSuccessMessage = locationPickerSuccessMessage
+        vc.locationPickerSuccessTitle = locationPickerSuccessTitle
+        
         vc.completion = { item in
             self.selectedLocation = item
             self.mapBtn.setImage(UIImage(named: self.selectedLocation != nil ? "ic_location" : "ic_location_empty" ,

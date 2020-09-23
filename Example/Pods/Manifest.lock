@@ -1,15 +1,15 @@
 PODS:
-  - Drawsana (0.9.2)
-  - ERMarkup (0.1.5):
-    - Drawsana (~> 0.9.2)
-    - FTPopOverMenu_Swift (= 0.2.0)
-  - FTPopOverMenu_Swift (0.2.0)
+  - Drawsana (0.12.0)
+  - ERMarkup (0.1.23):
+    - Drawsana (~> 0.12.0)
+    - FTPopOverMenu_Swift (~> 0.2.0)
+  - FTPopOverMenu_Swift (0.2.1)
 
 DEPENDENCIES:
   - ERMarkup (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://cdn.cocoapods.org/:
     - Drawsana
     - FTPopOverMenu_Swift
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Drawsana: e6c738958804d69769b034019bc274fa58a56d10
-  ERMarkup: e6c60d9f521c9f6ead9b4627aab08a48efea5357
-  FTPopOverMenu_Swift: 44d95f702ef643f902c60d7e49553dfc0e874dac
+  Drawsana: 6e69c064ffb859fef968a0a50d3481849a48941c
+  ERMarkup: 9f766f1a95823c4bc20f7fe323783c9a44fb4f23
+  FTPopOverMenu_Swift: c91ce7301c358264743de028bc28177ee9d8e1a4
 
 PODFILE CHECKSUM: 98d035d992350b1f282e17314d790692e22fa598
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
