@@ -63,7 +63,7 @@ public class ERMarkupViewController: UIViewController {
     public var cancelTitle: String = "Cancel"
     public var locationPickerSuccessMessage: String = "Location successfully selected"
     public var locationPickerSuccessTitle: String = "Success"
-    
+    public var selectTitle: String = "Select"
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -324,6 +324,7 @@ public class ERMarkupViewController: UIViewController {
         vc.selectedLocation = selectedLocation
         vc.locationPickerSuccessMessage = locationPickerSuccessMessage
         vc.locationPickerSuccessTitle = locationPickerSuccessTitle
+        vc.selectTitle = selectTitle
         
         vc.completion = { item in
             self.selectedLocation = item

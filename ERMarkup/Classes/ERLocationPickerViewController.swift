@@ -34,6 +34,7 @@ public class ERLocationPickerViewController: UIViewController {
     
     public var locationPickerSuccessMessage: String = "Location successfully selected"
     public var locationPickerSuccessTitle: String = "Success"
+    public var selectTitle: String = "Select"
     
     lazy var results: LocationPickerResultsViewController = {
        let results = LocationPickerResultsViewController()
@@ -230,7 +231,7 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
     
     func selectLocationButton() -> UIButton {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
-        button.setTitle("Select", for: UIControl.State())
+        button.setTitle(selectTitle, for: UIControl.State())
         button.backgroundColor = UIColor.blue
         button.setTitleColor(.white, for: UIControl.State())
         button.layer.cornerRadius = 5
