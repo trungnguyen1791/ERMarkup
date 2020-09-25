@@ -7,11 +7,13 @@
 
 import UIKit
 import MapKit
+import Contacts
+
 
 public class ERLocationPickerViewController: UIViewController {
 
+    @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var mapPin: UIImageView!
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var mapView: MKMapView!
     let locationManager: CLLocationManager = {
         let manager = CLLocationManager()
@@ -27,14 +29,42 @@ public class ERLocationPickerViewController: UIViewController {
     public var completion: CompletionHandler?
     var selectedLocation: Location?
     var searchTimer: Timer?
+    var localSearch: MKLocalSearch?
+    var historyManager = SearchHistoryManager()
     
     public var locationPickerSuccessMessage: String = "Location successfully selected"
     public var locationPickerSuccessTitle: String = "Success"
     
+    lazy var results: LocationPickerResultsViewController = {
+       let results = LocationPickerResultsViewController()
+        results.onSelectLocation = {[weak self] in self?.selectLocationFromSearch($0) }
+        results.searchHistoryLb = "History"
+        return results
+    }()
+    
+    lazy var searchController: UISearchController = {
+        $0.delegate = self
+        $0.searchResultsUpdater = self
+        $0.searchBar.delegate = self
+        $0.dimsBackgroundDuringPresentation = true
+        /// true if search bar in tableView header
+        $0.hidesNavigationBarDuringPresentation = false
+//        $0.searchBar.placeholder = searchBarPlaceholder
+        $0.searchBar.barStyle = .black
+        $0.searchBar.searchBarStyle = .minimal
+//        $0.searchBar.searchTextField.textColor = UIColor.darkGray
+//        $0.searchBar.textField?.setPlaceHolderTextColor(UIColor(hex: 0xf8f8f8))
+//        $0.searchBar.textField?.clearButtonMode = .whileEditing
+        return $0
+    }(UISearchController(searchResultsController: results))
+    fileprivate lazy var searchViewTest: UIView = UIView()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-
+        extendedLayoutIncludesOpaqueBars = true
+        definesPresentationContext = true
+        
+        
         // Do any additional setup after loading the view.
         if #available(iOS 11.0, *) {
             let userLocationBtn = MKUserTrackingButton(mapView: mapView)
@@ -46,21 +76,62 @@ public class ERLocationPickerViewController: UIViewController {
             // Fallback on earlier versions
         }
         
-        searchBar.delegate = self
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.016) {
+            self.searchView.addSubview(self.searchController.searchBar)
+            self.results.view.layer.cornerRadius = 10
+//            self.searchController.searchBar.translatesAutoresizingMaskIntoConstraints = false
+            self.searchController.searchBar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
+            self.searchController.searchBar.sizeToFit()
+        }
+        
+//        NSLayoutConstraint(item: searchController.searchBar, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: searchView, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0).isActive = true
+//       NSLayoutConstraint(item: searchController.searchBar, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: searchView, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0).isActive = true
+//       NSLayoutConstraint(item: searchController.searchBar, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: searchView, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1, constant: 0).isActive = true
+//       NSLayoutConstraint(item: searchController.searchBar, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 56).isActive = true
+        
+        
         mapView.delegate = self
-        searchBar.isHidden = true
         
         if let item = selectedLocation {
             let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta:  0.1)
-            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: item.lat, longitude: item.long), span: span)
-            
+            let region = MKCoordinateRegion(center: item.location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
     }
+    
+    public override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+//        searchController.searchBar.frame = CGRect(x: 0, y: 0, width: searchView.frame.width, height: searchView.frame.height)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            print(self.searchController.searchBar.frame)
+            print(self.searchController.searchBar.constraints)
+        }
+    }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.searchController.searchBar.frame.size.height = self.searchView.frame.height
+        self.searchController.searchBar.frame.size.width = self.searchView.frame.width
+//        searchController.searchBar.frame = CGRect(x: 0, y: 0, width: searchView.frame.width, height: searchView.frame.height)
+//        self.results.view.frame = self.mapView.frame
+    }
+    
+    //MARK: -
     @IBAction func doneBtnTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    func selectLocationFromSearch(_ location: Location) {
+        dismiss(animated: true) {
+            self.selectedLocation = location
+            let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta:  0.1)
+            let region = MKCoordinateRegion(center: location.location.coordinate, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            self.historyManager.addToHistory(location)
+        }
+    }
     func selectLocation(location: CLLocation) {
         // add point annotation to map
         let annotation = MKPointAnnotation()
@@ -68,7 +139,9 @@ public class ERLocationPickerViewController: UIViewController {
 //        self.mapView.addAnnotation(annotation)
         annotation.title = ""
         geocoder.cancelGeocode()
-        geocoder.reverseGeocodeLocation(location) { response, error in
+        geocoder.reverseGeocodeLocation(location) { [weak self] response, error in
+            guard let self = self else {return}
+            
             if let error = error as NSError?, error.code != 10 { // ignore cancelGeocode errors
                 // show error and remove annotation
                 let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
@@ -94,7 +167,9 @@ public class ERLocationPickerViewController: UIViewController {
                 annotation.title = name
                 annotation.subtitle = (address.line1 ?? "") + "\n" + (address.line2 ?? "")
                 
-                self.selectedLocation = Location(lat: location.coordinate.latitude, long: location.coordinate.longitude, address: address)
+                
+                self.selectedLocation = Location(name: placemark.areasOfInterest?.first, location: location, placemark: placemark)
+                self.searchController.searchBar.text = self.selectedLocation.flatMap { $0.address } ?? ""
                 self.mapView.addAnnotation(annotation)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.016) {
                     self.mapView.selectAnnotation(annotation, animated: true)
@@ -104,20 +179,6 @@ public class ERLocationPickerViewController: UIViewController {
         }
     }
     
-}
-
-extension ERLocationPickerViewController: UISearchBarDelegate {
-    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
-    
-    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-    }
-    
-    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
 }
 
 extension ERLocationPickerViewController: MKMapViewDelegate {
@@ -170,10 +231,6 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
     func selectLocationButton() -> UIButton {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
         button.setTitle("Select", for: UIControl.State())
-//        if let titleLabel = button.titleLabel {
-//            let width = titleLabel.textRect(forBounds: CGRect(x: 0, y: 0, width: Int.max, height: 30), limitedToNumberOfLines: 1).width
-//            button.frame.size = CGSize(width: width + 10, height: 30.0)
-//        }
         button.backgroundColor = UIColor.blue
         button.setTitleColor(.white, for: UIControl.State())
         button.layer.cornerRadius = 5
@@ -182,85 +239,252 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
         return button
     }
 }
-public struct Location {
-    public var lat: Double          = 0
-    public var long: Double         = 0
-    public var address: Address?
-    
-    public init(lat: Double, long: Double, address: Address?) {
-        self.lat = lat
-        self.long = long
-        self.address = address
+extension ERLocationPickerViewController: UISearchBarDelegate {
+    public func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        print("Should begin")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.results.view.frame = self.mapView.frame
+            self.searchController.searchBar.frame = CGRect(x: 0, y: 0, width: self.searchView.frame.width, height: self.searchView.frame.height)
+        }
+        return true
+    }
+    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        if let text = searchBar.text, text.isEmpty {
+            searchBar.text = " "
+        }
     }
     
-    public var locationString: String {
-        return "\(lat),\(long)"
-    }
-}
-
-public struct Address {
-    
-    // MARK: - Properties
-    
-    public var street: String?
-    public var building: String?
-    public var apt: String?
-    public var zip: String?
-    public var city: String?
-    public var state: String?
-    public var country: String?
-    public var ISOcountryCode: String?
-    public var timeZone: TimeZone?
-    public var latitude: CLLocationDegrees?
-    public var longitude: CLLocationDegrees?
-    public var placemark: CLPlacemark?
-    
-    // MARK: - Types
-    
-    public init(placemark: CLPlacemark) {
-        self.street = placemark.thoroughfare
-        self.building = placemark.subThoroughfare
-        self.city = placemark.locality
-        self.state = placemark.administrativeArea
-        self.zip = placemark.postalCode
-        self.country = placemark.country
-        self.ISOcountryCode = placemark.isoCountryCode
-        self.timeZone = placemark.timeZone
-        self.latitude = placemark.location?.coordinate.latitude
-        self.longitude = placemark.location?.coordinate.longitude
-        self.placemark = placemark
-    }
-    
-    // MARK: - Helpers
-    
-    public var coordinates: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: latitude ?? 0.0, longitude: longitude ?? 0.0)
-    }
-    
-    public var line: String? {
-        return [line1, line2].compactMap{$0}.joined(separator: ", ")
-    }
-    
-    public var line1: String? {
-        return [[building, street].compactMap{$0}.joined(separator: " "), apt].compactMap{$0}.joined(separator: ", ")
-    }
-    
-    public var line2: String? {
-        return [[city, zip].compactMap{$0}.joined(separator: " "), country].compactMap{$0}.joined(separator: ", ")
+    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            searchBar.text = " "
+        }
     }
 }
 
+//Shit about searchresults view controller :(
+extension ERLocationPickerViewController: UISearchResultsUpdating, UISearchControllerDelegate {
+    public func willPresentSearchController(_ searchController: UISearchController) {
+        self.results.view.frame = self.mapView.frame
+    }
+    public func didPresentSearchController(_ searchController: UISearchController) {
+        UIView.animate(withDuration: 0.17) {
+            self.searchController.searchBar.frame = CGRect(x: 0, y: 0, width: self.searchView.frame.width, height: self.searchView.frame.height)
+            self.results.tableView.contentInset = UIEdgeInsets(top: 70, left: 0, bottom: 0, right: 0)
+        }
+    }
 
-extension MKAnnotationView {
-
-    func conteiner(arrangedSubviews: [UIView]) {
-        let stackView = UIStackView(arrangedSubviews: arrangedSubviews)
-        stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
-        stackView.alignment = .fill
-        stackView.spacing = 5
-        stackView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleWidth, .flexibleHeight]
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        self.detailCalloutAccessoryView = stackView
+    public func didDismissSearchController(_ searchController: UISearchController) {
+        UIView.animate(withDuration: 0.1) {
+            self.searchController.searchBar.frame = CGRect(x: 0, y: 0, width: self.searchView.frame.width, height: self.searchView.frame.height)
+            self.results.tableView.contentInset = UIEdgeInsets(top: 70, left: 0, bottom: 0, right: 0)
+        }
+    }
+    public func updateSearchResults(for searchController: UISearchController) {
+        guard let term = searchController.searchBar.text else { return  }
+        searchTimer?.invalidate()
+        let searchTerm = term.trimmingCharacters(in: .whitespaces)
+        if searchTerm.isEmpty {
+            results.locations = historyManager.history()
+            results.isShowingHistory = false
+            results.tableView.reloadData()
+        }else {
+            showItemsForSearchResult(nil)
+            searchTimer = Timer.scheduledTimer(timeInterval: 0.2, target: self,
+                                               selector: #selector(searchFromTimer(_:)),
+                                               userInfo: ["query": searchTerm], repeats: false)
+        }
+    }
+    
+    @objc func searchFromTimer(_ timer: Timer) {
+        guard let userInfo = timer.userInfo as? [String: AnyObject],
+            let term = userInfo["query"] as? String
+            else { return }
+        
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = term
+        
+        localSearch?.cancel()
+        localSearch = MKLocalSearch(request: request)
+        localSearch!.start { response, _ in
+            self.showItemsForSearchResult(response)
+        }
+    }
+    
+    func showItemsForSearchResult(_ searchResult: MKLocalSearch.Response?) {
+        results.locations = searchResult?.mapItems.map { Location(name: $0.name, placemark: $0.placemark) } ?? []
+        results.isShowingHistory = false
+        results.tableView.reloadData()
     }
 }
+
+
+public class LocationPickerResultsViewController: UITableViewController {
+    var locations: [Location] = []
+    var onSelectLocation: ((Location) -> ())?
+    var isShowingHistory: Bool = false
+    var searchHistoryLb: String?
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        extendedLayoutIncludesOpaqueBars = true
+        tableView.contentInsetAdjustmentBehavior = .never
+        
+        tableView.tableFooterView = UIView()
+        tableView.separatorColor = UIColor.lightGray.withAlphaComponent(0.4)
+        tableView.backgroundColor = nil
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        tableView.backgroundView = blurEffectView
+        tableView.separatorEffect = UIVibrancyEffect(blurEffect: blurEffect)
+        
+    }
+    
+    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return isShowingHistory ? searchHistoryLb : nil
+    }
+    
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return locations.count
+    }
+    
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LocationCell") ?? UITableViewCell(style: .subtitle, reuseIdentifier: "LocationCell")
+        
+        let location = locations[indexPath.row]
+        cell.imageView?.image = tableView.tintColor.toImage().imageWithSize(size: CGSize(width: 8, height: 8), roundedRadius: 4)
+        cell.imageView?.layer.cornerRadius = 4
+        cell.textLabel?.text = location.name
+        cell.detailTextLabel?.text = location.address
+        cell.backgroundColor = .clear
+        cell.contentView.backgroundColor = .clear
+        
+        return cell
+    }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        onSelectLocation?(locations[indexPath.row])
+    }
+}
+
+
+internal extension UIColor {
+    func toImage(size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+        let rect:CGRect = CGRect(origin: .zero, size: size)
+        UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
+        self.setFill()
+        UIRectFill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image! // was image
+    }
+}
+
+internal extension UIImage {
+    /// Resizes an image to the specified size.
+    ///
+    /// - Parameters:
+    ///     - size: the size we desire to resize the image to.
+    ///
+    /// - Returns: the resized image.
+    ///
+    func imageWithSize(size: CGSize) -> UIImage? {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale);
+        let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height);
+        draw(in: rect)
+        
+        let resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        return resultingImage
+    }
+    
+    /// Resizes an image to the specified size and adds an extra transparent margin at all sides of
+    /// the image.
+    ///
+    /// - Parameters:
+    ///     - size: the size we desire to resize the image to.
+    ///     - extraMargin: the extra transparent margin to add to all sides of the image.
+    ///
+    /// - Returns: the resized image.  The extra margin is added to the input image size.  So that
+    ///         the final image's size will be equal to:
+    ///         `CGSize(width: size.width + extraMargin * 2, height: size.height + extraMargin * 2)`
+    ///
+    func imageWithSize(size: CGSize, extraMargin: CGFloat) -> UIImage? {
+        
+        let imageSize = CGSize(width: size.width + extraMargin * 2, height: size.height + extraMargin * 2)
+        
+        UIGraphicsBeginImageContextWithOptions(imageSize, false, UIScreen.main.scale);
+        let drawingRect = CGRect(x: extraMargin, y: extraMargin, width: size.width, height: size.height)
+        draw(in: drawingRect)
+        
+        let resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        return resultingImage
+    }
+    
+    /// Resizes an image to the specified size.
+    ///
+    /// - Parameters:
+    ///     - size: the size we desire to resize the image to.
+    ///     - roundedRadius: corner radius
+    ///
+    /// - Returns: the resized image with rounded corners.
+    ///
+    func imageWithSize(size: CGSize, roundedRadius radius: CGFloat) -> UIImage? {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        if let currentContext = UIGraphicsGetCurrentContext() {
+            let rect = CGRect(origin: .zero, size: size)
+            currentContext.addPath(UIBezierPath(roundedRect: rect,
+                                                byRoundingCorners: .allCorners,
+                                                cornerRadii: CGSize(width: radius, height: radius)).cgPath)
+            currentContext.clip()
+            
+            //Don't use CGContextDrawImage, coordinate system origin in UIKit and Core Graphics are vertical oppsite.
+            draw(in: rect)
+            currentContext.drawPath(using: .fillStroke)
+            let roundedCornerImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return roundedCornerImage
+        }
+        return nil
+    }
+}
+
+internal  extension CLPlacemark {
+    
+    var postalAddressIfAvailable: CNPostalAddress? {
+        if #available(iOS 11.0, *) {
+            return self.postalAddress
+        }
+        
+        return nil
+    }
+    
+}
+
+struct SearchHistoryManager {
+    
+    fileprivate let HistoryKey = "RecentLocationsKey"
+    fileprivate var defaults = UserDefaults.standard
+    
+    func history() -> [Location] {
+        let history = defaults.object(forKey: HistoryKey) as? [NSDictionary] ?? []
+        return history.compactMap(Location.fromDefaultsDic)
+    }
+    
+    func addToHistory(_ location: Location) {
+        guard let dic = location.toDefaultsDic() else { return }
+        
+        var history  = defaults.object(forKey: HistoryKey) as? [NSDictionary] ?? []
+        let historyNames = history.compactMap { $0[LocationDicKeys.name] as? String }
+        let alreadyInHistory = location.name.flatMap(historyNames.contains) ?? false
+        if !alreadyInHistory {
+            history.insert(dic, at: 0)
+            defaults.set(history, forKey: HistoryKey)
+        }
+    }
+}
+

@@ -51,6 +51,7 @@
 		7D577220155CA669EB58CA078D053C20 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE75BD0D9F8C5FA89506358D7491389 /* LineShape.swift */; };
 		7F50767CCC03B09C40D159550EAE20FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
 		82CE16BD9E2E2CC219969E46220D42D4 /* ToolOperationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5305C95C167FD1B6306C2B3DA10F19B /* ToolOperationContext.swift */; };
+		84F3B60F251C950C0045352D /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B60E251C950C0045352D /* LocationModel.swift */; };
 		89B9AF3ACBDCAFB9C3BDD5FD2EA8D27E /* ERLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEAE7DA4E4619BBB0C12CB8C97E5B3D /* ERLocationPickerViewController.swift */; };
 		89BA6AB2C4AAC5B26B482B601D6B6DB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B113D1093053A0E4CBE521D3618F8A /* Foundation.framework */; };
 		8C66A52D2A319CA8800C9C31B520C705 /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB3B3B28A0DABF19F196B5D83A712DF /* TextTool.swift */; };
@@ -143,10 +144,10 @@
 		17111F5428550EC837C370F9E98331CA /* AngleTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AngleTool.swift; path = Drawsana/Tools/Implementations/AngleTool.swift; sourceTree = "<group>"; };
 		1737FB5DFC838BA26DAADF8B47D7B423 /* UserSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = "Drawsana/Data model/UserSettings.swift"; sourceTree = "<group>"; };
 		19DAF04157E7C97D0EEB4DE80B9C634B /* Pods-ERMarkup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ERMarkup_Tests.modulemap"; sourceTree = "<group>"; };
-		1B90A4A2FF0F44840FFCB7E633ACD569 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1B90A4A2FF0F44840FFCB7E633ACD569 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1E2A2CAF539D3B0E73656CC03F45F1A5 /* Drawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = "Drawsana/Data model/Drawing.swift"; sourceTree = "<group>"; };
 		2722CEEB06B22A2FF1D34957B4B36690 /* Pods-ERMarkup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FTPopOverMenu_Swift.framework; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2766E211016ED57D4F9773C67BA09EF2 /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2825E4B61869EC3A1C9A3F7FF1C08E97 /* KeyedDecodingContainer+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyedDecodingContainer+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/KeyedDecodingContainer+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
 		2A6C5BFD21AD23FF0B42CFE12C48FFAA /* Pods-ERMarkup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ERMarkup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B354785A8944FBD0DA8479984C84C2C /* FTPopOverMenu_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FTPopOverMenu_Swift-Info.plist"; sourceTree = "<group>"; };
@@ -161,7 +162,7 @@
 		3CDC8303154E2EA2EA9C640670F4318E /* PenTool_EraserTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PenTool_EraserTool.swift; path = Drawsana/Tools/Implementations/PenTool_EraserTool.swift; sourceTree = "<group>"; };
 		3D2EC0B236A9EBA9F881C52F07809533 /* ERMarkup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ERMarkup.modulemap; sourceTree = "<group>"; };
 		3DB3531EBA42C49AB903F494A4D898C0 /* Drawsana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Drawsana.debug.xcconfig; sourceTree = "<group>"; };
-		3EF4B16E3BD437FFF41D4672FE1673A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3EF4B16E3BD437FFF41D4672FE1673A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40803005A0B630F6B2769F9F8E95A3DF /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Drawsana/Shapes/Shape.swift; sourceTree = "<group>"; };
 		4277BCA23D4F11DA8C4AAEE41F6038CF /* Drawsana.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Drawsana.modulemap; sourceTree = "<group>"; };
 		4601DCA1B69ACB07C71C3CEC5D6BB70D /* DragHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DragHandler.swift; path = "Drawsana/Tools/Implementations/Text tool/DragHandler.swift"; sourceTree = "<group>"; };
@@ -174,8 +175,8 @@
 		574E8C407B4158B7C2060CB6BD7CB920 /* ERMarkup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.debug.xcconfig; sourceTree = "<group>"; };
 		57E2043FACF40765A2D6C0D131C97E2C /* ImmediatePanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediatePanGestureRecognizer.swift; path = Drawsana/Helpers/ImmediatePanGestureRecognizer.swift; sourceTree = "<group>"; };
 		584F77D02615A83A2534DF1BE53B88DD /* Pods-ERMarkup_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Tests-Info.plist"; sourceTree = "<group>"; };
-		59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ERMarkup_Example.framework; path = "Pods-ERMarkup_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ERMarkup_Tests.framework; path = "Pods-ERMarkup_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59610B61716DD3100F624AB4DF999352 /* Pods_ERMarkup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2F483E6A2860DF73F7CE902B6ED2FE /* Pods_ERMarkup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERMarkup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		626E6D1F2BCF7E0009EF6ADC66BA3671 /* Pods-ERMarkup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ERMarkup_Tests-umbrella.h"; sourceTree = "<group>"; };
 		63B2FB9E7501DA7FBCB6EAE9E77F4699 /* DrawsanaView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawsanaView.swift; path = Drawsana/DrawsanaView.swift; sourceTree = "<group>"; };
 		6401CDC579BE6EE4C877A840667C1D88 /* FT+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FT+Extension.swift"; path = "FTPopOverMenu_Swift/FT+Extension.swift"; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 		7663BA3BDA371D44A491D0554DD01357 /* DrawingTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingTool.swift; path = Drawsana/Tools/DrawingTool.swift; sourceTree = "<group>"; };
 		8029DB11AD790AB219FA2E067DA7A98D /* FTPopOverMenu_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPopOverMenu_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9333FCD2F88C664D8FAB462F7B5B5 /* ic_delete@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_delete@2x.png"; sourceTree = "<group>"; };
+		84F3B60E251C950C0045352D /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationModel.swift; path = ERMarkup/Classes/LocationModel.swift; sourceTree = "<group>"; };
 		8770218C17B905FC3D6C16DC49B7247E /* ERMarkupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERMarkupViewController.swift; path = ERMarkup/Classes/ERMarkupViewController.swift; sourceTree = "<group>"; };
 		87FB37BD2255AB22D7C63D59ED208154 /* RectShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectShape.swift; path = Drawsana/Shapes/Implementations/RectShape.swift; sourceTree = "<group>"; };
 		88350AC27F8C244850E927A66DFA8F53 /* UIControl+Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Point.swift"; path = "FTPopOverMenu_Swift/UIControl+Point.swift"; sourceTree = "<group>"; };
@@ -204,7 +206,7 @@
 		9762FC49D3B4347AE3A92D231EE88240 /* ERMarkup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ERMarkup.release.xcconfig; sourceTree = "<group>"; };
 		98CE85262E93BE3C27B98969B9F2983D /* ERMarkup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ERMarkup-umbrella.h"; sourceTree = "<group>"; };
 		9D3F379C72D5621FE4FF6C1FEAF80AA1 /* Pods-ERMarkup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ERMarkup_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE3C7D2BB3C82ED75AA4354007BA247 /* Pods-ERMarkup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Example-dummy.m"; sourceTree = "<group>"; };
 		9EDC322FE104E2B8623B830698D295F4 /* ic_selection@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_selection@2x.png"; sourceTree = "<group>"; };
 		9F6ECE8D2F84A57B396A9F1425760674 /* ic_line@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_line@2x.png"; sourceTree = "<group>"; };
@@ -216,15 +218,15 @@
 		B15A054AF6D66BD400551A2C353FAC8D /* ic_line_size3@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_line_size3@2x.png"; sourceTree = "<group>"; };
 		B236E4CAD7A9218AF6304E70813A3692 /* UIColor+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/UIColor+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
 		B7D27EEDB00711AC96BECCF32D2E71F3 /* Pods-ERMarkup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ERMarkup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Drawsana.framework; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39E9999AED768616AB170C09A4A352 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE15EE935C235DCFE080F6D169D22580 /* Drawsana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Drawsana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4915375E25F2EBE3C3862CDCFE6082 /* CGFloat+DrawsanaExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+DrawsanaExtensions.swift"; path = "Drawsana/Helpers/Extensions/CGFloat+DrawsanaExtensions.swift"; sourceTree = "<group>"; };
 		BFC1348FAF66681BF16D30A589530B2D /* FTConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTConfiguration.swift; path = FTPopOverMenu_Swift/FTConfiguration.swift; sourceTree = "<group>"; };
 		BFEAE7DA4E4619BBB0C12CB8C97E5B3D /* ERLocationPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ERLocationPickerViewController.swift; path = ERMarkup/Classes/ERLocationPickerViewController.swift; sourceTree = "<group>"; };
 		C082FCB7493B25DE8FCD7AE6F0EB1166 /* Pods-ERMarkup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ERMarkup_Tests-dummy.m"; sourceTree = "<group>"; };
 		C1E379F0016CA323F769BB7490717928 /* ic_font@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_font@2x.png"; sourceTree = "<group>"; };
-		C86DC91556F31742B7A2AD13FE1B40D3 /* ERMarkup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ERMarkup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ERMarkup.framework; path = ERMarkup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86DC91556F31742B7A2AD13FE1B40D3 /* ERMarkup.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ERMarkup.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8D3CA51031D4F7580E3878A5CFA3C54 /* ERMarkup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ERMarkup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50D0903707B9B2057F6A624D994219F /* DrawingOperationStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawingOperationStack.swift; path = "Drawsana/Data model/DrawingOperationStack.swift"; sourceTree = "<group>"; };
 		D606195733E26FF85B931B7D194785C5 /* ic_line_size1@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "ic_line_size1@2x.png"; sourceTree = "<group>"; };
 		D7F068E5C27DA98E6A502C0FD136BAE6 /* FTPopOverMenu_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FTPopOverMenu_Swift.debug.xcconfig; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		4052916C609E9D5D6A8D5AA02407C52E /* ERMarkup */ = {
 			isa = PBXGroup;
 			children = (
+				84F3B60E251C950C0045352D /* LocationModel.swift */,
 				BFEAE7DA4E4619BBB0C12CB8C97E5B3D /* ERLocationPickerViewController.swift */,
 				8770218C17B905FC3D6C16DC49B7247E /* ERMarkupViewController.swift */,
 				B40BA63A028229F962F316D55DC9C032 /* Pod */,
@@ -416,7 +419,6 @@
 				F28FE5F49BE71990E1C35B227458DEBC /* UIScreen+Frame.swift */,
 				1AB22DF2553FDC90FF31F9DA1EA0720C /* Support Files */,
 			);
-			name = FTPopOverMenu_Swift;
 			path = FTPopOverMenu_Swift;
 			sourceTree = "<group>";
 		};
@@ -542,7 +544,6 @@
 				1737FB5DFC838BA26DAADF8B47D7B423 /* UserSettings.swift */,
 				D2C1DE37454D68FF13AC6F24798200FD /* Support Files */,
 			);
-			name = Drawsana;
 			path = Drawsana;
 			sourceTree = "<group>";
 		};
@@ -870,6 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3B60F251C950C0045352D /* LocationModel.swift in Sources */,
 				89B9AF3ACBDCAFB9C3BDD5FD2EA8D27E /* ERLocationPickerViewController.swift in Sources */,
 				3787EDB88ACF85A09CBD6337EB979A17 /* ERMarkup-dummy.m in Sources */,
 				BD30CC27007FAF62FEB5F004D00383B2 /* ERMarkupViewController.swift in Sources */,
@@ -971,8 +973,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

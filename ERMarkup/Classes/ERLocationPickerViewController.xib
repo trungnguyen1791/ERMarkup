@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="mapPin" destination="pu7-h6-hbs" id="9zT-W7-dig"/>
                 <outlet property="mapView" destination="XUn-sd-sij" id="2m6-m4-iR7"/>
-                <outlet property="searchBar" destination="Yui-v2-AiI" id="Iz0-Ki-obP"/>
+                <outlet property="searchView" destination="97T-pN-qYj" id="PIi-DD-40d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,10 +47,13 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </mapView>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-v2-AiI">
-                    <rect key="frame" x="40" y="104" width="334" height="56"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97T-pN-qYj">
+                    <rect key="frame" x="30" y="94" width="354" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="n4a-Gv-qsc"/>
+                    </constraints>
+                </view>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pu7-h6-hbs">
                     <rect key="frame" x="187" y="406" width="40" height="40"/>
                     <constraints>
@@ -62,17 +65,17 @@
             <color key="backgroundColor" white="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="XUn-sd-sij" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="3t6-y4-IZV"/>
-                <constraint firstItem="Yui-v2-AiI" firstAttribute="leading" secondItem="XUn-sd-sij" secondAttribute="leading" constant="10" id="4rY-ro-NuO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="97T-pN-qYj" secondAttribute="trailing" constant="30" id="4EC-F2-8em"/>
                 <constraint firstItem="pu7-h6-hbs" firstAttribute="centerY" secondItem="XUn-sd-sij" secondAttribute="centerY" constant="-16" id="8oe-iq-ATE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iWr-xk-OpY" secondAttribute="trailing" constant="30" id="JY8-Z1-hYc"/>
                 <constraint firstAttribute="bottom" secondItem="iWr-xk-OpY" secondAttribute="bottom" constant="30" id="MD7-M6-0HJ"/>
-                <constraint firstItem="Yui-v2-AiI" firstAttribute="trailing" secondItem="XUn-sd-sij" secondAttribute="trailing" constant="-10" id="NIk-89-fok"/>
                 <constraint firstItem="iWr-xk-OpY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="RrY-AZ-Nnp"/>
                 <constraint firstItem="pu7-h6-hbs" firstAttribute="centerX" secondItem="XUn-sd-sij" secondAttribute="centerX" id="VX6-5n-f4d"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XUn-sd-sij" secondAttribute="trailing" constant="30" id="XjQ-Sc-1sU"/>
+                <constraint firstItem="97T-pN-qYj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="kag-gG-Osg"/>
+                <constraint firstItem="97T-pN-qYj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="nKw-ID-6hk"/>
                 <constraint firstItem="XUn-sd-sij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pdx-rb-5lG"/>
                 <constraint firstItem="iWr-xk-OpY" firstAttribute="top" secondItem="XUn-sd-sij" secondAttribute="bottom" constant="30" id="txd-Qe-iLW"/>
-                <constraint firstItem="Yui-v2-AiI" firstAttribute="top" secondItem="XUn-sd-sij" secondAttribute="top" constant="10" id="wmQ-Cd-mgo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
