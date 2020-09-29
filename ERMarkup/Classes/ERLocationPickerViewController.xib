@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ERLocationPickerViewController" customModule="ERMarkup" customModuleProvider="target">
             <connections>
+                <outlet property="cancelBtn" destination="iWr-xk-OpY" id="GqG-5n-UQM"/>
                 <outlet property="mapPin" destination="pu7-h6-hbs" id="9zT-W7-dig"/>
                 <outlet property="mapView" destination="XUn-sd-sij" id="2m6-m4-iR7"/>
                 <outlet property="searchView" destination="97T-pN-qYj" id="PIi-DD-40d"/>

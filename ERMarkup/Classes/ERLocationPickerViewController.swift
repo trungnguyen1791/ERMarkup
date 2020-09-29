@@ -12,6 +12,7 @@ import Contacts
 
 public class ERLocationPickerViewController: UIViewController {
 
+    @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var mapPin: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
@@ -35,6 +36,7 @@ public class ERLocationPickerViewController: UIViewController {
     public var locationPickerSuccessMessage: String = "Location successfully selected"
     public var locationPickerSuccessTitle: String = "Success"
     public var selectTitle: String = "Select"
+    public var cancelTitle: String = "Cancel"
     
     lazy var results: LocationPickerResultsViewController = {
        let results = LocationPickerResultsViewController()
@@ -98,6 +100,9 @@ public class ERLocationPickerViewController: UIViewController {
             let region = MKCoordinateRegion(center: item.location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
+        
+        cancelBtn.setTitle(cancelTitle, for: .normal)
+        
     }
     
     public override func viewWillLayoutSubviews() {
@@ -230,7 +235,7 @@ extension ERLocationPickerViewController: MKMapViewDelegate {
     }
     
     func selectLocationButton() -> UIButton {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 70, height: 30))
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
         button.setTitle(selectTitle, for: UIControl.State())
         button.backgroundColor = UIColor.blue
         button.setTitleColor(.white, for: UIControl.State())
