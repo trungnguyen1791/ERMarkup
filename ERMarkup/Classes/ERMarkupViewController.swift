@@ -325,6 +325,7 @@ public class ERMarkupViewController: UIViewController {
         vc.locationPickerSuccessMessage = locationPickerSuccessMessage
         vc.locationPickerSuccessTitle = locationPickerSuccessTitle
         vc.selectTitle = selectTitle
+        vc.cancelTitle = cancelTitle
         
         vc.completion = { item in
             self.selectedLocation = item
