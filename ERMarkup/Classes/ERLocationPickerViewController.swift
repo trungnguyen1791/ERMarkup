@@ -37,6 +37,7 @@ public class ERLocationPickerViewController: UIViewController {
     public var locationPickerSuccessTitle: String = "Success"
     public var selectTitle: String = "Select"
     public var cancelTitle: String = "Cancel"
+    public var locationPickerErrorMessage: String = "Something went wrong. Please try again later"
     
     lazy var results: LocationPickerResultsViewController = {
        let results = LocationPickerResultsViewController()
@@ -150,7 +151,7 @@ public class ERLocationPickerViewController: UIViewController {
             
             if let error = error as NSError?, error.code != 10 { // ignore cancelGeocode errors
                 // show error and remove annotation
-                let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
+                let alert = UIAlertController(title: nil, message: self.locationPickerErrorMessage, preferredStyle: .alert)
                 
                 alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { action in
                     self.mapView.removeAnnotation(annotation)

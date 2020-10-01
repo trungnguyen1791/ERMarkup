@@ -64,6 +64,7 @@ public class ERMarkupViewController: UIViewController {
     public var locationPickerSuccessMessage: String = "Location successfully selected"
     public var locationPickerSuccessTitle: String = "Success"
     public var selectTitle: String = "Select"
+    public var locationPickerErrorMessage: String = "Something went wrong. Please try again later"
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -326,6 +327,7 @@ public class ERMarkupViewController: UIViewController {
         vc.locationPickerSuccessTitle = locationPickerSuccessTitle
         vc.selectTitle = selectTitle
         vc.cancelTitle = cancelTitle
+        vc.locationPickerErrorMessage = locationPickerErrorMessage
         
         vc.completion = { item in
             self.selectedLocation = item
@@ -358,7 +360,8 @@ extension ERMarkupViewController: DrawsanaViewDelegate {
     }
     
     public func drawsanaView(_ drawsanaView: DrawsanaView, didChangeStrokeColor strokeColor: UIColor?) {
-        
+        let image = UIImage.imageWithColor(color: strokeColor ?? UIColor.black)!.circularImageWithBorderOf(color: UIColor.white, diameter: 35, boderWidth: 2)
+        self.strokeColorBtn.setImage(image, for: .normal)
     }
     
     public func drawsanaView(_ drawsanaView: DrawsanaView, didChangeFillColor fillColor: UIColor?) {
