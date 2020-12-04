@@ -36,14 +36,14 @@ public class ERMarkupViewController: UIViewController {
     let redoBtn = UIButton()
     let toolBtn = UIButton()
     
-    let mapBtn = UIButton()
+//    let mapBtn = UIButton()
     var selectedLocation: Location?
     var originalImage: UIImage?
     var tempImage: UIImage?
     
     
     lazy var toolbarStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [undoBtn, strokeColorBtn, strokeWidthBtn, toolBtn, mapBtn])
+        let stack = UIStackView(arrangedSubviews: [undoBtn, strokeColorBtn, toolBtn])
         
         return stack
     }()
@@ -51,8 +51,9 @@ public class ERMarkupViewController: UIViewController {
     lazy var textTool = { return TextTool(delegate: self) }()
     lazy var selectionTool = { return SelectionTool(delegate: self) }()
     
-    lazy var tools: [DrawingTool] = { return [PenTool(), textTool, ArrowTool(), RectTool(), selectionTool] }()
+//    lazy var tools: [DrawingTool] = { return [PenTool(), textTool, ArrowTool(), RectTool(), selectionTool] }()
     
+    lazy var tools: [DrawingTool] = { return [PenTool(), RectTool(), selectionTool] }()
     let strokeWidths: [CGFloat] = [3, 10, 16]
     var strokeWidthIndex = 0
     
@@ -84,14 +85,25 @@ public class ERMarkupViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: cancelTitle, style: .plain, target: self, action: #selector(handleCancelBtnTapped))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: doneTitle, style: .done, target: self, action: #selector(handleDoneBtnTapped))
+//        toolImages = [
+//            UIImage(named: "ic_line.png",
+//                    in: Bundle(for: self.classForCoder),
+//                    compatibleWith: nil),
+//            UIImage(named: "ic_font.png",
+//                    in: Bundle(for: self.classForCoder),
+//                    compatibleWith: nil),
+//            UIImage(named: "ic_arrow.png",
+//                    in: Bundle(for: self.classForCoder),
+//                    compatibleWith: nil),
+//            UIImage(named: "ic_rect.png",
+//                    in: Bundle(for: self.classForCoder),
+//                    compatibleWith: nil),
+//            UIImage(named: "ic_selection.png",
+//                    in: Bundle(for: self.classForCoder),
+//                    compatibleWith: nil)]
+        
         toolImages = [
             UIImage(named: "ic_line.png",
-                    in: Bundle(for: self.classForCoder),
-                    compatibleWith: nil),
-            UIImage(named: "ic_font.png",
-                    in: Bundle(for: self.classForCoder),
-                    compatibleWith: nil),
-            UIImage(named: "ic_arrow.png",
                     in: Bundle(for: self.classForCoder),
                     compatibleWith: nil),
             UIImage(named: "ic_rect.png",
@@ -100,6 +112,7 @@ public class ERMarkupViewController: UIViewController {
             UIImage(named: "ic_selection.png",
                     in: Bundle(for: self.classForCoder),
                     compatibleWith: nil)]
+
         
         strokeWidthImages = [
             UIImage(named: "ic_line_size1",
@@ -149,14 +162,14 @@ public class ERMarkupViewController: UIViewController {
         toolBtn.addTarget(self, action: #selector(handleToolsBtnTapped(sender:)), for: .touchUpInside)
         
         
-        mapBtn.translatesAutoresizingMaskIntoConstraints = false
-        _ = mapBtn.widthAnchor.constraint(equalToConstant: 45)
-        _ = mapBtn.heightAnchor.constraint(equalToConstant: 45)
-        mapBtn.setImage(UIImage(named: selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
-                                 in: Bundle(for: self.classForCoder),
-                                 compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
-        mapBtn.tintColor = .white
-        mapBtn.addTarget(self, action: #selector(handleMapBtnTapped(sender:)), for: .touchUpInside)
+//        mapBtn.translatesAutoresizingMaskIntoConstraints = false
+//        _ = mapBtn.widthAnchor.constraint(equalToConstant: 45)
+//        _ = mapBtn.heightAnchor.constraint(equalToConstant: 45)
+//        mapBtn.setImage(UIImage(named: selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
+//                                 in: Bundle(for: self.classForCoder),
+//                                 compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
+//        mapBtn.tintColor = .white
+//        mapBtn.addTarget(self, action: #selector(handleMapBtnTapped(sender:)), for: .touchUpInside)
         
         
         toolbarStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -303,7 +316,8 @@ public class ERMarkupViewController: UIViewController {
     @objc func handleToolsBtnTapped(sender: UIButton) {
         let defaultPopoverConfig = FTConfiguration.shared
         defaultPopoverConfig.menuWidth = 120
-        let whiteTitleArrays = ["Line", "Text", "Arrow", "Rectangle", "Selection",]
+//        let whiteTitleArrays = ["Line", "Text", "Arrow", "Rectangle", "Selection",]
+        let whiteTitleArrays = ["Line", "Rectangle", "Selection",]
         
         
         let cellConfig = FTCellConfiguration()
@@ -331,9 +345,9 @@ public class ERMarkupViewController: UIViewController {
         
         vc.completion = { item in
             self.selectedLocation = item
-            self.mapBtn.setImage(UIImage(named: self.selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
-            in: Bundle(for: self.classForCoder),
-            compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
+//            self.mapBtn.setImage(UIImage(named: self.selectedLocation != nil ? "ic_location" : "ic_location_empty" ,
+//            in: Bundle(for: self.classForCoder),
+//            compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: .normal)
             
 //            if let originalImage = self.originalImage, let logo = UIImage.imageWith(qrCode: "http://maps.google.com/?q=\(item?.lat ?? 0),\(item?.long ?? 0)") {
 //                self.imageView.image = originalImage.drawQRCode(logo: logo, position: CGPoint.zero)
