@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         
         if let image = UIImage(named: "test") {
             let vc = ERMarkupViewController(image: image)
+            vc.selectionToolTile = "Auswählen"
+            vc.lineToolTitle = "Stift"
+            vc.rectangleToolTitle = "Rechteck"
             //        let vc = ERMarkupViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen

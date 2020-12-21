@@ -20,7 +20,8 @@ public class ERMarkupViewController: UIViewController {
     
 //    let definedColors: [UIColor?] = [.red, .black, .white, .green, .orange, nil]
     //https://github.com/iGenius-Srl/IGColorPicker
-    open var definedColors: [UIColor?] = [#colorLiteral(red: 1, green: 0.09019607843, blue: 0.2666666667, alpha: 1), #colorLiteral(red: 0.8352941176, green: 0, blue: 0.9764705882, alpha: 1),  #colorLiteral(red: 0.3960784314, green: 0.1215686275, blue: 1, alpha: 1),  #colorLiteral(red: 0, green: 0.5691478252, blue: 0.9167497754, alpha: 1),  #colorLiteral(red: 0, green: 0.6901960784, blue: 1, alpha: 1),  #colorLiteral(red: 0, green: 0.8980392157, blue: 1, alpha: 1), #colorLiteral(red: 0, green: 0.9019607843, blue: 0.462745098, alpha: 1), #colorLiteral(red: 1, green: 0.9176470588, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.568627451, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.2392156863, blue: 0, alpha: 1), #colorLiteral(red: 0.4745098039, green: 0.3333333333, blue: 0.2823529412, alpha: 1), #colorLiteral(red: 0.1294117647, green: 0.1294117647, blue: 0.1294117647, alpha: 1), nil]
+//    open var definedColors: [UIColor?] = [#colorLiteral(red: 1, green: 0.09019607843, blue: 0.2666666667, alpha: 1), #colorLiteral(red: 0.8352941176, green: 0, blue: 0.9764705882, alpha: 1),  #colorLiteral(red: 0.3960784314, green: 0.1215686275, blue: 1, alpha: 1),  #colorLiteral(red: 0, green: 0.5691478252, blue: 0.9167497754, alpha: 1),  #colorLiteral(red: 0, green: 0.6901960784, blue: 1, alpha: 1),  #colorLiteral(red: 0, green: 0.8980392157, blue: 1, alpha: 1), #colorLiteral(red: 0, green: 0.9019607843, blue: 0.462745098, alpha: 1), #colorLiteral(red: 1, green: 0.9176470588, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.568627451, blue: 0, alpha: 1), #colorLiteral(red: 1, green: 0.2392156863, blue: 0, alpha: 1), #colorLiteral(red: 0.4745098039, green: 0.3333333333, blue: 0.2823529412, alpha: 1), #colorLiteral(red: 0.1294117647, green: 0.1294117647, blue: 0.1294117647, alpha: 1), nil]
+    open var definedColors: [UIColor?] = [#colorLiteral(red: 1, green: 0.09019607843, blue: 0.2666666667, alpha: 1), #colorLiteral(red: 0, green: 0.5691478252, blue: 0.9167497754, alpha: 1), #colorLiteral(red: 0, green: 0.9019607843, blue: 0.462745098, alpha: 1), #colorLiteral(red: 1, green: 0.568627451, blue: 0, alpha: 1), #colorLiteral(red: 0.1294117647, green: 0.1294117647, blue: 0.1294117647, alpha: 1), nil]
     lazy var drawingView: DrawsanaView = {
         let view = DrawsanaView()
         view.delegate = self
@@ -66,6 +67,10 @@ public class ERMarkupViewController: UIViewController {
     public var locationPickerSuccessTitle: String = "Success"
     public var selectTitle: String = "Select"
     public var locationPickerErrorMessage: String = "Something went wrong. Please try again later"
+    
+    public var lineToolTitle: String = "Line"
+    public var rectangleToolTitle: String = "Rectangle"
+    public var selectionToolTile: String = "Selection"
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -317,7 +322,7 @@ public class ERMarkupViewController: UIViewController {
         let defaultPopoverConfig = FTConfiguration.shared
         defaultPopoverConfig.menuWidth = 120
 //        let whiteTitleArrays = ["Line", "Text", "Arrow", "Rectangle", "Selection",]
-        let whiteTitleArrays = ["Line", "Rectangle", "Selection",]
+        let whiteTitleArrays = [lineToolTitle, rectangleToolTitle, selectionToolTile]
         
         
         let cellConfig = FTCellConfiguration()
